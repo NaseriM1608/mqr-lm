@@ -50,13 +50,19 @@ All five learning arms share the same decoder geometry: 12 layers, model width 5
 
 For a final normalized decoder feature $F$, MQR computes:
 
-$$C=\operatorname{GELU}(F W_c+b_c), \qquad q_j=C V_j+b_j.$$
+$$
+C=\mathrm{GELU}(F W_c+b_c), \qquad q_j=C V_j+b_j.
+$$
 
 Each query scores the same learned token vectors $E_v$. The component scores are aggregated before the vocabulary softmax:
 
-$$a_{jv}=q_j^\top E_v, \qquad z_v=\operatorname{logsumexp}_j(a_{jv})-\log M.$$
+$$
+a_{jv}=q_j^\top E_v, \qquad z_v=\log\left(\sum_{j=1}^{M}\exp(a_{jv})\right)-\log M.
+$$
 
-$$p(v\mid F)=\frac{\exp(z_v)}{\sum_u\exp(z_u)}.$$
+$$
+p(v\mid F)=\frac{\exp(z_v)}{\sum_u\exp(z_u)}.
+$$
 
 Here $M=4$ for MQR and Direct4. Direct1 uses one query. There is no learned branch gate, output-token bias, mandatory vector normalization, or changed temperature in the tested configuration. Subtracting $\log M$ cancels in the final softmax for fixed $M$.
 
@@ -116,7 +122,9 @@ Original MQR started with much smaller centered logit variation than the dense h
 
 The adjustment reduced MQR's mean NLL from 7.104622 to 6.659180. Relative to dense, the deficit fell from 0.594938 to 0.149495 nats:
 
-$$\text{dense-gap closure}=1-\frac{6.659180-6.509684}{7.104622-6.509684}\approx74.9\%.$$
+$$
+1-\frac{6.659180-6.509684}{7.104622-6.509684}\approx74.9\%.
+$$
 
 **This is 74.9% closure of the NLL deficit against dense, not a 74.9% improvement in accuracy or total NLL.** The reduction in MQR's total NLL was approximately 6.27%. Initialization materially improved the prototype, but did not remove the remaining deficit against dense or Direct4.
 
@@ -149,7 +157,9 @@ The registered point screen required both:
 
 For candidate set $S$ and the exact model's top-50 set $T$:
 
-$$R_{50}=\frac{\sum_{v\in S\cap T}p(v)}{\sum_{v\in T}p(v)}.$$
+$$
+R_{50}=\frac{\sum_{v\in S\cap T}p(v)}{\sum_{v\in T}p(v)}.
+$$
 
 This differs from **total retained probability**, $\sum_{v\in S}p(v)$, which uses the entire vocabulary distribution. Recovering the most likely token does not establish faithful sampling from the full distribution. Normalizing only the surviving candidates produces a truncated distribution, not exact language-model likelihood.
 

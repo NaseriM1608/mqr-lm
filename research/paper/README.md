@@ -4,6 +4,8 @@ The [nine-page paper](paper.pdf) is the 28 October 2026 draft of **Query Diversi
 
 `manuscript.md` and `assets/` retain its editable text, five scientific figures and ten Computer Modern equations. The PDF is the original, already reviewed artifact. Author names and affiliations remain to be supplied and verified by the researcher.
 
+The Markdown uses upright GELU text and an explicit log-of-sum-of-exponentials expression for compatibility with GitHub and embedded math viewers. This changes notation only; the score calculation, supplied PDF and embedded equation assets are unchanged.
+
 ## Render the source
 
 From the repository root:

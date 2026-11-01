@@ -34,7 +34,7 @@ Finally, observed inference cost depends on memory traffic and execution geometr
 
 Let the final normalized decoder feature be a row vector F of width 512. For MQR, the concept representation C has width 256 and each query has width 128. With learned affine projections,
 
-$$ C=\operatorname{GELU}(F W_c+b_c). $$
+$$ C=\mathrm{GELU}(F W_c+b_c). $$
 
 $$ q_j=C V_j+b_j,\qquad j=1,\ldots,M. $$
 
@@ -42,7 +42,7 @@ Every query uses the same learned token table E. Writing the query and token vec
 
 $$ a_{jv}=q_j^\top E_v. $$
 
-$$ z_v=\operatorname{logsumexp}_{j}(a_{jv})-\log M. $$
+$$ z_v=\log\left(\sum_{j=1}^{M}\exp(a_{jv})\right)-\log M. $$
 
 $$ p(v\mid F)=\frac{\exp(z_v)}{\sum_u\exp(z_u)}. $$
 

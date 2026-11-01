@@ -13,7 +13,7 @@ MQR changes the vocabulary readout, while retaining a conventional causal decode
 
 The 256-wide concept representation is specific to MQR. Direct4 removes that pathway while preserving query count, table width and score aggregation, differing by only 256 parameters. Query count here is unrelated to attention-head count.
 
-For row-vector decoder feature $F$, MQR forms $C=\operatorname{GELU}(FW_c+b_c)$ and $q_j=CV_j+b_j$. Every query scores every shared output-token row, $a_{jv}=q_j^\top E_v$. The final logits are $z_v=\operatorname{logsumexp}_j(a_{jv})-\log M$, followed by a single softmax across vocabulary tokens. Training minimizes the mean exact negative log probability of observed next tokens.
+For row-vector decoder feature $F$, MQR forms $C=\mathrm{GELU}(FW_c+b_c)$ and $q_j=CV_j+b_j$. Every query scores every shared output-token row, $a_{jv}=q_j^\top E_v$. The final logits are $z_v=\log\left(\sum_{j=1}^{M}\exp(a_{jv})\right)-\log M$, followed by a single softmax across vocabulary tokens. Training minimizes the mean exact negative log probability of observed next tokens.
 
 Equal coefficients before global aggregation do not mean equal effective branch mass: the corresponding branch-normalized mixture weights depend on each branch's vocabulary partition function. There is no independently learned mixture gate in the tested architecture.
 
