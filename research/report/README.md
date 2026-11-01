@@ -1,5 +1,7 @@
 # Complete technical report
 
+Author: **Mahmoud Naseri**. The report PDF is preserved as the completed 28 October 2026 artifact; this author credit was confirmed on 1 November 2026.
+
 - [PDF, 24 pages](report.pdf)
 - [Editable Markdown](report.md)
 

@@ -2,9 +2,11 @@
 
 The [nine-page paper](paper.pdf) is the 28 October 2026 draft of **Query Diversity Without a Likelihood Advantage: A Controlled Study of Multi-Query Vocabulary Heads**. It includes the learning comparison, CPU inference diagnostic, fixed-graph search follow-up, limitations, references and appendices. It has not been submitted or published.
 
-`manuscript.md` and `assets/` retain its editable text, five scientific figures and ten Computer Modern equations. The PDF is the original, already reviewed artifact. Author names and affiliations remain to be supplied and verified by the researcher.
+The author is **Mahmoud Naseri**. No institutional affiliation is listed. Author credit and PDF metadata were updated on 1 November 2026; the experimental results are unchanged. The assistance disclosure remains in Appendix D.
 
-The Markdown uses upright GELU text and an explicit log-of-sum-of-exponentials expression for compatibility with GitHub and embedded math viewers. This changes notation only; the score calculation, supplied PDF and embedded equation assets are unchanged.
+`manuscript.md` and `assets/` retain the editable text, five scientific figures and ten Computer Modern equations. The PDF was rebuilt with the author's name and the current public-release description, retaining the scientific figures and embedded vector equation assets.
+
+The Markdown uses upright GELU text and an explicit log-of-sum-of-exponentials expression for compatibility with GitHub and embedded math viewers. This changes notation only; the score calculation and embedded equation assets are unchanged.
 
 ## Render the source
 

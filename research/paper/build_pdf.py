@@ -17,6 +17,7 @@ from pypdf import PdfReader, PdfWriter, Transformation
 HERE=Path(__file__).resolve().parent
 ROOT=HERE.parents[1]
 OUTPUT=HERE/'paper-rebuilt.pdf'
+AUTHOR='Mahmoud Naseri'
 WIDTH,HEIGHT=A4
 LEFT,RIGHT,TOP,BOTTOM=45,45,41,43
 GAP=18
@@ -79,7 +80,7 @@ class Paper(BaseDocTemplate):
         super().__init__(str(OUTPUT),pagesize=A4,leftMargin=LEFT,rightMargin=RIGHT,
                          topMargin=TOP,bottomMargin=BOTTOM,
                          title='Query Diversity Without a Likelihood Advantage: A Controlled Study of Multi-Query Vocabulary Heads',
-                         author='Research manuscript draft; author metadata pending researcher verification')
+                         author=AUTHOR)
         self.equation_placements=[]
         def frames(top):
             return [Frame(x,BOTTOM,CW,HEIGHT-top-BOTTOM,leftPadding=0,rightPadding=0,
@@ -97,6 +98,8 @@ class Paper(BaseDocTemplate):
                                'A Controlled Study of Multi-Query Vocabulary Heads',
                                ]):
                 c.drawCentredString(WIDTH/2,y,line)
+            c.setFont('Times-Roman',11)
+            c.drawCentredString(WIDTH/2,HEIGHT-89,AUTHOR)
             c.setFont('Times-Roman',9)
             c.drawCentredString(WIDTH/2,HEIGHT-108,'Research manuscript draft | Revised 28 October 2026')
         else:
@@ -123,7 +126,7 @@ def build():
     lines=text.splitlines();story=[];i=0;eq=0;references=False;appendix=False
     while i<len(lines):
         line=lines[i].strip()
-        if not line or line.startswith('# ') or line.startswith('Research manuscript draft'):
+        if not line or line.startswith('# ') or line.startswith('Author: ') or line.startswith('Research manuscript draft'):
             i+=1;continue
         if line=='<!-- MAIN_END -->':
             story.append(Marker('main_last_page'));i+=1;continue

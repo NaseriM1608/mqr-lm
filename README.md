@@ -272,6 +272,6 @@ research/provenance.json Source and publication identities
 
 The public repository deliberately excludes raw datasets, token streams, checkpoints, private execution packages, credential files, generated preview images, local environments, and the brag video. Original large experiment records are retained outside the published tree. The included [evidence guide](research/README.md) distinguishes aggregate reanalysis from a new checkpoint audit.
 
-The research hypothesis and direction were supplied by the researcher. AI tools assisted with implementation, orchestration, analysis, checks, and manuscript preparation. The paper discloses that assistance. The draft has not been submitted or published, and its final author list and affiliations remain to be supplied and verified by the researcher.
+Mahmoud Naseri is the author and supplied the research hypothesis and direction. AI tools assisted with implementation, orchestration, analysis, checks, and manuscript preparation. The paper discloses that assistance. It is an unpublished research draft; no institutional affiliation is listed.
 
-No project license has been selected. Dataset and third-party resource permissions are separate from this repository. See [citation guidance](CITATION.md).
+The original code and associated software documentation are available under the [MIT license](LICENSE), copyright 2026 Mahmoud Naseri. This code license does not assign a separate publication license to the manuscript, technical report, or scientific figures, and does not change dataset or third-party resource permissions. See [citation guidance](CITATION.md).

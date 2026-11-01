@@ -1,5 +1,7 @@
 # Query Diversity Without a Likelihood Advantage: A Controlled Study of Multi-Query Vocabulary Heads
 
+Author: Mahmoud Naseri
+
 Research manuscript draft | Originally 25 October 2026; revised 28 October 2026
 
 ## Abstract
@@ -305,7 +307,7 @@ Table A3. Complete control comparison for measured timing paths. HNSW timing pat
 
 This manuscript is an editorial transformation of the completed technical report, MQR-LM: A Controlled Investigation of Multi-Query Vocabulary Heads (originally 25 October, revised 28 October 2026). No model was trained, no checkpoint was altered, and no new inference workload was executed to prepare this manuscript revision. Plots re-express recorded measurements, including the completed search follow-up. The report and its evidence ledger are the source of experimental claims; bibliography entries are inherited from its established literature context. No additional literature result is treated as project evidence.
 
-The full source implementation, prepared-data identities, successful-batch replay, checkpoint-sidecar records, raw timing repeats, and coverage exports are retained locally. Large checkpoint bodies remain in private Kaggle outputs. They were reloaded remotely during the original audits; preparing this manuscript does not constitute another checkpoint audit. Public release of the source, tokenizer, processed evidence, and authorized checkpoint access has not been established. Full external reproduction requires those artifacts and relevant data permissions.
+The full source implementation, prepared-data identities, successful-batch replay, checkpoint-sidecar records, raw timing repeats, and coverage exports are retained locally. Large checkpoint bodies remain in private Kaggle outputs. They were reloaded remotely during the original audits; preparing this manuscript does not constitute another checkpoint audit. The source implementation and selected numerical evidence are now available in the public mqr-lm repository. The tokenizer, prepared corpora, and checkpoints are not distributed there. Full external reproduction requires the original artifacts and relevant data permissions.
 
 Two operational details affect evidence interpretation. First, learning outputs were recovered after an initial collection failure caused by colliding remote basenames and inconsistent lengths; the recovery used complete paths and matching archive receipts without rerunning training. Second, the initial CPU checker rejected FP32 branch-mass unit totals using a 1e-6 tolerance. Maximum observed drift was 0.0000466108. A separately recorded retrospective correction changed only branch-marginal upper-bound/unit-sum sanity tolerances to 1e-4. It did not alter raw measurements, scoring, fidelity thresholds, candidates, or the frozen experimental code. The original failed audit and corrected passing audit are both preserved. This correction is not a preregistered numerical tolerance.
 
@@ -334,9 +336,9 @@ A separate equivalent-loss audit tested the joint reduction implied by the scori
 
 The CPU workload also recorded four own-feedback prompts per arm, up to 32 generated tokens. Exact/HNSW complete traces matched for 0/4 dense prompts, 3/4 original MQR, 2/4 adjusted MQR, 1/4 Direct1, and 4/4 Direct4. This small integration set does not override failed bank-level fidelity screens. Cold-index measurements excluded model/process startup; shared-process RSS cannot establish isolated model memory ordering. Structural FP32 model sizes were approximately 400.21 MiB for dense and 304.47-305.22 MiB for compact heads; HNSW serialized indices were approximately 145.01 and 49.01 MiB respectively.
 
-## Appendix D: Research Assistance and Authorship Preparation
+## Appendix D: Research Assistance and Authorship
 
-The researcher supplied the hypothesis and project direction. Codex and other AI agents supported implementation, experiment orchestration, evidence checks, analysis, and report/manuscript preparation. Automated audits and agent reviews are not independent human peer review. The submission author list and affiliations must be supplied and verified by the researcher; this draft does not infer them from account or filesystem metadata. The author must check the inherited references, contribution statement, permissions, and intended venue's disclosure requirements before submission.
+Mahmoud Naseri supplied the hypothesis and project direction and is the author of this manuscript. Codex and other AI agents supported implementation, experiment orchestration, evidence checks, analysis, and report/manuscript preparation. Automated audits and agent reviews are not independent human peer review. No institutional affiliation is listed. The author must check the inherited references, contribution statement, permissions, and intended venue's disclosure requirements before submission.
 
 ## Appendix E: Complete Search Follow-up Results
 
