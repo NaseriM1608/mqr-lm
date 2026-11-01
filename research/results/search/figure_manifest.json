@@ -1,0 +1,58 @@
+{
+  "status": "complete",
+  "scope": "Static re-expression of passing audited evidence; no model execution",
+  "synthetic_fixture": false,
+  "plot_script_sha256": "771dcc11fc04fad665e074b06f07cb8a85e131abb6919f9ecff6e7a430067bbb",
+  "sources": {
+    "audit.json": {
+      "sha256": "6c9163f51730161644183f8ddbbcf50148505322115a1ff4285e637a27a7109a",
+      "bytes": 1443
+    },
+    "summary.json": {
+      "sha256": "02cfcdd9a8f8e2c1fbf60758fdd83aed70000089e31dc5c1bb2131dfb112a171",
+      "bytes": 158775
+    },
+    "coverage.csv": {
+      "sha256": "f6bf37ccec43aeb731124608f39fbaa2a8df750eb806b14de913ad85de648369",
+      "bytes": 46327
+    },
+    "timings.csv": {
+      "sha256": "ee52f51f18d7acafc34a7a16ad76830d3478b813821cd92f338032f07ee7ab63",
+      "bytes": 4624
+    }
+  },
+  "audit_sha256": "6c9163f51730161644183f8ddbbcf50148505322115a1ff4285e637a27a7109a",
+  "tuning_configurations": 36,
+  "tuning_eligible_configurations": 0,
+  "confirmation_eligible_arms": [],
+  "figures": [
+    {
+      "stem": "tuning_fidelity_cost",
+      "caption": "Tuning fidelity/cost tradeoff for all 36 arm/configuration cells. Budget colors join four efSearch settings; marker shapes identify efSearch values. Filled points require both macro greedy agreement >=99.5% and top-50 probability-mass recall >=99%; hollow points fail at least one screen. Exact-head timing is newly measured on the same host. Lines only connect registered settings; there is no fitted curve or extrapolation. These are descriptive means over correlated contexts, not confidence bounds.",
+      "files": {
+        "tuning_fidelity_cost.png": {
+          "sha256": "4b2930adb7b792de7e40ea4e186ddf4efd6f02ac2cb79ab3819592a84be876ce",
+          "bytes": 196334
+        },
+        "tuning_fidelity_cost.svg": {
+          "sha256": "2cf46d8f3f75018c6895c9dab425fff56f27f031cef5887895bfccb666327714",
+          "bytes": 40351
+        }
+      }
+    },
+    {
+      "stem": "confirmation_latency",
+      "caption": "Confirmation complete cached-decode and directly measured prefill-plus-decode latency for exact scoring and each arm's tune-only frozen setting. The selected configuration is diagnostic when no tuning cell passes both fidelity screens; a confirmation result cannot retrospectively promote it. Hatched bars denote paths ineligible for a matched-fidelity win. Short dashed ticks in the cached-decode panel mark 10% below that arm's own exact latency; the combined-request panel is a separate secondary measurement. No uncertainty intervals or cross-seed serving claims are implied.",
+      "files": {
+        "confirmation_latency.png": {
+          "sha256": "878a4be79df5a881a42c9393ba3c445bc8d9354d554f29e450eb866d748a0764",
+          "bytes": 213805
+        },
+        "confirmation_latency.svg": {
+          "sha256": "90374a4526c1b0e706b5758045f59ac8d9ad692502bb93f87ce01c691cf50fae",
+          "bytes": 21659
+        }
+      }
+    }
+  ]
+}

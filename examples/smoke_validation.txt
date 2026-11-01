@@ -1,0 +1,10 @@
+Synthetic held-out smoke-test corpus, authored separately for software verification only.
+This tiny corpus is not a research benchmark and does not measure generalization reliably.
+
+English validation document: A gardener studies clouds above the hill. She checks the weather, fills a green watering can, and returns to the garden. Tomorrow the students will describe what changed between the two photographs. The reserved text is used to check that evaluation runs separately from training.
+
+Deutsches Validierungsdokument: Ein Gärtner betrachtet die Wolken über dem Hügel. Er prüft das Wetter, füllt eine grüne Gießkanne und kehrt in den Garten zurück. Morgen beschreiben die Schülerinnen, was sich zwischen den beiden Bildern verändert hat. Dieser reservierte Text prüft, ob die Auswertung getrennt vom Training ausgeführt wird.
+
+وثيقة تحقق عربية: تراقب بستانية الغيوم فوق التل. تفحص الطقس وتملأ إبريقا أخضر ثم تعود إلى الحديقة. غدا سيصف الطلاب ما تغير بين الصورتين. نحتفظ بهذا النص للتحقق من تشغيل التقييم بصورة منفصلة عن التدريب.
+
+سند اعتبارسنجی فارسی: باغبانی ابرهای بالای تپه را نگاه می‌کند. او هوا را بررسی می‌کند، یک آب‌پاش سبز را پر می‌کند و به باغ برمی‌گردد. فردا دانش‌آموزان توضیح می‌دهند که میان دو عکس چه چیزی تغییر کرده است. این متن کنار گذاشته شده است تا اجرای جداگانه ارزیابی و آموزش را بررسی کنیم.

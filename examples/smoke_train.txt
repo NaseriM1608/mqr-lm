@@ -1,0 +1,10 @@
+Synthetic multilingual smoke-test corpus, authored for software verification only.
+This tiny corpus is not research data and does not support model-quality claims.
+
+English training document: The river passes a small library. Every morning a reader opens a book, writes a short note, and walks to the station. A language model predicts the next token from the tokens that came before it. Our experiment compares two output heads on the same text. We record the loss, the elapsed time, and the random seed so another person can repeat the run.
+
+Deutsches Trainingsdokument: Der Fluss führt an einer kleinen Bibliothek vorbei. Jeden Morgen öffnet eine Leserin ein Buch, schreibt eine kurze Notiz und geht zum Bahnhof. Ein Sprachmodell sagt das nächste Token aus den vorherigen Token voraus. Unser Versuch vergleicht zwei Ausgabeschichten mit denselben Texten. Wir notieren den Fehlerwert, die verstrichene Zeit und den Zufallsstartwert, damit eine andere Person den Versuch wiederholen kann.
+
+وثيقة تدريب عربية: يمر النهر بجانب مكتبة صغيرة. في كل صباح يفتح القارئ كتابا ويكتب ملاحظة قصيرة ثم يمشي إلى المحطة. يتوقع نموذج اللغة الرمز التالي اعتمادا على الرموز السابقة. تقارن تجربتنا بين طريقتين لإنتاج المخرجات باستخدام النص نفسه. نسجل قيمة الخسارة والوقت والبذرة العشوائية حتى يستطيع شخص آخر تكرار التجربة.
+
+سند آموزشی فارسی: رودخانه از کنار یک کتابخانه کوچک می‌گذرد. هر صبح یک خواننده کتابی باز می‌کند، یادداشتی کوتاه می‌نویسد و به سوی ایستگاه می‌رود. مدل زبان با توجه به توکن‌های پیشین، توکن بعدی را پیش‌بینی می‌کند. در این آزمایش دو سر خروجی را با متن یکسان مقایسه می‌کنیم. مقدار خطا، زمان سپری‌شده و بذر تصادفی را ثبت می‌کنیم تا شخص دیگری بتواند آزمایش را تکرار کند.

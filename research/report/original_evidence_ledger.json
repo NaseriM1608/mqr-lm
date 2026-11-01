@@ -1,0 +1,366 @@
+{
+  "created_utc": "2026-10-27T21:44:23.329091+00:00",
+  "scope": "Report synthesis of preserved evidence; no new model experiment",
+  "sources": {
+    "ARCHITECTURE_REVIEW.md": {
+      "sha256": "004f4069f285690bb12af11ff04ad731a6d1c2056059d3ed2a4be951abe90e21",
+      "bytes": 10162
+    },
+    "DATA_AND_BENCHMARKS.md": {
+      "sha256": "131c85c994a958c7afbc88c81718e667bda63aaef9e7a3f2691ac65ed12756cd",
+      "bytes": 18462
+    },
+    "IMPLEMENTATION_STATUS.md": {
+      "sha256": "528bc902b2a03090318d3743903e790f2ae7b16bcb0bf6bb8cd0d1b2c46c4340",
+      "bytes": 8450
+    },
+    "README.md": {
+      "sha256": "795fd058dfd1981c71786e3a8bf82dce1a6dc7c68093eaf5440b2a935e17ad24",
+      "bytes": 13833
+    },
+    "RESEARCH_PLAN.md": {
+      "sha256": "b4053c66068d55449bde6f4713d09e1519048852da72d4c786037ea3c6873d14",
+      "bytes": 81394
+    },
+    "RESEARCH_SPEC.md": {
+      "sha256": "7ce2dd232cbf3ffb7bb1f9e8c5735349970adf01eb33a356855bd73d05bfb54b",
+      "bytes": 5644
+    },
+    "artifacts/algebra_v1/RESULTS.md": {
+      "sha256": "c81f92f396ca1f69fc8790eacfc61d837e7f31d9cd8793c86a247553522c7cfa",
+      "bytes": 2910
+    },
+    "artifacts/algebra_v1/loss_comparison.png": {
+      "sha256": "d55a4de8c877f0e87a43a08b25213cd5044c565dc8c241d1a1075acfb4dca1c1",
+      "bytes": 115706
+    },
+    "artifacts/algebra_v1/protocol.json": {
+      "sha256": "88baaaa6be25c4faa1ccfbb055df0d36603808e1b891a24812f038c73f0f87a6",
+      "bytes": 1912
+    },
+    "artifacts/algebra_v1/validation.json": {
+      "sha256": "a794a1a24644afdb5f3bcee64ce070e4b7ca9d353c4b3b48b2add462980063bb",
+      "bytes": 8359
+    },
+    "artifacts/confirmation_v1/RESULTS.md": {
+      "sha256": "3375e4ce30cb7827d8f27ef5dd4e4ecbfad1e934927644fc01afd8f863b0c5a1",
+      "bytes": 9383
+    },
+    "artifacts/confirmation_v1/package_v2/mqr-broader-confirmation.zip": {
+      "sha256": "1fe722f735d97629c3c374a314f391d7e46a73c3459798d74798f4229ddbf5e0",
+      "bytes": 85363422
+    },
+    "artifacts/data_confirmation_v1/prepared_approval_v1.json": {
+      "sha256": "4b5bce64ed1085dda3581bff8959cb7f44c9a8d4d791d4ef832b7dd1e065c144",
+      "bytes": 16947684
+    },
+    "artifacts/data_confirmation_v1/quality/SOURCE_FINDINGS.md": {
+      "sha256": "2a4d48d71c368a4ebb25ceef3c23fed8b19de0bc5caa52ed022b50c1d6b63043",
+      "bytes": 14669
+    },
+    "artifacts/direct_search_v1/analysis_tests_2026-10-28.xml": {
+      "sha256": "cc31e4a01022e4278f2c75d8018c0b10ca2d16d655458781bf170abf1dd119a2",
+      "bytes": 4124
+    },
+    "artifacts/direct_search_v1/analyze_search.py": {
+      "sha256": "abda845282965433b449ad0210d72124c91289e81f73aaa629ab65da17edd19e",
+      "bytes": 46093
+    },
+    "artifacts/direct_search_v1/bank_v1/manifest.json": {
+      "sha256": "2fcfcd98b3110cf0814197a2af721648bc7040b44befb69d91f274cc3bcc72ff",
+      "bytes": 1580
+    },
+    "artifacts/direct_search_v1/package_v3/dataset/direct-search-v1.zip": {
+      "sha256": "1ee64fa22a92843a3f2b023884914f2b90cb0fa703b44e1e1bd500cb86c0aef5",
+      "bytes": 20679613
+    },
+    "artifacts/direct_search_v1/plot_search.py": {
+      "sha256": "771dcc11fc04fad665e074b06f07cb8a85e131abb6919f9ecff6e7a430067bbb",
+      "bytes": 17570
+    },
+    "artifacts/direct_search_v1/protocol.json": {
+      "sha256": "00d6db88223064e0461628313a24b037d16a488c95c27e62cd7eed2e8c57eb8f",
+      "bytes": 3701
+    },
+    "artifacts/direct_search_v1/readiness_tests_v3.xml": {
+      "sha256": "c11f37b4a58f787ceede5f999104e29adfad45d29706e93d5d4a3611e5b4bacb",
+      "bytes": 5355
+    },
+    "artifacts/direct_search_v1/worker.py": {
+      "sha256": "e7c7f3a54de9a8885ddfe1ad8fa7ef7f3075089be93f5d8cd3752bbc8f4b3bfd",
+      "bytes": 32446
+    },
+    "artifacts/inference_cpu_v1/bank_v1/prepared_manifest.json": {
+      "sha256": "5af8239573946e8e90097a957496a1eac84ed9e3da15a021bea4eae0b5f5fb08",
+      "bytes": 9627
+    },
+    "artifacts/inference_cpu_v1/bank_v1/source_freeze.json": {
+      "sha256": "f533d49883e27b173e8f1a2d2cb7fdb67fa2f718b7d9ce63d9038f364c290eec",
+      "bytes": 2875
+    },
+    "artifacts/inference_cpu_v1/package_v1/dataset/mqr-cpu-inference-v1.zip": {
+      "sha256": "f9646bc2aa5388b00d5d998823335fb328dcddf4c639ef4e8dff48a10c461b95",
+      "bytes": 20557241
+    },
+    "artifacts/inference_cpu_v1/package_v1/kernel/mqr_cpu_inference.ipynb": {
+      "sha256": "a7b57a5e27c7188129d50185bb0a9103fade13495e5c9ced78a81866af30b678",
+      "bytes": 3214
+    },
+    "artifacts/inference_cpu_v1/protocol.json": {
+      "sha256": "905e684a2d26d444d9758cb3ed57f4618cb9870e389a8cd1e55b486b48745540",
+      "bytes": 4320
+    },
+    "docs/CHUNK_RESULTS.md": {
+      "sha256": "a6d2cce2e1f3dd542a49a82a07793d1b0fa3726c20ad4a8b67b7dedc97e20359",
+      "bytes": 10810
+    },
+    "docs/CONFIRMATION_PROTOCOL.md": {
+      "sha256": "e346d43f4276a262fe1f26b7229010797796d24253341d2eff6c943a46515993",
+      "bytes": 9749
+    },
+    "docs/CPU_INFERENCE_DECISION_2026-10-25.md": {
+      "sha256": "291cfb05be82e3e325eca207b9cda111c9b265f070ecce24335df2361ec83e2b",
+      "bytes": 8496
+    },
+    "docs/DATA_PIPELINE.md": {
+      "sha256": "b31e1e9ee622096f808bf078c7ea983c0670ccff68917d09b1cf8370d324a5f9",
+      "bytes": 7964
+    },
+    "docs/DIRECT_SEARCH_DECISION_2026-10-28.md": {
+      "sha256": "06c6adb9fa56f5fc391ef88771b88e83a64c2c0966c9b4f45f43411d84260da5",
+      "bytes": 7629
+    },
+    "docs/DIRECT_SEARCH_STATUS.md": {
+      "sha256": "89dcae57acc88599290ddaa2441fd8601465768f9b35cdf38f348160fc610108",
+      "bytes": 5754
+    },
+    "docs/GPU_CALIBRATION.md": {
+      "sha256": "2c51295e82a84bd059abbdb4aae88f80ada4a4d16c7a0e621aa7aef1eb63fa96",
+      "bytes": 6228
+    },
+    "docs/REVIEW_AND_NEXT_STEPS_2026-10-25.md": {
+      "sha256": "3878a9a4691440eaa55f79708fb57236a22d5561054bed22a9a36304237bbdf1",
+      "bytes": 20687
+    },
+    "docs/TUNING_PROTOCOL.md": {
+      "sha256": "37618f8e6564ef8c6abb49128aff0726fa6a455ba36bc84ab3c6644e0b3026f9",
+      "bytes": 6680
+    },
+    "docs/TUNING_RESULTS.md": {
+      "sha256": "50438ca634f4414e88db33a0c94f64a003de4a5012f3d8c9388a2d9d41b2246d",
+      "bytes": 13506
+    },
+    "pyproject.toml": {
+      "sha256": "4c252b8bcbcda34962cf9160a43cc1af1d494fb452e69c409fa9f2a47831b414",
+      "bytes": 690
+    },
+    "reports/MQR_LM_RESEARCH_REPORT_2026-10-25/assets/paired_macro_gaps.png": {
+      "sha256": "bfff30a2b28d92222dbab0a4a9b8dc76f03d0d9fd07491bff462c8e162e98cd5",
+      "bytes": 73348
+    },
+    "reports/MQR_LM_RESEARCH_REPORT_2026-10-25/plot_endpoint.py": {
+      "sha256": "9e6c11016b73b6e7ea3f50f7ee2099a9827cd2d95cf36462de78b11d6ef9e493",
+      "bytes": 1873
+    },
+    "reports/MQR_LM_RESEARCH_REPORT_2026-10-25/report.template.md": {
+      "sha256": "794196d4d92a768b05e3f921dc87fe8eac6806282c40e3b07b2de77d5f84f397",
+      "bytes": 61675
+    },
+    "requirements-cpu.lock": {
+      "sha256": "b2378e3eaba9a0c882c196d0ace0684786f288c45c28135fb3cba5db98154d1b",
+      "bytes": 801
+    },
+    "results/confirmation_v1/recovery_v1/analysis/macro_nll_tokens.png": {
+      "sha256": "b1818521b5f0e2a7e8ac61362e2c88c8d981aeac87ef716f306003ef5ad5bfc6",
+      "bytes": 119188
+    },
+    "results/confirmation_v1/recovery_v1/analysis/paired_endpoint_gaps.csv": {
+      "sha256": "7de46831db3aa4600d28b438da254359f9c2278b079c88482240eff433453f56",
+      "bytes": 2364
+    },
+    "results/confirmation_v1/recovery_v1/analysis/summary.json": {
+      "sha256": "1f0429eb51b3b02011420ef1a1145dcc328a5b46211aa3e20b57bf3fda1f1a3c",
+      "bytes": 24303
+    },
+    "results/confirmation_v1/recovery_v1/audit.json": {
+      "sha256": "35ae7d5d202529431f23d289211a72504da48b6cc9cc5e13f47236e0a3252fa2",
+      "bytes": 132981
+    },
+    "results/confirmation_v1/recovery_v1/scores.csv": {
+      "sha256": "bd32b5dcf489fae96a9e1033300ea57a4c7bfcaa3d9c332759fc27fb6fddc41a",
+      "bytes": 27643
+    },
+    "results/direct_search_v1/analysis_v1/REPORT.md": {
+      "sha256": "ad4f8d17e1f19e30fcd80ae19f4d3d7284c3f163039c8ceda772f978ee8ee8c8",
+      "bytes": 9022
+    },
+    "results/direct_search_v1/analysis_v1/audit.json": {
+      "sha256": "6c9163f51730161644183f8ddbbcf50148505322115a1ff4285e637a27a7109a",
+      "bytes": 1443
+    },
+    "results/direct_search_v1/analysis_v1/confirmation_latency.png": {
+      "sha256": "878a4be79df5a881a42c9393ba3c445bc8d9354d554f29e450eb866d748a0764",
+      "bytes": 213805
+    },
+    "results/direct_search_v1/analysis_v1/coverage.csv": {
+      "sha256": "f6bf37ccec43aeb731124608f39fbaa2a8df750eb806b14de913ad85de648369",
+      "bytes": 46327
+    },
+    "results/direct_search_v1/analysis_v1/figure_manifest.json": {
+      "sha256": "7f32bdd4b24be1d89e370c64f3ddfd60c58d6969dd4353d169ab39215b2ca702",
+      "bytes": 2975
+    },
+    "results/direct_search_v1/analysis_v1/summary.json": {
+      "sha256": "02cfcdd9a8f8e2c1fbf60758fdd83aed70000089e31dc5c1bb2131dfb112a171",
+      "bytes": 158775
+    },
+    "results/direct_search_v1/analysis_v1/timings.csv": {
+      "sha256": "ee52f51f18d7acafc34a7a16ad76830d3478b813821cd92f338032f07ee7ab63",
+      "bytes": 4624
+    },
+    "results/direct_search_v1/analysis_v1/tuning_fidelity_cost.png": {
+      "sha256": "4b2930adb7b792de7e40ea4e186ddf4efd6f02ac2cb79ab3819592a84be876ce",
+      "bytes": 196334
+    },
+    "results/direct_search_v1/collection_v1/status.json": {
+      "sha256": "d43ceda5008fe3185c2ea1facf7ad29db18f1571f4f9ef4b5b9a84c51cac1500",
+      "bytes": 352
+    },
+    "results/direct_search_v1/collection_v2/evidence.zip": {
+      "sha256": "9a11403c873bc4701fe057cf9f328232b635528acfee19a2d023272a9a90a1e2",
+      "bytes": 5542328
+    },
+    "results/direct_search_v1/collection_v2/logged_receipt_authority.json": {
+      "sha256": "f11abaadf121ed3140b80331d6b713e887f4489dd7ae384b1ff659ee6e4136b5",
+      "bytes": 503
+    },
+    "results/direct_search_v1/collection_v2/status.json": {
+      "sha256": "f57abc9cd3709c2e9d8c2aa50d104cea631656b11b1677b55d508508cb1754be",
+      "bytes": 479
+    },
+    "results/direct_search_v1/completion_record.json": {
+      "sha256": "d34f8e118dcbf0376f966621fee2ba51bb5841a99c2785c674a6fa57141f1e21",
+      "bytes": 8335
+    },
+    "results/inference_cpu_v1/analysis_v2/branch_contribution.png": {
+      "sha256": "60ad42bb5182174999e18dcd99f662c93092ce74a62ece3aae5309fbf696dc76",
+      "bytes": 108669
+    },
+    "results/inference_cpu_v1/analysis_v2/branches.csv": {
+      "sha256": "6f391be91e268b78410ff6445f7e7a6f1b183b0d00abbf7da5d74dcd94c58cf3",
+      "bytes": 117126
+    },
+    "results/inference_cpu_v1/analysis_v2/fidelity.csv": {
+      "sha256": "389e437b3032f35195f63d290a68b5d6f64131083e1b17cc780c9d51d7406b83",
+      "bytes": 41963
+    },
+    "results/inference_cpu_v1/analysis_v2/fidelity.png": {
+      "sha256": "6963a57ac2fc2783157f8ac4cf0f62ca2f8ea2fae5ac2e16c025b1e1edb66c62",
+      "bytes": 84829
+    },
+    "results/inference_cpu_v1/analysis_v2/quality_latency.png": {
+      "sha256": "653dd360c6c138f129071594afcbb1e5fbe9b87ca15a732dcb9bb227b95ff187",
+      "bytes": 71659
+    },
+    "results/inference_cpu_v1/analysis_v2/raw_timings.csv": {
+      "sha256": "ab2687c689c6a1aaeec71bbac2911f2b022ae37439d11cf12f0faca7bbe191a4",
+      "bytes": 476345
+    },
+    "results/inference_cpu_v1/analysis_v2/resources.json": {
+      "sha256": "a2baaabc1dcf7123152b2736282a38f92c6cefa483daa76969fe66375123389b",
+      "bytes": 43001
+    },
+    "results/inference_cpu_v1/analysis_v2/summary.json": {
+      "sha256": "ea7e4f7d6d831d937889c3c94b76e954a266a1438aa9326d64ba72f00fe44d57",
+      "bytes": 20669
+    },
+    "results/inference_cpu_v1/audit.json": {
+      "sha256": "99c6b744dfa2b949ff228fc82e6a42014e0023346ddcac7f0461e0d3c31d4d80",
+      "bytes": 177
+    },
+    "results/inference_cpu_v1/audit_v2.json": {
+      "sha256": "6760095c269b55ec64597091eb0fb9cb5504a57fff3e5b9fb2a1c2fb1c8e1174",
+      "bytes": 22709
+    },
+    "results/inference_cpu_v1/checker_repair_v2/REVIEW.md": {
+      "sha256": "84a85aeacc089121e050f7c7be4d51a97bd5f75b8d4810eb3e3a8be08eb7e5ea",
+      "bytes": 2909
+    },
+    "results/inference_cpu_v1/collection_v1/evidence.zip": {
+      "sha256": "da02e11a20e8b96dc7d7ff823ee1cb798240cb24b0c923aacde94688b9cb9db8",
+      "bytes": 3112759
+    },
+    "src/mqr/confirmation.py": {
+      "sha256": "f234a88b2204015687852b4bbfcb8b8f5968bac5be52c6b8ca0b1ed95b5f8df3",
+      "bytes": 23085
+    },
+    "src/mqr/heads.py": {
+      "sha256": "9dee3579f5e010c7822789deb1080b34941e0e69c0954747ee6072a3e0575c90",
+      "bytes": 8323
+    },
+    "src/mqr/metrics.py": {
+      "sha256": "e8116767aeeb81d1df7ec1660eb9918a149f8932639d4e80578d1d46c4b8eef2",
+      "bytes": 5705
+    },
+    "src/mqr/retrieval.py": {
+      "sha256": "e462bd7e81c19575a49fd39873c633fb498378c58a469415940d09a203771659",
+      "bytes": 6969
+    }
+  },
+  "copied_figures": {
+    "loss_comparison.png": {
+      "source": "artifacts/algebra_v1/loss_comparison.png",
+      "sha256": "d55a4de8c877f0e87a43a08b25213cd5044c565dc8c241d1a1075acfb4dca1c1"
+    },
+    "macro_nll_tokens.png": {
+      "source": "results/confirmation_v1/recovery_v1/analysis/macro_nll_tokens.png",
+      "sha256": "b1818521b5f0e2a7e8ac61362e2c88c8d981aeac87ef716f306003ef5ad5bfc6"
+    },
+    "paired_macro_gaps.png": {
+      "source": "reports/MQR_LM_RESEARCH_REPORT_2026-10-25/assets/paired_macro_gaps.png",
+      "sha256": "bfff30a2b28d92222dbab0a4a9b8dc76f03d0d9fd07491bff462c8e162e98cd5"
+    },
+    "quality_latency.png": {
+      "source": "results/inference_cpu_v1/analysis_v2/quality_latency.png",
+      "sha256": "653dd360c6c138f129071594afcbb1e5fbe9b87ca15a732dcb9bb227b95ff187"
+    },
+    "fidelity.png": {
+      "source": "results/inference_cpu_v1/analysis_v2/fidelity.png",
+      "sha256": "6963a57ac2fc2783157f8ac4cf0f62ca2f8ea2fae5ac2e16c025b1e1edb66c62"
+    },
+    "branch_contribution.png": {
+      "source": "results/inference_cpu_v1/analysis_v2/branch_contribution.png",
+      "sha256": "60ad42bb5182174999e18dcd99f662c93092ce74a62ece3aae5309fbf696dc76"
+    },
+    "tuning_fidelity_cost.png": {
+      "source": "results/direct_search_v1/analysis_v1/tuning_fidelity_cost.png",
+      "sha256": "4b2930adb7b792de7e40ea4e186ddf4efd6f02ac2cb79ab3819592a84be876ce"
+    },
+    "confirmation_latency.png": {
+      "source": "results/direct_search_v1/analysis_v1/confirmation_latency.png",
+      "sha256": "878a4be79df5a881a42c9393ba3c445bc8d9354d554f29e450eb866d748a0764"
+    }
+  },
+  "tables": {
+    "ARCH_TABLE": "| Arm | Vocabulary head | Head parameters | Total parameters |\n|---|---|---|---|\n| Dense | 512-wide dense table | 33,554,432 | 104,913,920 |\n| Original MQR | Concept256; 4 x 128 queries | 8,651,520 | 80,011,008 |\n| Adjusted MQR | Same architecture; calibrated initialization | 8,651,520 | 80,011,008 |\n| Direct1 | One affine 128-wide query | 8,454,272 | 79,813,760 |\n| Direct4 | Four affine 128-wide queries | 8,651,264 | 80,010,752 |",
+    "DATA_TABLE": "| Split | Positions per language | Total positions | Use |\n|---|---|---|---|\n| Training | 6,549,926 | 26,199,704 | Balanced sampling pool |\n| Validation | 775,909 | 3,103,636 | Development evaluation |\n| Test | 814,053 | 3,256,212 | Locked for selection |",
+    "PILOT_TABLE": "| Arm | Seed-0 NLL | Seed-1 NLL |\n|---|---|---|\n| Dense | 7.73669 | 7.73313 |\n| Direct1 original | 7.94692 | 7.99089 |\n| Direct4 original | 8.19681 | 8.15861 |\n| MQR original | 8.77945 | 8.75979 |\n| Direct1 adjusted | 7.75924 | 7.76392 |\n| Direct4 adjusted | 7.76337 | 7.74647 |\n| MQR adjusted | 7.75834 | 7.78309 |",
+    "LEARNING_TABLE": "| Arm | Mean macro NLL | Gap vs dense +/- paired SD | Worker minutes | Peak allocated GiB |\n|---|---|---|---|---|\n| Dense | 6.509684 | reference | 20.650 | 3.200 |\n| Original MQR | 7.104622 | +0.594938 +/- 0.022096 | 58.605 | 4.566 |\n| Adjusted MQR | 6.659180 | +0.149495 +/- 0.004614 | 58.763 | 4.566 |\n| Direct1 | 6.633984 | +0.124300 +/- 0.014704 | 16.415 | 2.683 |\n| Direct4 | 6.613376 | +0.103692 +/- 0.008338 | 60.010 | 4.566 |",
+    "LANGUAGE_TABLE": "| Language | Dense | Original MQR | Adjusted MQR | Direct1 | Direct4 |\n|---|---|---|---|---|---|\n| English | 6.214426 | 6.752516 | 6.349637 | 6.321719 | 6.303800 |\n| German | 6.708801 | 7.272251 | 6.848683 | 6.828127 | 6.810176 |\n| Arabic | 6.870693 | 7.498380 | 7.036740 | 7.004625 | 6.996561 |\n| Persian | 6.244817 | 6.895341 | 6.401658 | 6.381467 | 6.342967 |",
+    "CPU_TABLE": "| Arm | Exact ms/pred. | HNSW ms/pred. | Exact combined ms/16 | HNSW combined ms/16 | Exact head share |\n|---|---|---|---|---|---|\n| Dense | 21.485 | 15.453 | 427.90 | 329.22 | 31.1% |\n| Original MQR | 18.297 | 16.281 | 372.80 | 342.44 | 21.2% |\n| Adjusted MQR | 18.209 | 16.861 | 372.66 | 354.20 | 21.3% |\n| Direct1 | 16.436 | 15.288 | 347.74 | 327.62 | 12.5% |\n| Direct4 | 18.013 | 16.696 | 371.47 | 346.92 | 21.0% |",
+    "COVERAGE_TABLE": "| Arm / B128 | Exact-union top-50 mass recall | HNSW greedy | HNSW top-50 mass recall | HNSW retained mass | Gold omissions |\n|---|---|---|---|---|---|\n| Dense | 100.000% | 90.625% | 80.578% | 43.910% | 52.344% |\n| Original MQR | 97.596% | 97.266% | 93.018% | 41.736% | 57.031% |\n| Adjusted MQR | 99.997% | 99.609% | 97.356% | 53.039% | 47.656% |\n| Direct1 | 100.000% | 87.500% | 77.079% | 42.053% | 56.641% |\n| Direct4 | 99.972% | 99.219% | 97.506% | 51.364% | 47.266% |",
+    "RESOURCE_TABLE": "| Arm | FP32 model MiB | HNSW index MiB | Initial build s | Cold request s | Identical traces /4 |\n|---|---|---|---|---|---|\n| Dense | 400.21 | 145.01 | 30.02 | 30.50 | 0 |\n| Original MQR | 305.22 | 49.01 | 10.90 | 11.03 | 3 |\n| Adjusted MQR | 305.22 | 49.01 | 12.85 | 11.24 | 2 |\n| Direct1 | 304.47 | 49.01 | 12.08 | 10.28 | 1 |\n| Direct4 | 305.22 | 49.01 | 12.02 | 10.29 | 4 |",
+    "HNSW_GRID": "| Arm | Budget | Greedy agreement | Top-50 mass recall | Retained mass | Joint screen |\n|---|---|---|---|---|---|\n| Dense | 32 | 90.625% | 76.764% | 35.283% | fail |\n| Dense | 128 | 90.625% | 80.578% | 43.910% | fail |\n| Dense | 512 | 90.625% | 80.578% | 48.710% | fail |\n| Original MQR | 32 | 97.266% | 68.896% | 29.001% | fail |\n| Original MQR | 128 | 97.266% | 93.018% | 41.736% | fail |\n| Original MQR | 512 | 97.266% | 94.721% | 54.603% | fail |\n| Adjusted MQR | 32 | 99.609% | 84.810% | 39.534% | fail |\n| Adjusted MQR | 128 | 99.609% | 97.356% | 53.039% | fail |\n| Adjusted MQR | 512 | 99.609% | 97.382% | 66.057% | fail |\n| Direct1 | 32 | 87.500% | 73.938% | 34.160% | fail |\n| Direct1 | 128 | 87.500% | 77.079% | 42.053% | fail |\n| Direct1 | 512 | 87.500% | 77.079% | 45.995% | fail |\n| Direct4 | 32 | 99.219% | 84.406% | 38.429% | fail |\n| Direct4 | 128 | 99.219% | 97.506% | 51.364% | fail |\n| Direct4 | 512 | 99.219% | 97.548% | 64.009% | fail |",
+    "CPU_LANGUAGE_TABLE": "| Language | Greedy agreement | Top-50 mass recall | Retained mass | Gold omissions |\n|---|---|---|---|---|\n| English | 98.438% | 98.256% | 58.344% | 46.875% |\n| German | 100.000% | 98.606% | 51.852% | 43.750% |\n| Arabic | 100.000% | 96.506% | 49.439% | 43.750% |\n| Persian | 100.000% | 96.058% | 52.522% | 56.250% |",
+    "SEARCH_FIDELITY_TABLE": "| Arm | B / efSearch | Tuning eligible /12 | Confirmation greedy | Confirmation R50 | Total mass |\n|---|---|---|---|---|---|\n| Dense | 128 / 1024 | 0 | 87.500% | 80.621% | 44.749% |\n| Direct1 | 256 / 1024 | 0 | 87.109% | 75.052% | 44.375% |\n| Direct4 | 512 / 1024 | 0 | 100.000% | 98.287% | 66.063% |",
+    "SEARCH_TIMING_TABLE": "| Arm | Exact ms/pred. | ANN ms/pred. | ANN latency change | Exact combined ms/16 | ANN combined ms/16 |\n|---|---|---|---|---|---|\n| Dense | 20.203 | 15.954 | -21.03% | 397.75 | 331.88 |\n| Direct1 | 15.545 | 15.995 | +2.90% | 323.77 | 333.55 |\n| Direct4 | 17.231 | 20.339 | +18.04% | 348.01 | 398.81 |",
+    "SEARCH_GRID": "| Arm | B / efSearch | Greedy | R50 | Total mass | Decode ms/pred. |\n|---|---|---|---|---|---|\n| Dense | 128 / 128 | 90.625% | 80.578% | 43.910% | 14.454 |\n| Dense | 128 / 256 | 90.625% | 80.659% | 43.963% | 14.805 |\n| Dense | 128 / 512 | 90.625% | 80.745% | 44.002% | 15.053 |\n| Dense | 128 / 1024 | 90.625% | 80.805% | 44.032% | 16.017 |\n| Dense | 256 / 128 | 90.625% | 80.578% | 47.050% | 14.647 |\n| Dense | 256 / 256 | 90.625% | 80.659% | 47.178% | 14.982 |\n| Dense | 256 / 512 | 90.625% | 80.745% | 47.241% | 15.106 |\n| Dense | 256 / 1024 | 90.625% | 80.805% | 47.281% | 16.020 |\n| Dense | 512 / 128 | 90.625% | 80.578% | 48.710% | 14.834 |\n| Dense | 512 / 256 | 90.625% | 80.659% | 49.038% | 15.072 |\n| Dense | 512 / 512 | 90.625% | 80.745% | 49.170% | 15.495 |\n| Dense | 512 / 1024 | 90.625% | 80.805% | 49.228% | 16.341 |\n| Direct1 | 128 / 128 | 87.500% | 77.079% | 42.053% | 14.421 |\n| Direct1 | 128 / 256 | 87.500% | 77.319% | 42.171% | 14.545 |\n| Direct1 | 128 / 512 | 87.500% | 77.510% | 42.279% | 14.854 |\n| Direct1 | 128 / 1024 | 88.672% | 77.878% | 42.451% | 15.859 |\n| Direct1 | 256 / 128 | 87.500% | 77.079% | 44.648% | 14.568 |\n| Direct1 | 256 / 256 | 87.500% | 77.319% | 44.869% | 14.643 |\n| Direct1 | 256 / 512 | 87.500% | 77.510% | 45.038% | 15.016 |\n| Direct1 | 256 / 1024 | 88.672% | 77.878% | 45.265% | 15.702 |\n| Direct1 | 512 / 128 | 87.500% | 77.079% | 45.995% | 14.797 |\n| Direct1 | 512 / 256 | 87.500% | 77.319% | 46.360% | 14.800 |\n| Direct1 | 512 / 512 | 87.500% | 77.510% | 46.607% | 15.244 |\n| Direct1 | 512 / 1024 | 88.672% | 77.878% | 46.893% | 15.763 |\n| Direct4 | 128 / 128 | 99.219% | 97.506% | 51.364% | 15.542 |\n| Direct4 | 128 / 256 | 99.219% | 97.804% | 51.442% | 16.407 |\n| Direct4 | 128 / 512 | 99.219% | 98.011% | 51.503% | 17.764 |\n| Direct4 | 128 / 1024 | 99.609% | 98.143% | 51.542% | 20.322 |\n| Direct4 | 256 / 128 | 99.219% | 97.543% | 57.887% | 15.857 |\n| Direct4 | 256 / 256 | 99.219% | 97.827% | 58.025% | 16.275 |\n| Direct4 | 256 / 512 | 99.219% | 98.033% | 58.126% | 17.761 |\n| Direct4 | 256 / 1024 | 99.609% | 98.165% | 58.198% | 20.409 |\n| Direct4 | 512 / 128 | 99.219% | 97.548% | 64.009% | 16.036 |\n| Direct4 | 512 / 256 | 99.219% | 97.827% | 64.270% | 16.482 |\n| Direct4 | 512 / 512 | 99.219% | 98.036% | 64.444% | 17.887 |\n| Direct4 | 512 / 1024 | 99.609% | 98.168% | 64.575% | 20.476 |",
+    "SEARCH_LANGUAGE_TABLE": "| Language | Greedy | R50 | Total mass |\n|---|---|---|---|\n| English | 100.000% | 99.342% | 70.821% |\n| German | 100.000% | 98.521% | 66.480% |\n| Arabic | 100.000% | 96.997% | 60.851% |\n| Persian | 100.000% | 98.289% | 66.102% |",
+    "ANCHOR_TABLE": "| Artifact | SHA-256 prefix | Bytes |\n|---|---|---|\n| Broader training package | 1fe722f735d97629c3c3 | 85,363,422 |\n| Strict learning audit | 35ae7d5d202529431f23 | 132,981 |\n| Prepared-data manifest | 5af8239573946e8e9009 | 9,627 |\n| Frozen source map | f533d49883e27b173e8f | 2,875 |\n| CPU input package | f9646bc2aa5388b00d5d | 20,557,241 |\n| CPU notebook | a7b57a5e27c7188129d5 | 3,214 |\n| CPU evidence ZIP | da02e11a20e8b96dc7d7 | 3,112,759 |\n| CPU passing audit v2 | 6760095c269b55ec6459 | 22,709 |\n| CPU analysis summary | ea7e4f7d6d831d937889 | 20,669 |\n| Search follow-up protocol | 00d6db88223064e04616 | 3,701 |\n| Search follow-up input | 1ee64fa22a92843a3f2b | 20,679,613 |\n| Search follow-up evidence | 9a11403c873bc4701fe0 | 5,542,328 |\n| Search follow-up audit | 6c9163f5173016164418 | 1,443 |\n| Search completion snapshot | d34f8e118dcbf0376f96 | 8,335 |"
+  },
+  "report_markdown_sha256": "78c355da9051b5b06b2e84bd5858cd1abd2ab6df44bbcf33bff8e9d1185db6d4",
+  "build_script_sha256": "8e8dc33fb70a970f786bde0a296362d6db837f116502a0193a2ef6530876c34b",
+  "pdf_sha256": "720e21324abca9ca7face836a656adef5f1ba1c08422c26454635271f4ec14c7",
+  "pdf_bytes": 1369197,
+  "word_count": 9869
+}

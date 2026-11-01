@@ -1,0 +1,241 @@
+{
+  "scope": "Re-expression of completed-report measurements; no model execution",
+  "report_sha256": "78c355da9051b5b06b2e84bd5858cd1abd2ab6df44bbcf33bff8e9d1185db6d4",
+  "source_bindings": {
+    "results/confirmation_v1/recovery_v1/scores.csv": "bd32b5dcf489fae96a9e1033300ea57a4c7bfcaa3d9c332759fc27fb6fddc41a",
+    "results/inference_cpu_v1/analysis_v2/summary.json": "ea7e4f7d6d831d937889c3c94b76e954a266a1438aa9326d64ba72f00fe44d57",
+    "results/inference_cpu_v1/analysis_v2/fidelity.csv": "389e437b3032f35195f63d290a68b5d6f64131083e1b17cc780c9d51d7406b83",
+    "results/direct_search_v1/analysis_v1/audit.json": "6c9163f51730161644183f8ddbbcf50148505322115a1ff4285e637a27a7109a",
+    "results/direct_search_v1/analysis_v1/summary.json": "02cfcdd9a8f8e2c1fbf60758fdd83aed70000089e31dc5c1bb2131dfb112a171",
+    "results/direct_search_v1/analysis_v1/coverage.csv": "f6bf37ccec43aeb731124608f39fbaa2a8df750eb806b14de913ad85de648369",
+    "results/direct_search_v1/analysis_v1/timings.csv": "ee52f51f18d7acafc34a7a16ad76830d3478b813821cd92f338032f07ee7ab63"
+  },
+  "equations": [
+    {
+      "formula": "C=\\operatorname{GELU}(F W_c+b_c).",
+      "file": "equation_00.png",
+      "vector_file": "equation_00.pdf",
+      "font_family": "Computer Modern",
+      "font_size_pt": 10.5
+    },
+    {
+      "formula": "q_j=C V_j+b_j,\\qquad j=1,\\ldots,M.",
+      "file": "equation_01.png",
+      "vector_file": "equation_01.pdf",
+      "font_family": "Computer Modern",
+      "font_size_pt": 10.5
+    },
+    {
+      "formula": "a_{jv}=q_j^\\top E_v.",
+      "file": "equation_02.png",
+      "vector_file": "equation_02.pdf",
+      "font_family": "Computer Modern",
+      "font_size_pt": 10.5
+    },
+    {
+      "formula": "z_v=\\operatorname{logsumexp}_{j}(a_{jv})-\\log M.",
+      "file": "equation_03.png",
+      "vector_file": "equation_03.pdf",
+      "font_family": "Computer Modern",
+      "font_size_pt": 10.5
+    },
+    {
+      "formula": "p(v\\mid F)=\\frac{\\exp(z_v)}{\\sum_u\\exp(z_u)}.",
+      "file": "equation_04.png",
+      "vector_file": "equation_04.pdf",
+      "font_family": "Computer Modern",
+      "font_size_pt": 10.5
+    },
+    {
+      "formula": "p(v\\mid F)=\\sum_j\\frac{Z_j}{\\sum_k Z_k}\\,\\frac{\\exp(a_{jv})}{Z_j}.",
+      "file": "equation_05.png",
+      "vector_file": "equation_05.pdf",
+      "font_family": "Computer Modern",
+      "font_size_pt": 10.5
+    },
+    {
+      "formula": "z_v^{\\mathrm{dense}}=\\sum_{r=1}^{512}F_r E_{vr}^{\\mathrm{dense}}.",
+      "file": "equation_06.png",
+      "vector_file": "equation_06.pdf",
+      "font_family": "Computer Modern",
+      "font_size_pt": 10.5
+    },
+    {
+      "formula": "q_j^{\\mathrm{direct}}=F D_j+b_{D,j},\\qquad M\\in\\{1,4\\}.",
+      "file": "equation_07.png",
+      "vector_file": "equation_07.pdf",
+      "font_family": "Computer Modern",
+      "font_size_pt": 10.5
+    },
+    {
+      "formula": "\\mathcal{L}=-\\frac{1}{N}\\sum_{t=1}^{N}\\log p(y_t\\mid F_t).",
+      "file": "equation_08.png",
+      "vector_file": "equation_08.pdf",
+      "font_family": "Computer Modern",
+      "font_size_pt": 10.5
+    },
+    {
+      "formula": "R_{50}=\\frac{\\sum_{v\\in S\\cap T}p(v)}{\\sum_{v\\in T}p(v)}.",
+      "file": "equation_09.png",
+      "vector_file": "equation_09.pdf",
+      "font_family": "Computer Modern",
+      "font_size_pt": 10.5
+    }
+  ],
+  "assets": {
+    "ann_fidelity.pdf": "e6d8684451fe1c706bf15bcd5c07b45aa3290ef85ccacaa9d122c4779533ee7f",
+    "ann_fidelity.png": "df8ed007dfda94f372084c1489a67975f71cf07f8ecf5425fe3469412ebc49f7",
+    "architecture.pdf": "3a60fe949556c5e7862d6de2dd9e449b109eabd529f9cef8ce70b4c8157de123",
+    "architecture.png": "eaef6b52cec9829d4bc2d1c9304ecd591de8b203c24518b287912d6976302c75",
+    "equation_00.pdf": "57df787b9a783f9e35e61e16ef5eb5266c41bda08ed97171a248fb34d18f9196",
+    "equation_00.png": "f9b554bea5155b08ee9b9c673f458fe42b469516b0af82a38f2461a6b1f10b7b",
+    "equation_01.pdf": "9b91777afe26e65b208f79038e3f2f88b9f6a00bfeb1c3461e0e7c2ae5fd59c4",
+    "equation_01.png": "5fde83367cc45ee7678371f3298dc6655a5a3b1dc06ea03d8054a34f441c2651",
+    "equation_02.pdf": "314d11b39ccd8074fb2f88d1192fd6d12820577646b29758a8707c4d300f4649",
+    "equation_02.png": "5f64d38f93d3fa9709242f3d5f114794d020def16442fafb724855da14b3070d",
+    "equation_03.pdf": "cd17373c867131cee5c6317a6af1e9818c0fbad6bb3610454811f0d153cdf9b3",
+    "equation_03.png": "7edfbeabc8533916894c713e0a7fd5c4560627302b71f8a09ac68424e6059443",
+    "equation_04.pdf": "8125a0a37bfb359c1861bc70f6a5a1d0b1e4930847ea0d6f84bf226f4a835402",
+    "equation_04.png": "525868001d931d19ac212b4f143f791b09cb4ac0a3a2b8ae79ccaa874def980d",
+    "equation_05.pdf": "c6313ada0122ee67a1d23e0d98ba551f9a9a0f253e43f6f94a41300670b25758",
+    "equation_05.png": "75f4b98fde587e6046f14f8c93271ca8808ec6c5e77af6338336bc8958562325",
+    "equation_06.pdf": "c7a8d99746843a03a15c3b04e5c1e3cca686f50ffa54a13f9235bd0b8cdfbe39",
+    "equation_06.png": "5696221776412b3591406135fcb421c190c3b24caf7584659a5e6d2b3f9f2dcc",
+    "equation_07.pdf": "a2f20e282b7766c3b450fca5a8185bd35a36d1990b7088ba08e19930297adc17",
+    "equation_07.png": "0b44956db6e025dcb79c7f335f65f1dd30aba16bf7443f4eb24fb5102712e9f5",
+    "equation_08.pdf": "b0f2da417ef3ad9c1ef21d952b0581709c3b67050136b859d725e4754ef13631",
+    "equation_08.png": "0db9ea8755b80a646a9b710eb9077bac4e63878b805a54a5d1311e8a7d3bb097",
+    "equation_09.pdf": "d57e9d58c65d6ff100f20f25cc543bf69f3d74667b5bc962d2987f1981cc31c8",
+    "equation_09.png": "8bf0093c28b8b254e0c3c536062dcde697dd2ba37cda883ed15e3f3fcb0d77a8",
+    "learning.pdf": "8842b44f02bb7b3121ae168ecda7f1a1366cab143723e6cb62c0077decdaeee6",
+    "learning.png": "34a0b3e98999539f80a86435ec2d024d0b091a71aa69074cc42dd06924eb52f9",
+    "quality_latency_exact.pdf": "34e459948f626d9026b356a0f2279390dd0cb63a2d7d83b2cc38837de7abde07",
+    "quality_latency_exact.png": "86e21a540d3c497d6db9bea05e7c442f25ca9113b1fcbb420fe89dda6a712e26",
+    "search_tuning_direct4.png": "32138812057414612e7fa17a561d4cf82438e42ff814b8716dc3e329097dd404",
+    "search_tuning_direct4.pdf": "a612d266e0d022b7fd5ef503108dd854aa337d17d1edfede31ebe4f79041a480"
+  },
+  "equation_typography": {
+    "family": "Computer Modern",
+    "format": "Embedded vector PDF glyphs; PNG previews",
+    "operators": "Upright",
+    "variables": "Italic",
+    "display_numbering": "Sequential, right aligned",
+    "style_references": [
+      "https://arxiv.org/pdf/1711.03953",
+      "https://arxiv.org/pdf/1812.04616"
+    ],
+    "formula_source_changed": false
+  },
+  "search_followup_figure": {
+    "phase": "tune",
+    "arm": "direct4_scale",
+    "configurations": 12,
+    "jointly_eligible": 0,
+    "confirmation_points_shown": false,
+    "caption": "Direct4 fixed-graph tuning. All 12 registered budget/efSearch settings fail the joint greedy/mass screen. Lines connect increasing efSearch settings without fitting; the gray exact reference uses newly measured tuning timing. Confirmation is evaluated separately and is not plotted here.",
+    "timing_reduction": "Mean of eight request-cell medians; three raw repeats per cell",
+    "exact_tuning_decode_ms_per_prediction": 17.32769365625053,
+    "points": [
+      {
+        "config_id": "b128_ef128",
+        "B": 128,
+        "efSearch": 128,
+        "decode_ms_per_prediction": 15.541895867186462,
+        "top50_mass_recall_percent": 97.50580647960305,
+        "joint_fidelity_eligible": false
+      },
+      {
+        "config_id": "b128_ef256",
+        "B": 128,
+        "efSearch": 256,
+        "decode_ms_per_prediction": 16.40721023437397,
+        "top50_mass_recall_percent": 97.8040280053392,
+        "joint_fidelity_eligible": false
+      },
+      {
+        "config_id": "b128_ef512",
+        "B": 128,
+        "efSearch": 512,
+        "decode_ms_per_prediction": 17.763653968748905,
+        "top50_mass_recall_percent": 98.01072170957923,
+        "joint_fidelity_eligible": false
+      },
+      {
+        "config_id": "b128_ef1024",
+        "B": 128,
+        "efSearch": 1024,
+        "decode_ms_per_prediction": 20.322039734374187,
+        "top50_mass_recall_percent": 98.14274252858013,
+        "joint_fidelity_eligible": false
+      },
+      {
+        "config_id": "b256_ef128",
+        "B": 256,
+        "efSearch": 128,
+        "decode_ms_per_prediction": 15.857224898437217,
+        "top50_mass_recall_percent": 97.5427862489596,
+        "joint_fidelity_eligible": false
+      },
+      {
+        "config_id": "b256_ef256",
+        "B": 256,
+        "efSearch": 256,
+        "decode_ms_per_prediction": 16.275233046874504,
+        "top50_mass_recall_percent": 97.82666889950633,
+        "joint_fidelity_eligible": false
+      },
+      {
+        "config_id": "b256_ef512",
+        "B": 256,
+        "efSearch": 512,
+        "decode_ms_per_prediction": 17.76083477343704,
+        "top50_mass_recall_percent": 98.03336262702942,
+        "joint_fidelity_eligible": false
+      },
+      {
+        "config_id": "b256_ef1024",
+        "B": 256,
+        "efSearch": 1024,
+        "decode_ms_per_prediction": 20.409110304688838,
+        "top50_mass_recall_percent": 98.16538342274725,
+        "joint_fidelity_eligible": false
+      },
+      {
+        "config_id": "b512_ef128",
+        "B": 512,
+        "efSearch": 128,
+        "decode_ms_per_prediction": 16.036168828123643,
+        "top50_mass_recall_percent": 97.54777054768056,
+        "joint_fidelity_eligible": false
+      },
+      {
+        "config_id": "b512_ef256",
+        "B": 512,
+        "efSearch": 256,
+        "decode_ms_per_prediction": 16.481579007813885,
+        "top50_mass_recall_percent": 97.82666889950633,
+        "joint_fidelity_eligible": false
+      },
+      {
+        "config_id": "b512_ef512",
+        "B": 512,
+        "efSearch": 512,
+        "decode_ms_per_prediction": 17.88661180468676,
+        "top50_mass_recall_percent": 98.0360948247835,
+        "joint_fidelity_eligible": false
+      },
+      {
+        "config_id": "b512_ef1024",
+        "B": 512,
+        "efSearch": 1024,
+        "decode_ms_per_prediction": 20.476328710937963,
+        "top50_mass_recall_percent": 98.16811562050134,
+        "joint_fidelity_eligible": false
+      }
+    ],
+    "script": "papers/mqr_v1_preprint/build_search_figure.py",
+    "script_sha256": "b6a444532171bd9f937de0a54ac12d6c4cbe5d1c974e5fd8f84bb7d769458185",
+    "scientific_plots_preserved": 4,
+    "equations_preserved": 10
+  }
+}

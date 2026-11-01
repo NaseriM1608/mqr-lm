@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mqr-lm"
+version = "0.1.0"
+description = "MQR-v1 research implementation and matched dense output-head baselines"
+requires-python = ">=3.11"
+dependencies = ["torch>=2.5,<3", "numpy>=1.26,<3"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+data = ["tokenizers>=0.21,<0.23", "datasets>=3,<6"]
+corpus = ["tokenizers>=0.21,<0.23", "pyarrow>=18,<24", "huggingface_hub>=0.30,<2"]
+ann = ["faiss-cpu>=1.9,<2"]
+paper = ["reportlab>=4,<5", "pillow>=10,<13", "pypdf>=5,<7"]
+
+[project.scripts]
+mqr = "mqr.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-ra"

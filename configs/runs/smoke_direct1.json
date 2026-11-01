@@ -1,0 +1,43 @@
+{
+  "model": {
+    "vocab_size": 259,
+    "layers": 2,
+    "d_model": 64,
+    "attention_heads": 4,
+    "ffn_dim": 128,
+    "context_length": 64,
+    "dropout": 0.0
+  },
+  "head": {
+    "kind": "direct",
+    "d_e": 32,
+    "d_c": 64,
+    "num_queries": 1,
+    "activation": "gelu",
+    "temperature": 1.0,
+    "normalize_queries": false,
+    "normalize_output_rows": false
+  },
+  "training": {
+    "seed": 0,
+    "device": "cpu",
+    "precision": "fp32",
+    "batch_size": 2,
+    "gradient_accumulation": 2,
+    "max_steps": 50,
+    "learning_rate": 0.001,
+    "weight_decay": 0.1,
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "grad_clip": 1.0,
+    "warmup_steps": 5,
+    "min_lr_ratio": 0.1,
+    "loss_chunk_positions": 32,
+    "checkpoint_every": 25,
+    "eval_every": 25,
+    "eval_batches": 4,
+    "num_threads": 2
+  }
+}

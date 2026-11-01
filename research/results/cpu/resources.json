@@ -1,0 +1,1087 @@
+[
+  {
+    "arm": "dense",
+    "model_parameter_bytes": 419655680,
+    "head_parameter_bytes": 134217728,
+    "output_table_bytes": 134217728,
+    "max_initial_kv_bytes": 6291456,
+    "checkpoint_load_seconds": 2.9041005440000163,
+    "warm_serving_memory": {
+      "rss_bytes": 1289637888,
+      "peak_rss_lifetime_bytes": 1939652608,
+      "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+    },
+    "process_memory_after_arm": {
+      "rss_bytes": 1155481600,
+      "peak_rss_lifetime_bytes": 1939652608,
+      "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+    },
+    "index": {
+      "flat": {
+        "method": "flat",
+        "index_build_seconds": 0.001004840999996759,
+        "full_validation_seconds": 0.0,
+        "serialization_seconds": 0.0,
+        "serialized_index_bytes": 0,
+        "serialized_index_sha256": null,
+        "indexed_fp32_vector_bytes": 0,
+        "fingerprint": null,
+        "parameters": null,
+        "before": {
+          "rss_bytes": 1134862336,
+          "peak_rss_lifetime_bytes": 1939652608,
+          "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+        },
+        "after": {
+          "rss_bytes": 1134985216,
+          "peak_rss_lifetime_bytes": 1939652608,
+          "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+        },
+        "build_rss": {
+          "sampled_peak_rss_bytes": 1134985216,
+          "rss_samples": 2,
+          "sampling_interval_seconds": 0.02,
+          "scope": "absolute RSS sampled within named phase; lower-bound observed peak, not resettable OS high-water mark"
+        },
+        "rss_scope": "Actual RSS, sampled construction maximum, and separately labeled OS lifetime peak; sequential allocator retention prevents isolated per-model comparison"
+      },
+      "faiss": {
+        "method": "faiss",
+        "index_build_seconds": 0.721759349000024,
+        "full_validation_seconds": 0.6442503110000075,
+        "serialization_seconds": 0.6037606419999975,
+        "serialized_index_bytes": 134217773,
+        "serialized_index_sha256": "3676dfe1d2154563e4b3361ad9313c383c900c2fb6888af26ed2b6889d499826",
+        "indexed_fp32_vector_bytes": 134217728,
+        "fingerprint": "bdad703c27fba35bea62ec7d661ad24e333275e96dd30cd4f353bc451c09e854",
+        "parameters": {
+          "hnsw_m": 32,
+          "ef_search": 128,
+          "ef_construction": 200
+        },
+        "before": {
+          "rss_bytes": 1134985216,
+          "peak_rss_lifetime_bytes": 1939652608,
+          "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+        },
+        "after": {
+          "rss_bytes": 1137078272,
+          "peak_rss_lifetime_bytes": 1939652608,
+          "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+        },
+        "build_rss": {
+          "sampled_peak_rss_bytes": 1270808576,
+          "rss_samples": 30,
+          "sampling_interval_seconds": 0.02,
+          "scope": "absolute RSS sampled within named phase; lower-bound observed peak, not resettable OS high-water mark"
+        },
+        "rss_scope": "Actual RSS, sampled construction maximum, and separately labeled OS lifetime peak; sequential allocator retention prevents isolated per-model comparison"
+      },
+      "hnsw": {
+        "method": "hnsw",
+        "index_build_seconds": 30.01666144699999,
+        "full_validation_seconds": 0.6571525429999951,
+        "serialization_seconds": 0.6705797700000176,
+        "serialized_index_bytes": 152055266,
+        "serialized_index_sha256": "c297ba03bae44afdfaa27b1271a6ed51181a6ab0adeb2077c3892c7fafe237fb",
+        "indexed_fp32_vector_bytes": 134217728,
+        "fingerprint": "bdad703c27fba35bea62ec7d661ad24e333275e96dd30cd4f353bc451c09e854",
+        "parameters": {
+          "hnsw_m": 32,
+          "ef_search": 128,
+          "ef_construction": 200
+        },
+        "before": {
+          "rss_bytes": 1137078272,
+          "peak_rss_lifetime_bytes": 1939652608,
+          "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+        },
+        "after": {
+          "rss_bytes": 1272877056,
+          "peak_rss_lifetime_bytes": 1939652608,
+          "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+        },
+        "build_rss": {
+          "sampled_peak_rss_bytes": 1272881152,
+          "rss_samples": 1440,
+          "sampling_interval_seconds": 0.02,
+          "scope": "absolute RSS sampled within named phase; lower-bound observed peak, not resettable OS high-water mark"
+        },
+        "rss_scope": "Actual RSS, sampled construction maximum, and separately labeled OS lifetime peak; sequential allocator retention prevents isolated per-model comparison"
+      }
+    },
+    "stage_profile": {
+      "stage_ms": {
+        "query_projection": 0.01305000000684231,
+        "device_to_cpu_query": 0.030325000011544034,
+        "cpu_search": 0.4813399999648027,
+        "cpu_to_device_ids": 0.036317000080998696,
+        "union_dedup_padding": 0.23010299992165528,
+        "all_query_rerank": 0.24658500001351058
+      },
+      "query_bytes": 2048,
+      "result_id_bytes": 1024,
+      "transfer_scope": "D2H FP32 query and H2D int64 ID bytes when CUDA; CPU paths are host conversions",
+      "hybrid_cpu_search": false,
+      "scope": "instrumented synchronized diagnostic, not uninstrumented end-to-end latency"
+    },
+    "warm_cold_request": {
+      "status": "passed",
+      "scope": "model_resident_warm_process_cold_index",
+      "document_id": "HuggingFaceFW/fineweb@9bb295ddab0e05d785b879661af7260fed5140fc:sample/10BT/005_00000.parquet:721175",
+      "language": "en",
+      "prefix_length": 128,
+      "maximum_new_tokens": 16,
+      "warm_request": {
+        "wall_seconds": 0.37709867499995653,
+        "predictions": 16,
+        "token_ids": [
+          360,
+          317,
+          2749,
+          25,
+          210,
+          947,
+          1565,
+          24,
+          78,
+          938,
+          400,
+          24,
+          1074,
+          24,
+          78,
+          938
+        ],
+        "eos_position": null,
+        "feedback": "own_generated_tokens",
+        "scope": "model_resident_warm_process_persistent_index"
+      },
+      "cold_request": {
+        "scope": "model_resident_warm_process_cold_index",
+        "wall_seconds": 30.502684004999992,
+        "build_seconds": 29.47756649500002,
+        "validation_seconds": 0.654739716999984,
+        "generation_seconds": 0.37037779299998874,
+        "predictions": 16,
+        "token_ids": [
+          360,
+          317,
+          2749,
+          25,
+          210,
+          947,
+          1565,
+          24,
+          78,
+          938,
+          400,
+          24,
+          1074,
+          24,
+          78,
+          938
+        ],
+        "eos_position": null,
+        "feedback": "own_generated_tokens",
+        "index_fingerprint": "bdad703c27fba35bea62ec7d661ad24e333275e96dd30cd4f353bc451c09e854",
+        "index_parameters": {
+          "hnsw_m": 32,
+          "ef_search": 128,
+          "ef_construction": 200
+        },
+        "before": {
+          "rss_bytes": 1155481600,
+          "peak_rss_lifetime_bytes": 1939652608,
+          "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+        },
+        "after": {
+          "rss_bytes": 1155481600,
+          "peak_rss_lifetime_bytes": 1939652608,
+          "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+        },
+        "build_rss": {
+          "sampled_peak_rss_bytes": 1289707520,
+          "rss_samples": 1417,
+          "sampling_interval_seconds": 0.02,
+          "scope": "absolute RSS sampled within named phase; lower-bound observed peak, not resettable OS high-water mark"
+        },
+        "request_tokens": 128,
+        "maximum_new_tokens": 16,
+        "measurement": "single observed inclusive build + full validation + own-feedback request; serialization excluded; not a sum of separate runs"
+      },
+      "same_complete_sequence": true,
+      "warm_index_released_before_cold": true,
+      "samples_per_mode": 1,
+      "scope_limit": "Cold index in a warm model/process; excludes process/model startup; no percentile or amortization claim from one pair"
+    }
+  },
+  {
+    "arm": "mqr",
+    "model_parameter_bytes": 320044032,
+    "head_parameter_bytes": 34606080,
+    "output_table_bytes": 33554432,
+    "max_initial_kv_bytes": 6291456,
+    "checkpoint_load_seconds": 1.7828447589999996,
+    "warm_serving_memory": {
+      "rss_bytes": 1299058688,
+      "peak_rss_lifetime_bytes": 1939652608,
+      "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+    },
+    "process_memory_after_arm": {
+      "rss_bytes": 1299058688,
+      "peak_rss_lifetime_bytes": 1939652608,
+      "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+    },
+    "index": {
+      "flat": {
+        "method": "flat",
+        "index_build_seconds": 0.0008312400000249909,
+        "full_validation_seconds": 0.0,
+        "serialization_seconds": 0.0,
+        "serialized_index_bytes": 0,
+        "serialized_index_sha256": null,
+        "indexed_fp32_vector_bytes": 0,
+        "fingerprint": null,
+        "parameters": null,
+        "before": {
+          "rss_bytes": 1297698816,
+          "peak_rss_lifetime_bytes": 1939652608,
+          "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+        },
+        "after": {
+          "rss_bytes": 1297698816,
+          "peak_rss_lifetime_bytes": 1939652608,
+          "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+        },
+        "build_rss": {
+          "sampled_peak_rss_bytes": 1297698816,
+          "rss_samples": 2,
+          "sampling_interval_seconds": 0.02,
+          "scope": "absolute RSS sampled within named phase; lower-bound observed peak, not resettable OS high-water mark"
+        },
+        "rss_scope": "Actual RSS, sampled construction maximum, and separately labeled OS lifetime peak; sequential allocator retention prevents isolated per-model comparison"
+      },
+      "faiss": {
+        "method": "faiss",
+        "index_build_seconds": 0.15366857599997275,
+        "full_validation_seconds": 0.11349686899995959,
+        "serialization_seconds": 0.11883755199994539,
+        "serialized_index_bytes": 33554477,
+        "serialized_index_sha256": "25e74b356f7542d15167a1182ac89626650acb31ffa0b6303d845cda002c0e6e",
+        "indexed_fp32_vector_bytes": 33554432,
+        "fingerprint": "5acfef7bcc19a5900c46774084f9c337abce184de38c5d6f3e0b822446488b43",
+        "parameters": {
+          "hnsw_m": 32,
+          "ef_search": 128,
+          "ef_construction": 200
+        },
+        "before": {
+          "rss_bytes": 1297698816,
+          "peak_rss_lifetime_bytes": 1939652608,
+          "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+        },
+        "after": {
+          "rss_bytes": 1297698816,
+          "peak_rss_lifetime_bytes": 1939652608,
+          "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+        },
+        "build_rss": {
+          "sampled_peak_rss_bytes": 1297702912,
+          "rss_samples": 9,
+          "sampling_interval_seconds": 0.02,
+          "scope": "absolute RSS sampled within named phase; lower-bound observed peak, not resettable OS high-water mark"
+        },
+        "rss_scope": "Actual RSS, sampled construction maximum, and separately labeled OS lifetime peak; sequential allocator retention prevents isolated per-model comparison"
+      },
+      "hnsw": {
+        "method": "hnsw",
+        "index_build_seconds": 10.895589464999944,
+        "full_validation_seconds": 0.11221201899991229,
+        "serialization_seconds": 0.18699776000005386,
+        "serialized_index_bytes": 51391970,
+        "serialized_index_sha256": "3270e42a71c470cb98272b63a7eba2b31c4d8d12078e1fb107c6490b9507f364",
+        "indexed_fp32_vector_bytes": 33554432,
+        "fingerprint": "5acfef7bcc19a5900c46774084f9c337abce184de38c5d6f3e0b822446488b43",
+        "parameters": {
+          "hnsw_m": 32,
+          "ef_search": 128,
+          "ef_construction": 200
+        },
+        "before": {
+          "rss_bytes": 1297698816,
+          "peak_rss_lifetime_bytes": 1939652608,
+          "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+        },
+        "after": {
+          "rss_bytes": 1297698816,
+          "peak_rss_lifetime_bytes": 1939652608,
+          "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+        },
+        "build_rss": {
+          "sampled_peak_rss_bytes": 1297702912,
+          "rss_samples": 529,
+          "sampling_interval_seconds": 0.02,
+          "scope": "absolute RSS sampled within named phase; lower-bound observed peak, not resettable OS high-water mark"
+        },
+        "rss_scope": "Actual RSS, sampled construction maximum, and separately labeled OS lifetime peak; sequential allocator retention prevents isolated per-model comparison"
+      }
+    },
+    "stage_profile": {
+      "stage_ms": {
+        "query_projection": 0.2653650000183916,
+        "device_to_cpu_query": 0.028017000090585498,
+        "cpu_search": 0.9360760000163282,
+        "cpu_to_device_ids": 0.03754700003355538,
+        "union_dedup_padding": 0.23611099993559037,
+        "all_query_rerank": 0.4894209999974919
+      },
+      "query_bytes": 2048,
+      "result_id_bytes": 1024,
+      "transfer_scope": "D2H FP32 query and H2D int64 ID bytes when CUDA; CPU paths are host conversions",
+      "hybrid_cpu_search": false,
+      "scope": "instrumented synchronized diagnostic, not uninstrumented end-to-end latency"
+    },
+    "warm_cold_request": {
+      "status": "passed",
+      "scope": "model_resident_warm_process_cold_index",
+      "document_id": "HuggingFaceFW/fineweb@9bb295ddab0e05d785b879661af7260fed5140fc:sample/10BT/005_00000.parquet:721175",
+      "language": "en",
+      "prefix_length": 128,
+      "maximum_new_tokens": 16,
+      "warm_request": {
+        "wall_seconds": 0.4437482360000331,
+        "predictions": 16,
+        "token_ids": [
+          360,
+          416,
+          285,
+          1223,
+          25,
+          210,
+          947,
+          1565,
+          23,
+          362,
+          317,
+          1565,
+          638,
+          285,
+          1223,
+          23
+        ],
+        "eos_position": null,
+        "feedback": "own_generated_tokens",
+        "scope": "model_resident_warm_process_persistent_index"
+      },
+      "cold_request": {
+        "scope": "model_resident_warm_process_cold_index",
+        "wall_seconds": 11.032920464000085,
+        "build_seconds": 10.510860408000099,
+        "validation_seconds": 0.11422396199998275,
+        "generation_seconds": 0.40783609400000387,
+        "predictions": 16,
+        "token_ids": [
+          360,
+          416,
+          285,
+          1223,
+          25,
+          210,
+          947,
+          1565,
+          23,
+          362,
+          317,
+          1565,
+          638,
+          285,
+          1223,
+          23
+        ],
+        "eos_position": null,
+        "feedback": "own_generated_tokens",
+        "index_fingerprint": "5acfef7bcc19a5900c46774084f9c337abce184de38c5d6f3e0b822446488b43",
+        "index_parameters": {
+          "hnsw_m": 32,
+          "ef_search": 128,
+          "ef_construction": 200
+        },
+        "before": {
+          "rss_bytes": 1299058688,
+          "peak_rss_lifetime_bytes": 1939652608,
+          "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+        },
+        "after": {
+          "rss_bytes": 1299058688,
+          "peak_rss_lifetime_bytes": 1939652608,
+          "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+        },
+        "build_rss": {
+          "sampled_peak_rss_bytes": 1299062784,
+          "rss_samples": 510,
+          "sampling_interval_seconds": 0.02,
+          "scope": "absolute RSS sampled within named phase; lower-bound observed peak, not resettable OS high-water mark"
+        },
+        "request_tokens": 128,
+        "maximum_new_tokens": 16,
+        "measurement": "single observed inclusive build + full validation + own-feedback request; serialization excluded; not a sum of separate runs"
+      },
+      "same_complete_sequence": true,
+      "warm_index_released_before_cold": true,
+      "samples_per_mode": 1,
+      "scope_limit": "Cold index in a warm model/process; excludes process/model startup; no percentile or amortization claim from one pair"
+    }
+  },
+  {
+    "arm": "mqr_scale",
+    "model_parameter_bytes": 320044032,
+    "head_parameter_bytes": 34606080,
+    "output_table_bytes": 33554432,
+    "max_initial_kv_bytes": 6291456,
+    "checkpoint_load_seconds": 1.7305193700000245,
+    "warm_serving_memory": {
+      "rss_bytes": 1334763520,
+      "peak_rss_lifetime_bytes": 1939652608,
+      "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+    },
+    "process_memory_after_arm": {
+      "rss_bytes": 1334763520,
+      "peak_rss_lifetime_bytes": 1939652608,
+      "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+    },
+    "index": {
+      "flat": {
+        "method": "flat",
+        "index_build_seconds": 0.00086590899991279,
+        "full_validation_seconds": 0.0,
+        "serialization_seconds": 0.0,
+        "serialized_index_bytes": 0,
+        "serialized_index_sha256": null,
+        "indexed_fp32_vector_bytes": 0,
+        "fingerprint": null,
+        "parameters": null,
+        "before": {
+          "rss_bytes": 1334722560,
+          "peak_rss_lifetime_bytes": 1939652608,
+          "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+        },
+        "after": {
+          "rss_bytes": 1334722560,
+          "peak_rss_lifetime_bytes": 1939652608,
+          "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+        },
+        "build_rss": {
+          "sampled_peak_rss_bytes": 1334722560,
+          "rss_samples": 2,
+          "sampling_interval_seconds": 0.02,
+          "scope": "absolute RSS sampled within named phase; lower-bound observed peak, not resettable OS high-water mark"
+        },
+        "rss_scope": "Actual RSS, sampled construction maximum, and separately labeled OS lifetime peak; sequential allocator retention prevents isolated per-model comparison"
+      },
+      "faiss": {
+        "method": "faiss",
+        "index_build_seconds": 0.15832650000004378,
+        "full_validation_seconds": 0.11266816700003801,
+        "serialization_seconds": 0.11923769999998513,
+        "serialized_index_bytes": 33554477,
+        "serialized_index_sha256": "652ca90aec94c2731f6dcdfd2014ecaecf2b6c339fec192dbcb98a46dc655a60",
+        "indexed_fp32_vector_bytes": 33554432,
+        "fingerprint": "d0e946bde0e36d3d8c1620ed7f65659947b2979ea924ce1644c6919697ffb8da",
+        "parameters": {
+          "hnsw_m": 32,
+          "ef_search": 128,
+          "ef_construction": 200
+        },
+        "before": {
+          "rss_bytes": 1334722560,
+          "peak_rss_lifetime_bytes": 1939652608,
+          "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+        },
+        "after": {
+          "rss_bytes": 1334722560,
+          "peak_rss_lifetime_bytes": 1939652608,
+          "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+        },
+        "build_rss": {
+          "sampled_peak_rss_bytes": 1334726656,
+          "rss_samples": 9,
+          "sampling_interval_seconds": 0.02,
+          "scope": "absolute RSS sampled within named phase; lower-bound observed peak, not resettable OS high-water mark"
+        },
+        "rss_scope": "Actual RSS, sampled construction maximum, and separately labeled OS lifetime peak; sequential allocator retention prevents isolated per-model comparison"
+      },
+      "hnsw": {
+        "method": "hnsw",
+        "index_build_seconds": 12.846569431000034,
+        "full_validation_seconds": 0.11277561800000058,
+        "serialization_seconds": 0.191424573000063,
+        "serialized_index_bytes": 51391970,
+        "serialized_index_sha256": "c50c13c380c288f8a504dcfbedd8968c104341295fb6f948a7b1e13cea4d6883",
+        "indexed_fp32_vector_bytes": 33554432,
+        "fingerprint": "d0e946bde0e36d3d8c1620ed7f65659947b2979ea924ce1644c6919697ffb8da",
+        "parameters": {
+          "hnsw_m": 32,
+          "ef_search": 128,
+          "ef_construction": 200
+        },
+        "before": {
+          "rss_bytes": 1334722560,
+          "peak_rss_lifetime_bytes": 1939652608,
+          "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+        },
+        "after": {
+          "rss_bytes": 1334722560,
+          "peak_rss_lifetime_bytes": 1939652608,
+          "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+        },
+        "build_rss": {
+          "sampled_peak_rss_bytes": 1334726656,
+          "rss_samples": 624,
+          "sampling_interval_seconds": 0.02,
+          "scope": "absolute RSS sampled within named phase; lower-bound observed peak, not resettable OS high-water mark"
+        },
+        "rss_scope": "Actual RSS, sampled construction maximum, and separately labeled OS lifetime peak; sequential allocator retention prevents isolated per-model comparison"
+      }
+    },
+    "stage_profile": {
+      "stage_ms": {
+        "query_projection": 0.23522299989053863,
+        "device_to_cpu_query": 0.025649999997767736,
+        "cpu_search": 1.5282649999335263,
+        "cpu_to_device_ids": 0.03820400002041424,
+        "union_dedup_padding": 0.24035199999161705,
+        "all_query_rerank": 0.5984340000395605
+      },
+      "query_bytes": 2048,
+      "result_id_bytes": 1024,
+      "transfer_scope": "D2H FP32 query and H2D int64 ID bytes when CUDA; CPU paths are host conversions",
+      "hybrid_cpu_search": false,
+      "scope": "instrumented synchronized diagnostic, not uninstrumented end-to-end latency"
+    },
+    "warm_cold_request": {
+      "status": "passed",
+      "scope": "model_resident_warm_process_cold_index",
+      "document_id": "HuggingFaceFW/fineweb@9bb295ddab0e05d785b879661af7260fed5140fc:sample/10BT/005_00000.parquet:721175",
+      "language": "en",
+      "prefix_length": 128,
+      "maximum_new_tokens": 16,
+      "warm_request": {
+        "wall_seconds": 0.40958976499996425,
+        "predictions": 16,
+        "token_ids": [
+          360,
+          858,
+          475,
+          773,
+          532,
+          95,
+          416,
+          285,
+          2092,
+          2136,
+          25,
+          210,
+          947,
+          1565,
+          24,
+          78
+        ],
+        "eos_position": null,
+        "feedback": "own_generated_tokens",
+        "scope": "model_resident_warm_process_persistent_index"
+      },
+      "cold_request": {
+        "scope": "model_resident_warm_process_cold_index",
+        "wall_seconds": 11.242179254999883,
+        "build_seconds": 10.733883733999846,
+        "validation_seconds": 0.1122559950001687,
+        "generation_seconds": 0.3960395259998677,
+        "predictions": 16,
+        "token_ids": [
+          360,
+          858,
+          475,
+          773,
+          532,
+          95,
+          416,
+          285,
+          2092,
+          2136,
+          25,
+          210,
+          947,
+          1565,
+          24,
+          78
+        ],
+        "eos_position": null,
+        "feedback": "own_generated_tokens",
+        "index_fingerprint": "d0e946bde0e36d3d8c1620ed7f65659947b2979ea924ce1644c6919697ffb8da",
+        "index_parameters": {
+          "hnsw_m": 32,
+          "ef_search": 128,
+          "ef_construction": 200
+        },
+        "before": {
+          "rss_bytes": 1334763520,
+          "peak_rss_lifetime_bytes": 1939652608,
+          "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+        },
+        "after": {
+          "rss_bytes": 1334763520,
+          "peak_rss_lifetime_bytes": 1939652608,
+          "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+        },
+        "build_rss": {
+          "sampled_peak_rss_bytes": 1334767616,
+          "rss_samples": 522,
+          "sampling_interval_seconds": 0.02,
+          "scope": "absolute RSS sampled within named phase; lower-bound observed peak, not resettable OS high-water mark"
+        },
+        "request_tokens": 128,
+        "maximum_new_tokens": 16,
+        "measurement": "single observed inclusive build + full validation + own-feedback request; serialization excluded; not a sum of separate runs"
+      },
+      "same_complete_sequence": true,
+      "warm_index_released_before_cold": true,
+      "samples_per_mode": 1,
+      "scope_limit": "Cold index in a warm model/process; excludes process/model startup; no percentile or amortization claim from one pair"
+    }
+  },
+  {
+    "arm": "direct1_scale",
+    "model_parameter_bytes": 319255040,
+    "head_parameter_bytes": 33817088,
+    "output_table_bytes": 33554432,
+    "max_initial_kv_bytes": 6291456,
+    "checkpoint_load_seconds": 1.7321976030000314,
+    "warm_serving_memory": {
+      "rss_bytes": 1370451968,
+      "peak_rss_lifetime_bytes": 1939652608,
+      "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+    },
+    "process_memory_after_arm": {
+      "rss_bytes": 1370451968,
+      "peak_rss_lifetime_bytes": 1939652608,
+      "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+    },
+    "index": {
+      "flat": {
+        "method": "flat",
+        "index_build_seconds": 0.0007838720000563626,
+        "full_validation_seconds": 0.0,
+        "serialization_seconds": 0.0,
+        "serialized_index_bytes": 0,
+        "serialized_index_sha256": null,
+        "indexed_fp32_vector_bytes": 0,
+        "fingerprint": null,
+        "parameters": null,
+        "before": {
+          "rss_bytes": 1370419200,
+          "peak_rss_lifetime_bytes": 1939652608,
+          "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+        },
+        "after": {
+          "rss_bytes": 1370419200,
+          "peak_rss_lifetime_bytes": 1939652608,
+          "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+        },
+        "build_rss": {
+          "sampled_peak_rss_bytes": 1370419200,
+          "rss_samples": 2,
+          "sampling_interval_seconds": 0.02,
+          "scope": "absolute RSS sampled within named phase; lower-bound observed peak, not resettable OS high-water mark"
+        },
+        "rss_scope": "Actual RSS, sampled construction maximum, and separately labeled OS lifetime peak; sequential allocator retention prevents isolated per-model comparison"
+      },
+      "faiss": {
+        "method": "faiss",
+        "index_build_seconds": 0.1771368080001139,
+        "full_validation_seconds": 0.11320279999995364,
+        "serialization_seconds": 0.11764721500003361,
+        "serialized_index_bytes": 33554477,
+        "serialized_index_sha256": "2aedc57ff5561a97608ef70f2a639ab151fb519492369bd2c22b0e5aa6f928d9",
+        "indexed_fp32_vector_bytes": 33554432,
+        "fingerprint": "9c26c71edc8bbfd73dca3b65bcdfde1af375236fffa9030e6d55a1119c2f0202",
+        "parameters": {
+          "hnsw_m": 32,
+          "ef_search": 128,
+          "ef_construction": 200
+        },
+        "before": {
+          "rss_bytes": 1370419200,
+          "peak_rss_lifetime_bytes": 1939652608,
+          "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+        },
+        "after": {
+          "rss_bytes": 1370419200,
+          "peak_rss_lifetime_bytes": 1939652608,
+          "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+        },
+        "build_rss": {
+          "sampled_peak_rss_bytes": 1370423296,
+          "rss_samples": 10,
+          "sampling_interval_seconds": 0.02,
+          "scope": "absolute RSS sampled within named phase; lower-bound observed peak, not resettable OS high-water mark"
+        },
+        "rss_scope": "Actual RSS, sampled construction maximum, and separately labeled OS lifetime peak; sequential allocator retention prevents isolated per-model comparison"
+      },
+      "hnsw": {
+        "method": "hnsw",
+        "index_build_seconds": 12.077945189000047,
+        "full_validation_seconds": 0.11355545900005382,
+        "serialization_seconds": 0.18773181799997474,
+        "serialized_index_bytes": 51391970,
+        "serialized_index_sha256": "13da14c7645e010c4e3fdf6a5cd66f7250be238b641da7d0e318b57f4f84af8f",
+        "indexed_fp32_vector_bytes": 33554432,
+        "fingerprint": "9c26c71edc8bbfd73dca3b65bcdfde1af375236fffa9030e6d55a1119c2f0202",
+        "parameters": {
+          "hnsw_m": 32,
+          "ef_search": 128,
+          "ef_construction": 200
+        },
+        "before": {
+          "rss_bytes": 1370419200,
+          "peak_rss_lifetime_bytes": 1939652608,
+          "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+        },
+        "after": {
+          "rss_bytes": 1370419200,
+          "peak_rss_lifetime_bytes": 1939652608,
+          "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+        },
+        "build_rss": {
+          "sampled_peak_rss_bytes": 1370423296,
+          "rss_samples": 586,
+          "sampling_interval_seconds": 0.02,
+          "scope": "absolute RSS sampled within named phase; lower-bound observed peak, not resettable OS high-water mark"
+        },
+        "rss_scope": "Actual RSS, sampled construction maximum, and separately labeled OS lifetime peak; sequential allocator retention prevents isolated per-model comparison"
+      }
+    },
+    "stage_profile": {
+      "stage_ms": {
+        "query_projection": 0.08834100003696221,
+        "device_to_cpu_query": 0.02762299982350669,
+        "cpu_search": 0.3898570000728796,
+        "cpu_to_device_ids": 0.03052000010939082,
+        "union_dedup_padding": 0.2648479999152187,
+        "all_query_rerank": 0.26287699984095525
+      },
+      "query_bytes": 512,
+      "result_id_bytes": 1024,
+      "transfer_scope": "D2H FP32 query and H2D int64 ID bytes when CUDA; CPU paths are host conversions",
+      "hybrid_cpu_search": false,
+      "scope": "instrumented synchronized diagnostic, not uninstrumented end-to-end latency"
+    },
+    "warm_cold_request": {
+      "status": "passed",
+      "scope": "model_resident_warm_process_cold_index",
+      "document_id": "HuggingFaceFW/fineweb@9bb295ddab0e05d785b879661af7260fed5140fc:sample/10BT/005_00000.parquet:721175",
+      "language": "en",
+      "prefix_length": 128,
+      "maximum_new_tokens": 16,
+      "warm_request": {
+        "wall_seconds": 0.3796277440001177,
+        "predictions": 16,
+        "token_ids": [
+          360,
+          1122,
+          285,
+          1223,
+          1223,
+          362,
+          475,
+          773,
+          532,
+          95,
+          729,
+          360,
+          317,
+          1801,
+          24,
+          1074
+        ],
+        "eos_position": null,
+        "feedback": "own_generated_tokens",
+        "scope": "model_resident_warm_process_persistent_index"
+      },
+      "cold_request": {
+        "scope": "model_resident_warm_process_cold_index",
+        "wall_seconds": 10.278254120999918,
+        "build_seconds": 9.79111316500007,
+        "validation_seconds": 0.11190758899988396,
+        "generation_seconds": 0.37523336699996435,
+        "predictions": 16,
+        "token_ids": [
+          360,
+          1122,
+          285,
+          1223,
+          1223,
+          362,
+          475,
+          773,
+          532,
+          95,
+          729,
+          360,
+          317,
+          1801,
+          24,
+          1074
+        ],
+        "eos_position": null,
+        "feedback": "own_generated_tokens",
+        "index_fingerprint": "9c26c71edc8bbfd73dca3b65bcdfde1af375236fffa9030e6d55a1119c2f0202",
+        "index_parameters": {
+          "hnsw_m": 32,
+          "ef_search": 128,
+          "ef_construction": 200
+        },
+        "before": {
+          "rss_bytes": 1370451968,
+          "peak_rss_lifetime_bytes": 1939652608,
+          "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+        },
+        "after": {
+          "rss_bytes": 1370451968,
+          "peak_rss_lifetime_bytes": 1939652608,
+          "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+        },
+        "build_rss": {
+          "sampled_peak_rss_bytes": 1370456064,
+          "rss_samples": 475,
+          "sampling_interval_seconds": 0.02,
+          "scope": "absolute RSS sampled within named phase; lower-bound observed peak, not resettable OS high-water mark"
+        },
+        "request_tokens": 128,
+        "maximum_new_tokens": 16,
+        "measurement": "single observed inclusive build + full validation + own-feedback request; serialization excluded; not a sum of separate runs"
+      },
+      "same_complete_sequence": true,
+      "warm_index_released_before_cold": true,
+      "samples_per_mode": 1,
+      "scope_limit": "Cold index in a warm model/process; excludes process/model startup; no percentile or amortization claim from one pair"
+    }
+  },
+  {
+    "arm": "direct4_scale",
+    "model_parameter_bytes": 320043008,
+    "head_parameter_bytes": 34605056,
+    "output_table_bytes": 33554432,
+    "max_initial_kv_bytes": 6291456,
+    "checkpoint_load_seconds": 1.7376447199999348,
+    "warm_serving_memory": {
+      "rss_bytes": 1338994688,
+      "peak_rss_lifetime_bytes": 1939652608,
+      "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+    },
+    "process_memory_after_arm": {
+      "rss_bytes": 1338994688,
+      "peak_rss_lifetime_bytes": 1939652608,
+      "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+    },
+    "index": {
+      "flat": {
+        "method": "flat",
+        "index_build_seconds": 0.0007652649999272398,
+        "full_validation_seconds": 0.0,
+        "serialization_seconds": 0.0,
+        "serialized_index_bytes": 0,
+        "serialized_index_sha256": null,
+        "indexed_fp32_vector_bytes": 0,
+        "fingerprint": null,
+        "parameters": null,
+        "before": {
+          "rss_bytes": 1338994688,
+          "peak_rss_lifetime_bytes": 1939652608,
+          "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+        },
+        "after": {
+          "rss_bytes": 1338994688,
+          "peak_rss_lifetime_bytes": 1939652608,
+          "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+        },
+        "build_rss": {
+          "sampled_peak_rss_bytes": 1338994688,
+          "rss_samples": 2,
+          "sampling_interval_seconds": 0.02,
+          "scope": "absolute RSS sampled within named phase; lower-bound observed peak, not resettable OS high-water mark"
+        },
+        "rss_scope": "Actual RSS, sampled construction maximum, and separately labeled OS lifetime peak; sequential allocator retention prevents isolated per-model comparison"
+      },
+      "faiss": {
+        "method": "faiss",
+        "index_build_seconds": 0.1501068759998816,
+        "full_validation_seconds": 0.11333482999998523,
+        "serialization_seconds": 0.11733776400001261,
+        "serialized_index_bytes": 33554477,
+        "serialized_index_sha256": "a4839884a65489d1d58f8cff85cd94047404bc9e9a615dba3e96bdbb0a19e513",
+        "indexed_fp32_vector_bytes": 33554432,
+        "fingerprint": "6f4b82447f6e28775c5b11ecd9f67fe4702fc0df8f591693ae7cd90784d691b2",
+        "parameters": {
+          "hnsw_m": 32,
+          "ef_search": 128,
+          "ef_construction": 200
+        },
+        "before": {
+          "rss_bytes": 1338994688,
+          "peak_rss_lifetime_bytes": 1939652608,
+          "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+        },
+        "after": {
+          "rss_bytes": 1338994688,
+          "peak_rss_lifetime_bytes": 1939652608,
+          "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+        },
+        "build_rss": {
+          "sampled_peak_rss_bytes": 1338998784,
+          "rss_samples": 9,
+          "sampling_interval_seconds": 0.02,
+          "scope": "absolute RSS sampled within named phase; lower-bound observed peak, not resettable OS high-water mark"
+        },
+        "rss_scope": "Actual RSS, sampled construction maximum, and separately labeled OS lifetime peak; sequential allocator retention prevents isolated per-model comparison"
+      },
+      "hnsw": {
+        "method": "hnsw",
+        "index_build_seconds": 12.022770795000042,
+        "full_validation_seconds": 0.11281868199989731,
+        "serialization_seconds": 0.18696055400005207,
+        "serialized_index_bytes": 51391970,
+        "serialized_index_sha256": "61d139d5595b5756e03936a618a80ec576acd7fe45f5dde522bdd417e2102252",
+        "indexed_fp32_vector_bytes": 33554432,
+        "fingerprint": "6f4b82447f6e28775c5b11ecd9f67fe4702fc0df8f591693ae7cd90784d691b2",
+        "parameters": {
+          "hnsw_m": 32,
+          "ef_search": 128,
+          "ef_construction": 200
+        },
+        "before": {
+          "rss_bytes": 1338994688,
+          "peak_rss_lifetime_bytes": 1939652608,
+          "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+        },
+        "after": {
+          "rss_bytes": 1338994688,
+          "peak_rss_lifetime_bytes": 1939652608,
+          "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+        },
+        "build_rss": {
+          "sampled_peak_rss_bytes": 1338998784,
+          "rss_samples": 584,
+          "sampling_interval_seconds": 0.02,
+          "scope": "absolute RSS sampled within named phase; lower-bound observed peak, not resettable OS high-water mark"
+        },
+        "rss_scope": "Actual RSS, sampled construction maximum, and separately labeled OS lifetime peak; sequential allocator retention prevents isolated per-model comparison"
+      }
+    },
+    "stage_profile": {
+      "stage_ms": {
+        "query_projection": 0.13392799996836402,
+        "device_to_cpu_query": 0.026617000003170688,
+        "cpu_search": 1.2801679999938642,
+        "cpu_to_device_ids": 0.03774199990402849,
+        "union_dedup_padding": 0.26282299995727954,
+        "all_query_rerank": 0.4217250000237982
+      },
+      "query_bytes": 2048,
+      "result_id_bytes": 1024,
+      "transfer_scope": "D2H FP32 query and H2D int64 ID bytes when CUDA; CPU paths are host conversions",
+      "hybrid_cpu_search": false,
+      "scope": "instrumented synchronized diagnostic, not uninstrumented end-to-end latency"
+    },
+    "warm_cold_request": {
+      "status": "passed",
+      "scope": "model_resident_warm_process_cold_index",
+      "document_id": "HuggingFaceFW/fineweb@9bb295ddab0e05d785b879661af7260fed5140fc:sample/10BT/005_00000.parquet:721175",
+      "language": "en",
+      "prefix_length": 128,
+      "maximum_new_tokens": 16,
+      "warm_request": {
+        "wall_seconds": 0.389432152000154,
+        "predictions": 16,
+        "token_ids": [
+          360,
+          416,
+          285,
+          2817,
+          24,
+          1074,
+          24,
+          1074,
+          24,
+          78,
+          5884,
+          25,
+          210,
+          947,
+          1565,
+          413
+        ],
+        "eos_position": null,
+        "feedback": "own_generated_tokens",
+        "scope": "model_resident_warm_process_persistent_index"
+      },
+      "cold_request": {
+        "scope": "model_resident_warm_process_cold_index",
+        "wall_seconds": 10.288611615000036,
+        "build_seconds": 9.787863876000074,
+        "validation_seconds": 0.11450701700005084,
+        "generation_seconds": 0.38624072199991133,
+        "predictions": 16,
+        "token_ids": [
+          360,
+          416,
+          285,
+          2817,
+          24,
+          1074,
+          24,
+          1074,
+          24,
+          78,
+          5884,
+          25,
+          210,
+          947,
+          1565,
+          413
+        ],
+        "eos_position": null,
+        "feedback": "own_generated_tokens",
+        "index_fingerprint": "6f4b82447f6e28775c5b11ecd9f67fe4702fc0df8f591693ae7cd90784d691b2",
+        "index_parameters": {
+          "hnsw_m": 32,
+          "ef_search": 128,
+          "ef_construction": 200
+        },
+        "before": {
+          "rss_bytes": 1338994688,
+          "peak_rss_lifetime_bytes": 1939652608,
+          "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+        },
+        "after": {
+          "rss_bytes": 1338994688,
+          "peak_rss_lifetime_bytes": 1939652608,
+          "rss_peak_scope": "process lifetime high-water mark, not a resettable phase peak"
+        },
+        "build_rss": {
+          "sampled_peak_rss_bytes": 1338998784,
+          "rss_samples": 476,
+          "sampling_interval_seconds": 0.02,
+          "scope": "absolute RSS sampled within named phase; lower-bound observed peak, not resettable OS high-water mark"
+        },
+        "request_tokens": 128,
+        "maximum_new_tokens": 16,
+        "measurement": "single observed inclusive build + full validation + own-feedback request; serialization excluded; not a sum of separate runs"
+      },
+      "same_complete_sequence": true,
+      "warm_index_released_before_cold": true,
+      "samples_per_mode": 1,
+      "scope_limit": "Cold index in a warm model/process; excludes process/model startup; no percentile or amortization claim from one pair"
+    }
+  }
+]

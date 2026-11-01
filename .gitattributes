@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.pdf binary
+# Preserve the exact published evidence bytes and their SHA-256 identities.
+research/** -text

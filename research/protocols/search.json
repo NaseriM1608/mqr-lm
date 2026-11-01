@@ -1,0 +1,91 @@
+{
+  "arms": [
+    "dense",
+    "direct1_scale",
+    "direct4_scale"
+  ],
+  "bank_manifest_sha256": "2fcfcd98b3110cf0814197a2af721648bc7040b44befb69d91f274cc3bcc72ff",
+  "base_manifest_sha256": "42bd59edbbf696ef6a3388ff21d4e328b81ac90d08fcbdb52ff74602dae5bbd9",
+  "budgets": [
+    128,
+    256,
+    512
+  ],
+  "candidate_policy": "k=B/query_count, union/deduplicate, add only normally scored EOS; all queries rerank every candidate; never inject gold",
+  "checkpoint_manifest_sha256": "8f912d6549c9b792f7783d0a519189fd89d8d4e2b6e2773180b17bf1f2d4aa54",
+  "comparison": {
+    "eligible_claim": "An ANN path needs both tuning and confirmation fidelity screens; compare its freshly measured complete decode to same-arm exact and display dense/Direct1 quality-cost frontier",
+    "learning_quality": "Keep existing exact three-seed learning NLL visible; no new training quality or dense-NLL parity claim",
+    "probability": "Report full retained mass separately from R50; candidate-normalized scores never substitute for exact NLL",
+    "speed_screen_fraction": 0.1
+  },
+  "completed_training_updates": 1000,
+  "date": "2026-10-27",
+  "ef_search": [
+    128,
+    256,
+    512,
+    1024
+  ],
+  "execution": {
+    "automatic_relaunch": false,
+    "device": "cpu",
+    "faiss_threads": 2,
+    "finalization_seconds": 300,
+    "gpu_requested": false,
+    "internet": false,
+    "max_notebook_seconds": 14400,
+    "max_worker_seconds": 13800,
+    "new_training": false,
+    "precision": "fp32",
+    "private": true,
+    "setup_seconds": 300,
+    "torch_threads": 2
+  },
+  "graph_policy": "One newly built graph per arm; reuse across efSearch/budget settings. Record construction cost and output-table fingerprint; no graph-seed robustness claim.",
+  "hnsw": {
+    "M": 32,
+    "efConstruction": 200
+  },
+  "human_authorization": {
+    "date": "2026-10-27",
+    "scope": "Bounded fixed-checkpoint CPU serving follow-up after Direct4 proposal assessment; no training or GPU execution",
+    "text": "proceed."
+  },
+  "limitations": [
+    "One trained model seed",
+    "One shared CPU host",
+    "Correlated early-document prefixes",
+    "Finite timing repeats",
+    "Same bounded development validation distribution",
+    "No quantized dense, GPU serving, human generation or convergence claim"
+  ],
+  "point_screens": {
+    "exact_top50_mass_recall": 0.99,
+    "own_head_greedy_agreement": 0.995
+  },
+  "preserve_prior_artifacts": true,
+  "question": "Can ordinary HNSW search tuning preserve registered own-head fidelity and improve complete CPU decode cost on fixed trained Direct4, with dense and Direct1 controls?",
+  "schema": "mqr-direct-search-protocol-v1",
+  "seed": 0,
+  "selection": {
+    "confirmation": "Write selection.json before confirmation feature or metric evaluation; no reselection or retuning on confirmation",
+    "eligible": "Both macro point screens on tuning bank; choose lowest mean cell-median complete cached-decode latency, ties lower B then efSearch",
+    "if_none_eligible": "Diagnostic only: maximize min(greedy/0.995,R50/0.99), then R50,greedy, then lower latency,B,efSearch; cannot become an eligible win based on confirmation alone"
+  },
+  "study": "direct_search_v1",
+  "timing": {
+    "confirmation_documents_per_language": 2,
+    "confirmation_secondary": "Prefill plus complete decode measured directly",
+    "new_tokens": 16,
+    "order": "Deterministic rotated path order within each request cell, matched own-exact forced continuation per checkpoint",
+    "prefix_lengths": [
+      32,
+      128
+    ],
+    "primary": "Mean request-cell median complete cached-decode seconds per prediction",
+    "repeats": 3,
+    "tune_documents_per_language": 1,
+    "warmup": 1
+  }
+}

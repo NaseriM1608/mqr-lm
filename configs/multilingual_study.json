@@ -1,0 +1,44 @@
+{
+  "status": "proposed_study_protocol_not_an_implemented_training_cli",
+  "architecture_name": "prototype",
+  "comparator_name": "vanilla",
+  "user_selected_languages": ["en", "de", "ar", "fa"],
+  "pretraining_sources": [
+    {"language":"en","dataset":"HuggingFaceFW/fineweb","subset":"sample-10BT","revision":null,"token_fraction":0.25},
+    {"language":"de","dataset":"HuggingFaceFW/fineweb-2","subset":"deu_Latn","revision":null,"token_fraction":0.25},
+    {"language":"ar","dataset":"HuggingFaceFW/fineweb-2","subset":"arb_Arab","revision":null,"token_fraction":0.25},
+    {"language":"fa","dataset":"HuggingFaceFW/fineweb-2","subset":"fas_Arab","revision":null,"token_fraction":0.25}
+  ],
+  "tokenizer": {"type":"shared_train_only_byte_level_bpe","vocab_size":65536,"fit_language_balancing":"equal_training_text_bytes_initially","frozen_sha256":null},
+  "data": {"initial_total_training_tokens":3000000000,"validation_tokens_per_language":1000000,"test_tokens_per_language":1000000,"split_policy":"immutable_document_split_and_cross_split_deduplication","benchmark_decontamination":true,"manifest_sha256":null},
+  "backbone": {"layers":12,"d_model":512,"attention_heads":8,"ffn_dim":2048,"context_length":512,"normalization":"pre_layernorm","positional_encoding":"rope","tied_embeddings":false},
+  "prototype_head": {"implementation":"concept_query","d_c":256,"d_e":128,"M":4,"activation":"gelu","normalize_queries":false,"normalize_output_rows":false,"aggregation":"logsumexp_global_vocabulary_normalization","token_bias":false,"branch_gate":false},
+  "training": {"objective":"exact_full_vocabulary_cross_entropy","ann_during_training":false,"initial_effective_batch_tokens":16384,"first_seed":0,"confirmation_seeds":[0,1,2],"matched_learning_curves_required":true,"gpu_hours_estimate":null},
+  "translation": {
+    "fork_from":"each_architectures_own_matched_base_checkpoint",
+    "dataset":"Helsinki-NLP/opus-100",
+    "subsets":["de-en","ar-en","en-fa"],
+    "target_unique_pairs_per_subset":200000,
+    "use_both_directions":true,
+    "loss_mask":"target_and_eos_only",
+    "screen_passes":1,
+    "confirmation_passes_if_justified":3,
+    "supervised_directions":["en-de","de-en","en-ar","ar-en","en-fa","fa-en"],
+    "zero_shot_directions":["de-ar","ar-de","de-fa","fa-de","ar-fa","fa-ar"],
+    "evaluation":"FLORES-200_devtest_and_OPUS_test",
+    "flores_codes":{"en":"eng_Latn","de":"deu_Latn","ar":"arb_Arab","fa":"pes_Arab"},
+    "metrics":["chrf++","sacrebleu_bleu_with_signature","wrong_language_rate","copying_rate","eos_failures","end_to_end_latency"],
+    "zero_shot_direction_dev_tuning":false
+  },
+  "transfer": {
+    "fork_from":"base_checkpoint_before_translation_adaptation",
+    "source_task_training":"English_MNLI_only",
+    "head_usage":"generate_and_score_labels_with_existing_vocabulary_head",
+    "primary_target_tests":["XNLI_de_test","XNLI_ar_test"],
+    "separate_exploratory_test":"FarsTail_fa_official_test",
+    "target_task_label_training_or_dev_tuning":false,
+    "claim":"zero_shot_cross_lingual_task_transfer_not_task_zero_shot",
+    "metrics":["generated_label_accuracy","macro_f1","invalid_label_rate","source_target_gap"]
+  },
+  "reporting": {"quality_scoring":"exact_head_then_exact_candidate_union_then_ANN","training_speed":["full_optimizer_step_tokens_per_second","peak_vram","validation_quality_vs_gpu_hours","time_to_common_quality"],"inference_batch_sizes":[1,8,32],"per_language_results":true,"parameter_counts_required":true,"paired_seed_confirmation":true}
+}

@@ -1,0 +1,22 @@
+{
+  "schema": "mqr-direct-search-external-audit-v1",
+  "status": "passed",
+  "scope": "Source-bound external arithmetic/completeness audit; no checkpoint or timing replay",
+  "auditor_sha256": "abda845282965433b449ad0210d72124c91289e81f73aaa629ab65da17edd19e",
+  "evidence_root": "E:\\transformer\\results\\direct_search_v1\\collection_v2\\evidence",
+  "package_root": "E:\\transformer\\artifacts\\direct_search_v1\\package_v3",
+  "manifest_sha256": "2d3704a3c2332ab1c0f31a0be4cbcc8f2e3235f9db3f7353d8b74d7414672735",
+  "protocol_sha256": "00d6db88223064e0461628313a24b037d16a488c95c27e62cd7eed2e8c57eb8f",
+  "evidence_sha256": "9a11403c873bc4701fe057cf9f328232b635528acfee19a2d023272a9a90a1e2",
+  "completed_arms": [
+    "dense",
+    "direct1_scale",
+    "direct4_scale"
+  ],
+  "verified_rows": {
+    "coverage": 14592,
+    "reference": 1536,
+    "timing": 504
+  },
+  "audit_limit": "The audit independently reconstructs candidate membership, greedy/gold joins, top-50 recalls, language/macro reductions, raw timing medians, the complete config grid and tune-only selection. Full retained mass is bounded and joined to its top-50 subset, but cannot be independently recomputed without all vocabulary probabilities or checkpoints. The frozen worker checks exact candidate-score parity and parameter immutability; this audit binds those source/measurement records without reloading model bodies or rerunning inference."
+}

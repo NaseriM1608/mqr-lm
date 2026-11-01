@@ -1,0 +1,4947 @@
+{
+  "status": "passed",
+  "package_sha256": "1fe722f735d97629c3c374a314f391d7e46a73c3459798d74798f4229ddbf5e0",
+  "package_manifest_sha256": "515d8892b20d8534c211b884f86caaaf167871074ec97ad1d824ddc83f435bf0",
+  "data_identity": {
+    "kind": "prepared",
+    "manifest_sha256": "5af8239573946e8e90097a957496a1eac84ed9e3da15a021bea4eae0b5f5fb08",
+    "tokenizer_sha256": "e282560759f32b1936af7cebda913215021a4a399ff0d56aa3f69d765f058ac1"
+  },
+  "source_sha256": {
+    "__init__.py": "457e8b7e4b4611dd699576b8db7d5198c3cd50f72fd8dd63ab6582e07a5c5dec",
+    "__main__.py": "6d8b7d7846a845059d7a3107143f11131f63c5511d669b44085b15ec5e3d2279",
+    "audit.py": "98ed77547e280ec9f16366c714b0e4fd095d5a70719e9bab8bb007140c270a18",
+    "balance.py": "bfc2d3f577477a50ec7835a7870f939f55715a856144c4a432e8d2f3c422ab10",
+    "benchmark.py": "978cd54d90fd42d48feed5f30b0a3e163559cac60ce4cd81a242f4606fef1533",
+    "benchmarks.py": "3a1c9cddd969c8e11681756e8db880942a3750bc8e0950418aaadfba644f9897",
+    "cli.py": "f7213c88c136350e91eca4d508750ba5f149da5c0747d5674afe659871e933c7",
+    "config.py": "15ad89f673352f9caf5ce13fa7380a379577dcd9356fd7afa36ed6d72f81d6c7",
+    "confirmation.py": "f234a88b2204015687852b4bbfcb8b8f5968bac5be52c6b8ca0b1ed95b5f8df3",
+    "corpus.py": "bac161680b85024161cc21e4d32b88ecc0c34d42c0ef2d7550d7b0c454a68e08",
+    "data.py": "a25d3d7ee95056d47259c788cea85d84a6b0eeb8d0710f93570777dfc92d8ad4",
+    "fetch.py": "867ff486101cec68bae79d701d3942c58cb33446fc5fea8fd727dff87eaee0b4",
+    "head_diagnostics.py": "1386325c200dc6abaccba45409ee6697dfabfcb1dd666cd895362dd1f8f7409f",
+    "heads.py": "9dee3579f5e010c7822789deb1080b34941e0e69c0954747ee6072a3e0575c90",
+    "holdouts.py": "bd01720d93b5f7d2e9db4cf898f4a7370b255bf6153b99f06fb6fa5d5dbb5c2b",
+    "kaggle.py": "3c56ded60b31325075adaebe1c7ee7cc97ace77f57715e81b02ec25e941f69bf",
+    "metrics.py": "e8116767aeeb81d1df7ec1660eb9918a149f8932639d4e80578d1d46c4b8eef2",
+    "model.py": "ab5dfab8a5d181d8aa30a1d645ab5f4ae3266c847d77623a926826c12ce7b2b6",
+    "package.py": "879ead9465f8c06cc2e2dc2de053cf29576b8135464387a42e48cd890b63de15",
+    "pilot.py": "4c8d83a14a25b91707d0325ed95382f46cc8a00ebbdbbdcfbb18d7176ed43590",
+    "prepare.py": "1b2befd0e484cc351868bcd18b5c0153c96f1156f630984c69ee2607791f6c87",
+    "provenance.py": "a4c738d80576bf4483d2423a744d7fba6fdb6207690d7cd01d6519be5cce2939",
+    "retrieval.py": "e462bd7e81c19575a49fd39873c633fb498378c58a469415940d09a203771659",
+    "sampling.py": "ca3c82d6db5e1e4ea8b144888fb80209ec245de40d7e252861589bcee05609b1",
+    "source_quality.py": "8972d08a4d4f3cb9699b5b77caa3aa59d3e1b44a84c6570407fcb2ef29eb5409",
+    "tracking.py": "c2c5e116ff4951196882d4d346c03036756376f4a109a001367008f22766b4ec",
+    "training.py": "b2a231b31b31a5a7f989225fcd5390308c728a6f6188c98502a3d03ce1262102",
+    "tuning.py": "8187e33d412bfc8d541174572ff73ea70c23edc151cae862e9a02774f60aa844"
+  },
+  "approved_source_before_import": true,
+  "frozen_runtime_specification": {
+    "docker_image": "gcr.io/kaggle-private-byod/python@sha256:9a6bcfda6d03b2cd9aa347ee8c1bae62043328ed0f4afe9bda014e4f8bbf9435",
+    "docker_image_pinning_type": "original",
+    "scope": "All15arms share this pinned Kaggle runtime; no cross-runtime bitwise weight-initialization claim"
+  },
+  "cpu_replay_successful_updates_per_seed": 1000,
+  "cpu_replay_banks": {
+    "0": "93824b7991b1f60f22245dd5cb3fb74c0f39965fa036bc1d79de6dad89f06d66",
+    "1": "b6b605ad8d41a0176c1e9dcb5dc8283e34e07abbc643c2c5c99bd1b1dc3a87b4",
+    "2": "29e0030e6cef2aaae8fd57bd7ddf116a06e91ae552962ecf7d3ebd0890b6017b"
+  },
+  "worker_count": 15,
+  "server_final_cpu_checkpoint_audits": 15,
+  "server_preflight_cpu_checkpoint_audits": 5,
+  "checkpoint_bodies_downloaded_or_locally_reloaded": false,
+  "checkpoint_scope": "Only server CPU-reload records and body SHA/bytes were audited locally",
+  "initialization_scope": "Within-seed GPU backbone/head fingerprint pairing and projection-only changes; no cross-runtime CPU/GPU initial-weight equality claim",
+  "memory_scope": "Post-setup worker allocator peaks including validation; one physical GPU per worker, no pooled VRAM",
+  "complete_wall_accounting": true,
+  "queue_wall_seconds": 26515.8956619,
+  "parent_child_wall_seconds_total": 38698.279652995,
+  "dispatch_finished_wall_seconds": 26392.041901099,
+  "worker_dispatch_budget_seconds": 32400,
+  "two_t4_reserved_gpu_hours_upper_bound": 14.731053145499999,
+  "workers": [
+    {
+      "job": {
+        "key": "seed0-dense",
+        "arm": "dense",
+        "seed": 0,
+        "device": "cuda:0"
+      },
+      "plan_sha256": "acfa770ccce80eaf37e462b2642fe840efb24580c89f9f16797bdcbc881b3dfd",
+      "hardware": {
+        "python": "3.13.15",
+        "torch": "2.11.0+cu128",
+        "torch_cuda_build": "12.8",
+        "device": "cuda:0",
+        "parallelism": "one device per process; GPU memory is not pooled",
+        "visible_gpus": 2,
+        "name": "Tesla T4",
+        "vram_bytes": 15636037632,
+        "compute_capability": [
+          7,
+          5
+        ],
+        "precision": "fp16 with GradScaler",
+        "native_bf16_requested": false
+      },
+      "cost": {
+        "successful_tokens": 16384000,
+        "attempted_tokens": 16384000,
+        "amp_overflows": 0,
+        "raw_attempts_including_abandoned": 1000,
+        "all_raw_attempt_seconds": 1124.114182545001,
+        "all_raw_validation_seconds": 141.01701546800018,
+        "all_raw_checkpoint_seconds": 10.08322553200037,
+        "all_raw_setup_seconds": 17.37417055900005,
+        "sessions": {
+          "4603a2ab4c5e44979cc048c01b503ed5": {
+            "recorded_wall_seconds": 59.431923341000015,
+            "closed": true,
+            "peak_allocated_vram_bytes": 3435357696,
+            "peak_reserved_vram_bytes": 3481272320
+          },
+          "ff2f978d9b1843b3aa370a56b5b8d7fb": {
+            "recorded_wall_seconds": 1247.0221118209997,
+            "closed": true,
+            "peak_allocated_vram_bytes": 3437585920,
+            "peak_reserved_vram_bytes": 3489660928
+          }
+        },
+        "recorded_worker_wall_seconds": 1306.4540351619999,
+        "complete_wall_accounting": true,
+        "final_session_id": "ff2f978d9b1843b3aa370a56b5b8d7fb"
+      },
+      "final_macro_nll": 6.498849286697805,
+      "validation_steps": [
+        0,
+        2,
+        50,
+        125,
+        250,
+        500,
+        750,
+        1000
+      ]
+    },
+    {
+      "job": {
+        "key": "seed1-mqr",
+        "arm": "mqr",
+        "seed": 1,
+        "device": "cuda:1"
+      },
+      "plan_sha256": "f4b6544e4ae6c6e2578cca526921b5d9f6f746a92aad0ede88a9bd03013a9c30",
+      "hardware": {
+        "python": "3.13.15",
+        "torch": "2.11.0+cu128",
+        "torch_cuda_build": "12.8",
+        "device": "cuda:1",
+        "parallelism": "one device per process; GPU memory is not pooled",
+        "visible_gpus": 2,
+        "name": "Tesla T4",
+        "vram_bytes": 15636037632,
+        "compute_capability": [
+          7,
+          5
+        ],
+        "precision": "fp16 with GradScaler",
+        "native_bf16_requested": false
+      },
+      "cost": {
+        "successful_tokens": 16384000,
+        "attempted_tokens": 16384000,
+        "amp_overflows": 0,
+        "raw_attempts_including_abandoned": 1000,
+        "all_raw_attempt_seconds": 3130.0172335169987,
+        "all_raw_validation_seconds": 307.20222150500024,
+        "all_raw_checkpoint_seconds": 5.777886130000979,
+        "all_raw_setup_seconds": 7.5422623810000005,
+        "sessions": {
+          "b9a05fe2d86742ac96c65bfdaf67668f": {
+            "recorded_wall_seconds": 3456.317178958,
+            "closed": true,
+            "peak_allocated_vram_bytes": 4902329344,
+            "peak_reserved_vram_bytes": 5500829696
+          }
+        },
+        "recorded_worker_wall_seconds": 3456.317178958,
+        "complete_wall_accounting": true,
+        "final_session_id": "b9a05fe2d86742ac96c65bfdaf67668f"
+      },
+      "final_macro_nll": 7.08514510281384,
+      "validation_steps": [
+        0,
+        50,
+        125,
+        250,
+        500,
+        750,
+        1000
+      ]
+    },
+    {
+      "job": {
+        "key": "seed2-mqr_scale",
+        "arm": "mqr_scale",
+        "seed": 2,
+        "device": "cuda:0"
+      },
+      "plan_sha256": "218c7c8cd77e940cd5c458f12c560466cb299299e27207395b8d4086b5ffc0ad",
+      "hardware": {
+        "python": "3.13.15",
+        "torch": "2.11.0+cu128",
+        "torch_cuda_build": "12.8",
+        "device": "cuda:0",
+        "parallelism": "one device per process; GPU memory is not pooled",
+        "visible_gpus": 2,
+        "name": "Tesla T4",
+        "vram_bytes": 15636037632,
+        "compute_capability": [
+          7,
+          5
+        ],
+        "precision": "fp16 with GradScaler",
+        "native_bf16_requested": false
+      },
+      "cost": {
+        "successful_tokens": 16384000,
+        "attempted_tokens": 16384000,
+        "amp_overflows": 0,
+        "raw_attempts_including_abandoned": 1000,
+        "all_raw_attempt_seconds": 3177.4985025850037,
+        "all_raw_validation_seconds": 306.6011727170003,
+        "all_raw_checkpoint_seconds": 5.789787894000256,
+        "all_raw_setup_seconds": 7.566025715000251,
+        "sessions": {
+          "71ccb21f1b244738b0df3deab4f0ccae": {
+            "recorded_wall_seconds": 3503.046958178,
+            "closed": true,
+            "peak_allocated_vram_bytes": 4902329344,
+            "peak_reserved_vram_bytes": 5500829696
+          }
+        },
+        "recorded_worker_wall_seconds": 3503.046958178,
+        "complete_wall_accounting": true,
+        "final_session_id": "71ccb21f1b244738b0df3deab4f0ccae"
+      },
+      "final_macro_nll": 6.661695178132504,
+      "validation_steps": [
+        0,
+        50,
+        125,
+        250,
+        500,
+        750,
+        1000
+      ]
+    },
+    {
+      "job": {
+        "key": "seed0-mqr",
+        "arm": "mqr",
+        "seed": 0,
+        "device": "cuda:1"
+      },
+      "plan_sha256": "03cbd08e919d35195862f8116b1352f95c0e1a63341845fcfa39b4bd3d2dffa0",
+      "hardware": {
+        "python": "3.13.15",
+        "torch": "2.11.0+cu128",
+        "torch_cuda_build": "12.8",
+        "device": "cuda:1",
+        "parallelism": "one device per process; GPU memory is not pooled",
+        "visible_gpus": 2,
+        "name": "Tesla T4",
+        "vram_bytes": 15636037632,
+        "compute_capability": [
+          7,
+          5
+        ],
+        "precision": "fp16 with GradScaler",
+        "native_bf16_requested": false
+      },
+      "cost": {
+        "successful_tokens": 16384000,
+        "attempted_tokens": 16384000,
+        "amp_overflows": 0,
+        "raw_attempts_including_abandoned": 1000,
+        "all_raw_attempt_seconds": 3130.811466885993,
+        "all_raw_validation_seconds": 351.05626564299916,
+        "all_raw_checkpoint_seconds": 7.583580833999122,
+        "all_raw_setup_seconds": 16.535746446000303,
+        "sessions": {
+          "3e75ca7a57bd4c7d94570c490aa38a2c": {
+            "recorded_wall_seconds": 113.58389576100001,
+            "closed": true,
+            "peak_allocated_vram_bytes": 4902329344,
+            "peak_reserved_vram_bytes": 5500829696
+          },
+          "d046da74ec70418cba4bfe13b8d20d9e": {
+            "recorded_wall_seconds": 3402.805193129,
+            "closed": true,
+            "peak_allocated_vram_bytes": 4904426496,
+            "peak_reserved_vram_bytes": 5393874944
+          }
+        },
+        "recorded_worker_wall_seconds": 3516.38908889,
+        "complete_wall_accounting": true,
+        "final_session_id": "d046da74ec70418cba4bfe13b8d20d9e"
+      },
+      "final_macro_nll": 7.112491311039776,
+      "validation_steps": [
+        0,
+        2,
+        50,
+        125,
+        250,
+        500,
+        750,
+        1000
+      ]
+    },
+    {
+      "job": {
+        "key": "seed1-mqr_scale",
+        "arm": "mqr_scale",
+        "seed": 1,
+        "device": "cuda:0"
+      },
+      "plan_sha256": "46ebd4014a37d859f33e7a3831174df1b1f48cc103a0cd2a899c5455321e046c",
+      "hardware": {
+        "python": "3.13.15",
+        "torch": "2.11.0+cu128",
+        "torch_cuda_build": "12.8",
+        "device": "cuda:0",
+        "parallelism": "one device per process; GPU memory is not pooled",
+        "visible_gpus": 2,
+        "name": "Tesla T4",
+        "vram_bytes": 15636037632,
+        "compute_capability": [
+          7,
+          5
+        ],
+        "precision": "fp16 with GradScaler",
+        "native_bf16_requested": false
+      },
+      "cost": {
+        "successful_tokens": 16384000,
+        "attempted_tokens": 16384000,
+        "amp_overflows": 0,
+        "raw_attempts_including_abandoned": 1000,
+        "all_raw_attempt_seconds": 3180.2741879680016,
+        "all_raw_validation_seconds": 307.59145467599865,
+        "all_raw_checkpoint_seconds": 5.7795153059996665,
+        "all_raw_setup_seconds": 7.62494561099993,
+        "sessions": {
+          "737961215aa44c0e83fc0d4f1bf43a48": {
+            "recorded_wall_seconds": 3506.9541466989995,
+            "closed": true,
+            "peak_allocated_vram_bytes": 4902329344,
+            "peak_reserved_vram_bytes": 5500829696
+          }
+        },
+        "recorded_worker_wall_seconds": 3506.9541466989995,
+        "complete_wall_accounting": true,
+        "final_session_id": "737961215aa44c0e83fc0d4f1bf43a48"
+      },
+      "final_macro_nll": 6.669332436285913,
+      "validation_steps": [
+        0,
+        50,
+        125,
+        250,
+        500,
+        750,
+        1000
+      ]
+    },
+    {
+      "job": {
+        "key": "seed2-direct1_scale",
+        "arm": "direct1_scale",
+        "seed": 2,
+        "device": "cuda:1"
+      },
+      "plan_sha256": "4d0fa9dd3255566d262c424dfc4eaee849e4b4fbc2c14f779cb0c915566946c0",
+      "hardware": {
+        "python": "3.13.15",
+        "torch": "2.11.0+cu128",
+        "torch_cuda_build": "12.8",
+        "device": "cuda:1",
+        "parallelism": "one device per process; GPU memory is not pooled",
+        "visible_gpus": 2,
+        "name": "Tesla T4",
+        "vram_bytes": 15636037632,
+        "compute_capability": [
+          7,
+          5
+        ],
+        "precision": "fp16 with GradScaler",
+        "native_bf16_requested": false
+      },
+      "cost": {
+        "successful_tokens": 16384000,
+        "attempted_tokens": 16384000,
+        "amp_overflows": 0,
+        "raw_attempts_including_abandoned": 1000,
+        "all_raw_attempt_seconds": 839.6979293440108,
+        "all_raw_validation_seconds": 116.87200924699937,
+        "all_raw_checkpoint_seconds": 6.001964129999578,
+        "all_raw_setup_seconds": 7.343989782999415,
+        "sessions": {
+          "ba99cab374c043628c8265dfe1bcb7d5": {
+            "recorded_wall_seconds": 975.3064436209988,
+            "closed": true,
+            "peak_allocated_vram_bytes": 2877911040,
+            "peak_reserved_vram_bytes": 2942304256
+          }
+        },
+        "recorded_worker_wall_seconds": 975.3064436209988,
+        "complete_wall_accounting": true,
+        "final_session_id": "ba99cab374c043628c8265dfe1bcb7d5"
+      },
+      "final_macro_nll": 6.6299592880532146,
+      "validation_steps": [
+        0,
+        50,
+        125,
+        250,
+        500,
+        750,
+        1000
+      ]
+    },
+    {
+      "job": {
+        "key": "seed0-mqr_scale",
+        "arm": "mqr_scale",
+        "seed": 0,
+        "device": "cuda:0"
+      },
+      "plan_sha256": "5328dcb373844519e49742bed206f40a68a708fecaabd3b4bbdbcdbd45d3e9cc",
+      "hardware": {
+        "python": "3.13.15",
+        "torch": "2.11.0+cu128",
+        "torch_cuda_build": "12.8",
+        "device": "cuda:0",
+        "parallelism": "one device per process; GPU memory is not pooled",
+        "visible_gpus": 2,
+        "name": "Tesla T4",
+        "vram_bytes": 15636037632,
+        "compute_capability": [
+          7,
+          5
+        ],
+        "precision": "fp16 with GradScaler",
+        "native_bf16_requested": false
+      },
+      "cost": {
+        "successful_tokens": 16384000,
+        "attempted_tokens": 16384000,
+        "amp_overflows": 0,
+        "raw_attempts_including_abandoned": 1000,
+        "all_raw_attempt_seconds": 3186.214601842004,
+        "all_raw_validation_seconds": 352.8640208759989,
+        "all_raw_checkpoint_seconds": 7.3243649399991,
+        "all_raw_setup_seconds": 10.840889361000336,
+        "sessions": {
+          "2de4dd2fee7440eeb70dd658d84d22b4": {
+            "recorded_wall_seconds": 107.33382505999998,
+            "closed": true,
+            "peak_allocated_vram_bytes": 4902329344,
+            "peak_reserved_vram_bytes": 5500829696
+          },
+          "088586023ed64e3e99816ddfbb29d374": {
+            "recorded_wall_seconds": 3459.978831018001,
+            "closed": true,
+            "peak_allocated_vram_bytes": 4904426496,
+            "peak_reserved_vram_bytes": 5393874944
+          }
+        },
+        "recorded_worker_wall_seconds": 3567.312656078001,
+        "complete_wall_accounting": true,
+        "final_session_id": "088586023ed64e3e99816ddfbb29d374"
+      },
+      "final_macro_nll": 6.646511169150472,
+      "validation_steps": [
+        0,
+        2,
+        50,
+        125,
+        250,
+        500,
+        750,
+        1000
+      ]
+    },
+    {
+      "job": {
+        "key": "seed1-direct1_scale",
+        "arm": "direct1_scale",
+        "seed": 1,
+        "device": "cuda:1"
+      },
+      "plan_sha256": "04aa84547e3c8c8e2ecd8f0edb40e46b9c7e0edfb6e8538daf36304d0fb9d574",
+      "hardware": {
+        "python": "3.13.15",
+        "torch": "2.11.0+cu128",
+        "torch_cuda_build": "12.8",
+        "device": "cuda:1",
+        "parallelism": "one device per process; GPU memory is not pooled",
+        "visible_gpus": 2,
+        "name": "Tesla T4",
+        "vram_bytes": 15636037632,
+        "compute_capability": [
+          7,
+          5
+        ],
+        "precision": "fp16 with GradScaler",
+        "native_bf16_requested": false
+      },
+      "cost": {
+        "successful_tokens": 16384000,
+        "attempted_tokens": 16384000,
+        "amp_overflows": 0,
+        "raw_attempts_including_abandoned": 1000,
+        "all_raw_attempt_seconds": 840.0022759710027,
+        "all_raw_validation_seconds": 115.24963316900175,
+        "all_raw_checkpoint_seconds": 5.751606806001291,
+        "all_raw_setup_seconds": 7.318366125000466,
+        "sessions": {
+          "cb1b9145d5db434ca45238e9766d5a35": {
+            "recorded_wall_seconds": 974.0376790949995,
+            "closed": true,
+            "peak_allocated_vram_bytes": 2877911040,
+            "peak_reserved_vram_bytes": 2942304256
+          }
+        },
+        "recorded_worker_wall_seconds": 974.0376790949995,
+        "complete_wall_accounting": true,
+        "final_session_id": "cb1b9145d5db434ca45238e9766d5a35"
+      },
+      "final_macro_nll": 6.631955961696804,
+      "validation_steps": [
+        0,
+        50,
+        125,
+        250,
+        500,
+        750,
+        1000
+      ]
+    },
+    {
+      "job": {
+        "key": "seed2-direct4_scale",
+        "arm": "direct4_scale",
+        "seed": 2,
+        "device": "cuda:0"
+      },
+      "plan_sha256": "f7e56d239d0aba0d41e55954cf4d06de4098bdf47249b0c47a0cbc9ae4c944a6",
+      "hardware": {
+        "python": "3.13.15",
+        "torch": "2.11.0+cu128",
+        "torch_cuda_build": "12.8",
+        "device": "cuda:0",
+        "parallelism": "one device per process; GPU memory is not pooled",
+        "visible_gpus": 2,
+        "name": "Tesla T4",
+        "vram_bytes": 15636037632,
+        "compute_capability": [
+          7,
+          5
+        ],
+        "precision": "fp16 with GradScaler",
+        "native_bf16_requested": false
+      },
+      "cost": {
+        "successful_tokens": 16384000,
+        "attempted_tokens": 16384000,
+        "amp_overflows": 0,
+        "raw_attempts_including_abandoned": 1000,
+        "all_raw_attempt_seconds": 3247.812241916983,
+        "all_raw_validation_seconds": 304.01963511599934,
+        "all_raw_checkpoint_seconds": 5.913235023001107,
+        "all_raw_setup_seconds": 7.615129251000326,
+        "sessions": {
+          "58c05941d18f427f876d0a42609a8d64": {
+            "recorded_wall_seconds": 3570.487562086999,
+            "closed": true,
+            "peak_allocated_vram_bytes": 4901800448,
+            "peak_reserved_vram_bytes": 5498732544
+          }
+        },
+        "recorded_worker_wall_seconds": 3570.487562086999,
+        "complete_wall_accounting": true,
+        "final_session_id": "58c05941d18f427f876d0a42609a8d64"
+      },
+      "final_macro_nll": 6.6098571377806365,
+      "validation_steps": [
+        0,
+        50,
+        125,
+        250,
+        500,
+        750,
+        1000
+      ]
+    },
+    {
+      "job": {
+        "key": "seed0-direct1_scale",
+        "arm": "direct1_scale",
+        "seed": 0,
+        "device": "cuda:1"
+      },
+      "plan_sha256": "2c051faadb49b85fba242332528002a91f0904037182e6946a7c6c846fb8cfb9",
+      "hardware": {
+        "python": "3.13.15",
+        "torch": "2.11.0+cu128",
+        "torch_cuda_build": "12.8",
+        "device": "cuda:1",
+        "parallelism": "one device per process; GPU memory is not pooled",
+        "visible_gpus": 2,
+        "name": "Tesla T4",
+        "vram_bytes": 15636037632,
+        "compute_capability": [
+          7,
+          5
+        ],
+        "precision": "fp16 with GradScaler",
+        "native_bf16_requested": false
+      },
+      "cost": {
+        "successful_tokens": 16384000,
+        "attempted_tokens": 16384000,
+        "amp_overflows": 0,
+        "raw_attempts_including_abandoned": 1000,
+        "all_raw_attempt_seconds": 840.4390924860435,
+        "all_raw_validation_seconds": 136.61325015099862,
+        "all_raw_checkpoint_seconds": 7.262064743999758,
+        "all_raw_setup_seconds": 10.714033446999792,
+        "sessions": {
+          "a0bd55772b5141caa6cf1e80dc6c0bc3": {
+            "recorded_wall_seconds": 48.77918766800008,
+            "closed": true,
+            "peak_allocated_vram_bytes": 2877911040,
+            "peak_reserved_vram_bytes": 2942304256
+          },
+          "9625680f892247e8860e0a14c02f955d": {
+            "recorded_wall_seconds": 956.4930909060004,
+            "closed": true,
+            "peak_allocated_vram_bytes": 2886299648,
+            "peak_reserved_vram_bytes": 3007315968
+          }
+        },
+        "recorded_worker_wall_seconds": 1005.2722785740004,
+        "complete_wall_accounting": true,
+        "final_session_id": "9625680f892247e8860e0a14c02f955d"
+      },
+      "final_macro_nll": 6.640038202051073,
+      "validation_steps": [
+        0,
+        2,
+        50,
+        125,
+        250,
+        500,
+        750,
+        1000
+      ]
+    },
+    {
+      "job": {
+        "key": "seed1-direct4_scale",
+        "arm": "direct4_scale",
+        "seed": 1,
+        "device": "cuda:0"
+      },
+      "plan_sha256": "7be7f866b316c88b7698ce2bbe4c7c4b18bb5ee4fcea467b46e0c625ff15022f",
+      "hardware": {
+        "python": "3.13.15",
+        "torch": "2.11.0+cu128",
+        "torch_cuda_build": "12.8",
+        "device": "cuda:0",
+        "parallelism": "one device per process; GPU memory is not pooled",
+        "visible_gpus": 2,
+        "name": "Tesla T4",
+        "vram_bytes": 15636037632,
+        "compute_capability": [
+          7,
+          5
+        ],
+        "precision": "fp16 with GradScaler",
+        "native_bf16_requested": false
+      },
+      "cost": {
+        "successful_tokens": 16384000,
+        "attempted_tokens": 16384000,
+        "amp_overflows": 0,
+        "raw_attempts_including_abandoned": 1000,
+        "all_raw_attempt_seconds": 3258.973581036007,
+        "all_raw_validation_seconds": 305.0904191949994,
+        "all_raw_checkpoint_seconds": 5.762859449001553,
+        "all_raw_setup_seconds": 7.356246511999416,
+        "sessions": {
+          "1565510e5f424474bc297632ca7b2cac": {
+            "recorded_wall_seconds": 3582.416494348001,
+            "closed": true,
+            "peak_allocated_vram_bytes": 4901800448,
+            "peak_reserved_vram_bytes": 5498732544
+          }
+        },
+        "recorded_worker_wall_seconds": 3582.416494348001,
+        "complete_wall_accounting": true,
+        "final_session_id": "1565510e5f424474bc297632ca7b2cac"
+      },
+      "final_macro_nll": 6.621412056963891,
+      "validation_steps": [
+        0,
+        50,
+        125,
+        250,
+        500,
+        750,
+        1000
+      ]
+    },
+    {
+      "job": {
+        "key": "seed2-dense",
+        "arm": "dense",
+        "seed": 2,
+        "device": "cuda:1"
+      },
+      "plan_sha256": "6f0d9bbfcf10b2e4b91b1f2663abb968e65a4f64e743f98bc121fe3c14131a1f",
+      "hardware": {
+        "python": "3.13.15",
+        "torch": "2.11.0+cu128",
+        "torch_cuda_build": "12.8",
+        "device": "cuda:1",
+        "parallelism": "one device per process; GPU memory is not pooled",
+        "visible_gpus": 2,
+        "name": "Tesla T4",
+        "vram_bytes": 15636037632,
+        "compute_capability": [
+          7,
+          5
+        ],
+        "precision": "fp16 with GradScaler",
+        "native_bf16_requested": false
+      },
+      "cost": {
+        "successful_tokens": 16384000,
+        "attempted_tokens": 16384000,
+        "amp_overflows": 0,
+        "raw_attempts_including_abandoned": 1000,
+        "all_raw_attempt_seconds": 1054.1137082200457,
+        "all_raw_validation_seconds": 126.00811239599716,
+        "all_raw_checkpoint_seconds": 8.031829636996918,
+        "all_raw_setup_seconds": 8.668794424000225,
+        "sessions": {
+          "39b882570c5d44c2a821f4d29c6d7f81": {
+            "recorded_wall_seconds": 1204.1460069099994,
+            "closed": true,
+            "peak_allocated_vram_bytes": 3435357696,
+            "peak_reserved_vram_bytes": 3481272320
+          }
+        },
+        "recorded_worker_wall_seconds": 1204.1460069099994,
+        "complete_wall_accounting": true,
+        "final_session_id": "39b882570c5d44c2a821f4d29c6d7f81"
+      },
+      "final_macro_nll": 6.51561576128006,
+      "validation_steps": [
+        0,
+        50,
+        125,
+        250,
+        500,
+        750,
+        1000
+      ]
+    },
+    {
+      "job": {
+        "key": "seed0-direct4_scale",
+        "arm": "direct4_scale",
+        "seed": 0,
+        "device": "cuda:0"
+      },
+      "plan_sha256": "0b80a70af0dc00377ada466640cb3ad48a6868951ac03f7bcc246f2b0e5e65ff",
+      "hardware": {
+        "python": "3.13.15",
+        "torch": "2.11.0+cu128",
+        "torch_cuda_build": "12.8",
+        "device": "cuda:0",
+        "parallelism": "one device per process; GPU memory is not pooled",
+        "visible_gpus": 2,
+        "name": "Tesla T4",
+        "vram_bytes": 15636037632,
+        "compute_capability": [
+          7,
+          5
+        ],
+        "precision": "fp16 with GradScaler",
+        "native_bf16_requested": false
+      },
+      "cost": {
+        "successful_tokens": 16384000,
+        "attempted_tokens": 16384000,
+        "amp_overflows": 0,
+        "raw_attempts_including_abandoned": 1000,
+        "all_raw_attempt_seconds": 3270.968461641021,
+        "all_raw_validation_seconds": 350.8254258049984,
+        "all_raw_checkpoint_seconds": 7.164392486997826,
+        "all_raw_setup_seconds": 10.577748948999215,
+        "sessions": {
+          "99d7b9f21069434bbdb8b323fc10c1e1": {
+            "recorded_wall_seconds": 106.047199794,
+            "closed": true,
+            "peak_allocated_vram_bytes": 4901800448,
+            "peak_reserved_vram_bytes": 5498732544
+          },
+          "8edac42c1adc46c1bc19a5401ab78752": {
+            "recorded_wall_seconds": 3542.862638052,
+            "closed": true,
+            "peak_allocated_vram_bytes": 4903897600,
+            "peak_reserved_vram_bytes": 5393874944
+          }
+        },
+        "recorded_worker_wall_seconds": 3648.909837846,
+        "complete_wall_accounting": true,
+        "final_session_id": "8edac42c1adc46c1bc19a5401ab78752"
+      },
+      "final_macro_nll": 6.608858888503164,
+      "validation_steps": [
+        0,
+        2,
+        50,
+        125,
+        250,
+        500,
+        750,
+        1000
+      ]
+    },
+    {
+      "job": {
+        "key": "seed1-dense",
+        "arm": "dense",
+        "seed": 1,
+        "device": "cuda:1"
+      },
+      "plan_sha256": "6f77d1404eef55179d656f3b8b183addfd7aee4dd2651db8cbd082f9ef7aa995",
+      "hardware": {
+        "python": "3.13.15",
+        "torch": "2.11.0+cu128",
+        "torch_cuda_build": "12.8",
+        "device": "cuda:1",
+        "parallelism": "one device per process; GPU memory is not pooled",
+        "visible_gpus": 2,
+        "name": "Tesla T4",
+        "vram_bytes": 15636037632,
+        "compute_capability": [
+          7,
+          5
+        ],
+        "precision": "fp16 with GradScaler",
+        "native_bf16_requested": false
+      },
+      "cost": {
+        "successful_tokens": 16384000,
+        "attempted_tokens": 16384000,
+        "amp_overflows": 0,
+        "raw_attempts_including_abandoned": 1000,
+        "all_raw_attempt_seconds": 1054.5047316830041,
+        "all_raw_validation_seconds": 127.85049546200025,
+        "all_raw_checkpoint_seconds": 7.9522899399980815,
+        "all_raw_setup_seconds": 8.69917906199953,
+        "sessions": {
+          "2989acf6038b487f9f3abb6f336fbed3": {
+            "recorded_wall_seconds": 1206.3197657689998,
+            "closed": true,
+            "peak_allocated_vram_bytes": 3435357696,
+            "peak_reserved_vram_bytes": 3481272320
+          }
+        },
+        "recorded_worker_wall_seconds": 1206.3197657689998,
+        "complete_wall_accounting": true,
+        "final_session_id": "2989acf6038b487f9f3abb6f336fbed3"
+      },
+      "final_macro_nll": 6.514587672892958,
+      "validation_steps": [
+        0,
+        50,
+        125,
+        250,
+        500,
+        750,
+        1000
+      ]
+    },
+    {
+      "job": {
+        "key": "seed2-mqr",
+        "arm": "mqr",
+        "seed": 2,
+        "device": "cuda:0"
+      },
+      "plan_sha256": "cd6deca93840dbf7b7e6f8c75f5b8119c4141a32dcdb3b2d2212344911e3c878",
+      "hardware": {
+        "python": "3.13.15",
+        "torch": "2.11.0+cu128",
+        "torch_cuda_build": "12.8",
+        "device": "cuda:0",
+        "parallelism": "one device per process; GPU memory is not pooled",
+        "visible_gpus": 2,
+        "name": "Tesla T4",
+        "vram_bytes": 15636037632,
+        "compute_capability": [
+          7,
+          5
+        ],
+        "precision": "fp16 with GradScaler",
+        "native_bf16_requested": false
+      },
+      "cost": {
+        "successful_tokens": 16384000,
+        "attempted_tokens": 16384000,
+        "amp_overflows": 0,
+        "raw_attempts_including_abandoned": 1000,
+        "all_raw_attempt_seconds": 3252.33368778801,
+        "all_raw_validation_seconds": 305.67055118799544,
+        "all_raw_checkpoint_seconds": 5.714336452001589,
+        "all_raw_setup_seconds": 7.3428393059984955,
+        "sessions": {
+          "bb6581e2cebc48f2a7bfc0ff288b6f3d": {
+            "recorded_wall_seconds": 3576.1687166509982,
+            "closed": true,
+            "peak_allocated_vram_bytes": 4902329344,
+            "peak_reserved_vram_bytes": 5500829696
+          }
+        },
+        "recorded_worker_wall_seconds": 3576.1687166509982,
+        "complete_wall_accounting": true,
+        "final_session_id": "bb6581e2cebc48f2a7bfc0ff288b6f3d"
+      },
+      "final_macro_nll": 7.116229715757072,
+      "validation_steps": [
+        0,
+        50,
+        125,
+        250,
+        500,
+        750,
+        1000
+      ]
+    }
+  ],
+  "quality_comparisons": [
+    {
+      "arm": "mqr",
+      "paired_seed_macro_nll_gaps_vs_dense": [
+        0.6136420243419707,
+        0.570557429920882,
+        0.6006139544770122
+      ],
+      "mean_gap": 0.5949378029132882,
+      "sample_standard_deviation": 0.022096031126385585
+    },
+    {
+      "arm": "mqr_scale",
+      "paired_seed_macro_nll_gaps_vs_dense": [
+        0.14766188245266676,
+        0.15474476339295506,
+        0.1460794168524444
+      ],
+      "mean_gap": 0.14949535423268875,
+      "sample_standard_deviation": 0.004614463321220327
+    },
+    {
+      "arm": "direct1_scale",
+      "paired_seed_macro_nll_gaps_vs_dense": [
+        0.14118891535326838,
+        0.11736828880384564,
+        0.11434352677315474
+      ],
+      "mean_gap": 0.12430024364342292,
+      "sample_standard_deviation": 0.014704003550998558
+    },
+    {
+      "arm": "direct4_scale",
+      "paired_seed_macro_nll_gaps_vs_dense": [
+        0.11000960180535913,
+        0.10682438407093287,
+        0.09424137650057673
+      ],
+      "mean_gap": 0.10369178745895624,
+      "sample_standard_deviation": 0.008337811671273255
+    }
+  ],
+  "scores": [
+    {
+      "seed": 0,
+      "arm": "dense",
+      "step": 0,
+      "language": "en",
+      "full_nll": 11.215155247598886,
+      "macro_nll": 11.202718280255795,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 0,
+      "arm": "dense",
+      "step": 0,
+      "language": "de",
+      "full_nll": 11.202211309224367,
+      "macro_nll": 11.202718280255795,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 0,
+      "arm": "dense",
+      "step": 0,
+      "language": "ar",
+      "full_nll": 11.198314137756824,
+      "macro_nll": 11.202718280255795,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 0,
+      "arm": "dense",
+      "step": 0,
+      "language": "fa",
+      "full_nll": 11.1951924264431,
+      "macro_nll": 11.202718280255795,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 0,
+      "arm": "dense",
+      "step": 2,
+      "language": "en",
+      "full_nll": 11.098777122795582,
+      "macro_nll": 11.123680064454675,
+      "successful_training_tokens": 32768
+    },
+    {
+      "seed": 0,
+      "arm": "dense",
+      "step": 2,
+      "language": "de",
+      "full_nll": 11.118063922971487,
+      "macro_nll": 11.123680064454675,
+      "successful_training_tokens": 32768
+    },
+    {
+      "seed": 0,
+      "arm": "dense",
+      "step": 2,
+      "language": "ar",
+      "full_nll": 11.151032287627459,
+      "macro_nll": 11.123680064454675,
+      "successful_training_tokens": 32768
+    },
+    {
+      "seed": 0,
+      "arm": "dense",
+      "step": 2,
+      "language": "fa",
+      "full_nll": 11.126846924424171,
+      "macro_nll": 11.123680064454675,
+      "successful_training_tokens": 32768
+    },
+    {
+      "seed": 0,
+      "arm": "dense",
+      "step": 50,
+      "language": "en",
+      "full_nll": 8.328270182013512,
+      "macro_nll": 8.648451557848603,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 0,
+      "arm": "dense",
+      "step": 50,
+      "language": "de",
+      "full_nll": 8.810182929039001,
+      "macro_nll": 8.648451557848603,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 0,
+      "arm": "dense",
+      "step": 50,
+      "language": "ar",
+      "full_nll": 9.015925407409668,
+      "macro_nll": 8.648451557848603,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 0,
+      "arm": "dense",
+      "step": 50,
+      "language": "fa",
+      "full_nll": 8.439427712932229,
+      "macro_nll": 8.648451557848603,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 0,
+      "arm": "dense",
+      "step": 125,
+      "language": "en",
+      "full_nll": 7.439271118491888,
+      "macro_nll": 7.862075495533645,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 0,
+      "arm": "dense",
+      "step": 125,
+      "language": "de",
+      "full_nll": 8.04540041461587,
+      "macro_nll": 7.862075495533645,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 0,
+      "arm": "dense",
+      "step": 125,
+      "language": "ar",
+      "full_nll": 8.369723342359066,
+      "macro_nll": 7.862075495533645,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 0,
+      "arm": "dense",
+      "step": 125,
+      "language": "fa",
+      "full_nll": 7.593907106667757,
+      "macro_nll": 7.862075495533645,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 0,
+      "arm": "dense",
+      "step": 250,
+      "language": "en",
+      "full_nll": 6.948324508965015,
+      "macro_nll": 7.3820033185184,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 0,
+      "arm": "dense",
+      "step": 250,
+      "language": "de",
+      "full_nll": 7.536410633474588,
+      "macro_nll": 7.3820033185184,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 0,
+      "arm": "dense",
+      "step": 250,
+      "language": "ar",
+      "full_nll": 7.891210002824664,
+      "macro_nll": 7.3820033185184,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 0,
+      "arm": "dense",
+      "step": 250,
+      "language": "fa",
+      "full_nll": 7.152068128809333,
+      "macro_nll": 7.3820033185184,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 0,
+      "arm": "dense",
+      "step": 500,
+      "language": "en",
+      "full_nll": 6.578835643827915,
+      "macro_nll": 6.938903457950801,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 0,
+      "arm": "dense",
+      "step": 500,
+      "language": "de",
+      "full_nll": 7.137852240353823,
+      "macro_nll": 6.938903457950801,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 0,
+      "arm": "dense",
+      "step": 500,
+      "language": "ar",
+      "full_nll": 7.343678595498204,
+      "macro_nll": 6.938903457950801,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 0,
+      "arm": "dense",
+      "step": 500,
+      "language": "fa",
+      "full_nll": 6.6952473521232605,
+      "macro_nll": 6.938903457950801,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 0,
+      "arm": "dense",
+      "step": 750,
+      "language": "en",
+      "full_nll": 6.360741011798382,
+      "macro_nll": 6.687276898883283,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 0,
+      "arm": "dense",
+      "step": 750,
+      "language": "de",
+      "full_nll": 6.886601598933339,
+      "macro_nll": 6.687276898883283,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 0,
+      "arm": "dense",
+      "step": 750,
+      "language": "ar",
+      "full_nll": 7.061198830604553,
+      "macro_nll": 6.687276898883283,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 0,
+      "arm": "dense",
+      "step": 750,
+      "language": "fa",
+      "full_nll": 6.440566154196858,
+      "macro_nll": 6.687276898883283,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 0,
+      "arm": "dense",
+      "step": 1000,
+      "language": "en",
+      "full_nll": 6.207520196214318,
+      "macro_nll": 6.498849286697805,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 0,
+      "arm": "dense",
+      "step": 1000,
+      "language": "de",
+      "full_nll": 6.701912144199014,
+      "macro_nll": 6.498849286697805,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 0,
+      "arm": "dense",
+      "step": 1000,
+      "language": "ar",
+      "full_nll": 6.852243173867464,
+      "macro_nll": 6.498849286697805,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 0,
+      "arm": "dense",
+      "step": 1000,
+      "language": "fa",
+      "full_nll": 6.233721632510424,
+      "macro_nll": 6.498849286697805,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 1,
+      "arm": "mqr",
+      "step": 0,
+      "language": "en",
+      "full_nll": 11.090749245136976,
+      "macro_nll": 11.09018451999873,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 1,
+      "arm": "mqr",
+      "step": 0,
+      "language": "de",
+      "full_nll": 11.089615926146507,
+      "macro_nll": 11.09018451999873,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 1,
+      "arm": "mqr",
+      "step": 0,
+      "language": "ar",
+      "full_nll": 11.090029798448086,
+      "macro_nll": 11.09018451999873,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 1,
+      "arm": "mqr",
+      "step": 0,
+      "language": "fa",
+      "full_nll": 11.090343110263348,
+      "macro_nll": 11.09018451999873,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 1,
+      "arm": "mqr",
+      "step": 50,
+      "language": "en",
+      "full_nll": 9.01493588835001,
+      "macro_nll": 9.227596110664308,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 1,
+      "arm": "mqr",
+      "step": 50,
+      "language": "de",
+      "full_nll": 9.345654647797346,
+      "macro_nll": 9.227596110664308,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 1,
+      "arm": "mqr",
+      "step": 50,
+      "language": "ar",
+      "full_nll": 9.509991105645895,
+      "macro_nll": 9.227596110664308,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 1,
+      "arm": "mqr",
+      "step": 50,
+      "language": "fa",
+      "full_nll": 9.039802800863981,
+      "macro_nll": 9.227596110664308,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 1,
+      "arm": "mqr",
+      "step": 125,
+      "language": "en",
+      "full_nll": 8.416293814778328,
+      "macro_nll": 8.852595628704876,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 1,
+      "arm": "mqr",
+      "step": 125,
+      "language": "de",
+      "full_nll": 9.072102386504412,
+      "macro_nll": 8.852595628704876,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 1,
+      "arm": "mqr",
+      "step": 125,
+      "language": "ar",
+      "full_nll": 9.30740675702691,
+      "macro_nll": 8.852595628704876,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 1,
+      "arm": "mqr",
+      "step": 125,
+      "language": "fa",
+      "full_nll": 8.614579556509852,
+      "macro_nll": 8.852595628704876,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 1,
+      "arm": "mqr",
+      "step": 250,
+      "language": "en",
+      "full_nll": 7.598659535869956,
+      "macro_nll": 8.161490425933152,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 1,
+      "arm": "mqr",
+      "step": 250,
+      "language": "de",
+      "full_nll": 8.34762711264193,
+      "macro_nll": 8.161490425933152,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 1,
+      "arm": "mqr",
+      "step": 250,
+      "language": "ar",
+      "full_nll": 8.68635692819953,
+      "macro_nll": 8.161490425933152,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 1,
+      "arm": "mqr",
+      "step": 250,
+      "language": "fa",
+      "full_nll": 8.013318127021194,
+      "macro_nll": 8.161490425933152,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 1,
+      "arm": "mqr",
+      "step": 500,
+      "language": "en",
+      "full_nll": 7.173730107024312,
+      "macro_nll": 7.611361864488572,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 1,
+      "arm": "mqr",
+      "step": 500,
+      "language": "de",
+      "full_nll": 7.858648041263223,
+      "macro_nll": 7.611361864488572,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 1,
+      "arm": "mqr",
+      "step": 500,
+      "language": "ar",
+      "full_nll": 8.102518193423748,
+      "macro_nll": 7.611361864488572,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 1,
+      "arm": "mqr",
+      "step": 500,
+      "language": "fa",
+      "full_nll": 7.310551116243005,
+      "macro_nll": 7.611361864488572,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 1,
+      "arm": "mqr",
+      "step": 750,
+      "language": "en",
+      "full_nll": 6.882883979007602,
+      "macro_nll": 7.246261280961335,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 1,
+      "arm": "mqr",
+      "step": 750,
+      "language": "de",
+      "full_nll": 7.433003285899758,
+      "macro_nll": 7.246261280961335,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 1,
+      "arm": "mqr",
+      "step": 750,
+      "language": "ar",
+      "full_nll": 7.651826316490769,
+      "macro_nll": 7.246261280961335,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 1,
+      "arm": "mqr",
+      "step": 750,
+      "language": "fa",
+      "full_nll": 7.017331542447209,
+      "macro_nll": 7.246261280961335,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 1,
+      "arm": "mqr",
+      "step": 1000,
+      "language": "en",
+      "full_nll": 6.734108153730631,
+      "macro_nll": 7.08514510281384,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 1,
+      "arm": "mqr",
+      "step": 1000,
+      "language": "de",
+      "full_nll": 7.270212929695845,
+      "macro_nll": 7.08514510281384,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 1,
+      "arm": "mqr",
+      "step": 1000,
+      "language": "ar",
+      "full_nll": 7.468473820015788,
+      "macro_nll": 7.08514510281384,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 1,
+      "arm": "mqr",
+      "step": 1000,
+      "language": "fa",
+      "full_nll": 6.867785507813096,
+      "macro_nll": 7.08514510281384,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 2,
+      "arm": "mqr_scale",
+      "step": 0,
+      "language": "en",
+      "full_nll": 11.253060936927795,
+      "macro_nll": 11.223233877681196,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 2,
+      "arm": "mqr_scale",
+      "step": 0,
+      "language": "de",
+      "full_nll": 11.225990857928991,
+      "macro_nll": 11.223233877681196,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 2,
+      "arm": "mqr_scale",
+      "step": 0,
+      "language": "ar",
+      "full_nll": 11.187721781432629,
+      "macro_nll": 11.223233877681196,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 2,
+      "arm": "mqr_scale",
+      "step": 0,
+      "language": "fa",
+      "full_nll": 11.226161934435368,
+      "macro_nll": 11.223233877681196,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 2,
+      "arm": "mqr_scale",
+      "step": 50,
+      "language": "en",
+      "full_nll": 8.257713489234447,
+      "macro_nll": 8.626855502370745,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 2,
+      "arm": "mqr_scale",
+      "step": 50,
+      "language": "de",
+      "full_nll": 8.844259466975927,
+      "macro_nll": 8.626855502370745,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 2,
+      "arm": "mqr_scale",
+      "step": 50,
+      "language": "ar",
+      "full_nll": 9.065488833934069,
+      "macro_nll": 8.626855502370745,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 2,
+      "arm": "mqr_scale",
+      "step": 50,
+      "language": "fa",
+      "full_nll": 8.339960219338536,
+      "macro_nll": 8.626855502370745,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 2,
+      "arm": "mqr_scale",
+      "step": 125,
+      "language": "en",
+      "full_nll": 7.462303601205349,
+      "macro_nll": 7.923777778167278,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 2,
+      "arm": "mqr_scale",
+      "step": 125,
+      "language": "de",
+      "full_nll": 8.141983564943075,
+      "macro_nll": 7.923777778167278,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 2,
+      "arm": "mqr_scale",
+      "step": 125,
+      "language": "ar",
+      "full_nll": 8.419271361082792,
+      "macro_nll": 7.923777778167278,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 2,
+      "arm": "mqr_scale",
+      "step": 125,
+      "language": "fa",
+      "full_nll": 7.671552585437894,
+      "macro_nll": 7.923777778167278,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 2,
+      "arm": "mqr_scale",
+      "step": 250,
+      "language": "en",
+      "full_nll": 7.0124509166926146,
+      "macro_nll": 7.438839717302471,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 2,
+      "arm": "mqr_scale",
+      "step": 250,
+      "language": "de",
+      "full_nll": 7.640887970104814,
+      "macro_nll": 7.438839717302471,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 2,
+      "arm": "mqr_scale",
+      "step": 250,
+      "language": "ar",
+      "full_nll": 7.926929175853729,
+      "macro_nll": 7.438839717302471,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 2,
+      "arm": "mqr_scale",
+      "step": 250,
+      "language": "fa",
+      "full_nll": 7.175090806558728,
+      "macro_nll": 7.438839717302471,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 2,
+      "arm": "mqr_scale",
+      "step": 500,
+      "language": "en",
+      "full_nll": 6.684824388474226,
+      "macro_nll": 7.055683103855699,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 2,
+      "arm": "mqr_scale",
+      "step": 500,
+      "language": "de",
+      "full_nll": 7.2413607109338045,
+      "macro_nll": 7.055683103855699,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 2,
+      "arm": "mqr_scale",
+      "step": 500,
+      "language": "ar",
+      "full_nll": 7.499105431139469,
+      "macro_nll": 7.055683103855699,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 2,
+      "arm": "mqr_scale",
+      "step": 500,
+      "language": "fa",
+      "full_nll": 6.7974418848752975,
+      "macro_nll": 7.055683103855699,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 2,
+      "arm": "mqr_scale",
+      "step": 750,
+      "language": "en",
+      "full_nll": 6.48993462882936,
+      "macro_nll": 6.826292170677334,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 2,
+      "arm": "mqr_scale",
+      "step": 750,
+      "language": "de",
+      "full_nll": 7.015296671539545,
+      "macro_nll": 6.826292170677334,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 2,
+      "arm": "mqr_scale",
+      "step": 750,
+      "language": "ar",
+      "full_nll": 7.22709796577692,
+      "macro_nll": 6.826292170677334,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 2,
+      "arm": "mqr_scale",
+      "step": 750,
+      "language": "fa",
+      "full_nll": 6.572839416563511,
+      "macro_nll": 6.826292170677334,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 2,
+      "arm": "mqr_scale",
+      "step": 1000,
+      "language": "en",
+      "full_nll": 6.352822417393327,
+      "macro_nll": 6.661695178132504,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 2,
+      "arm": "mqr_scale",
+      "step": 1000,
+      "language": "de",
+      "full_nll": 6.8491400722414255,
+      "macro_nll": 6.661695178132504,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 2,
+      "arm": "mqr_scale",
+      "step": 1000,
+      "language": "ar",
+      "full_nll": 7.039452876895666,
+      "macro_nll": 6.661695178132504,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 2,
+      "arm": "mqr_scale",
+      "step": 1000,
+      "language": "fa",
+      "full_nll": 6.4053653459995985,
+      "macro_nll": 6.661695178132504,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 0,
+      "arm": "mqr",
+      "step": 0,
+      "language": "en",
+      "full_nll": 11.090038858354092,
+      "macro_nll": 11.090315978042781,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 0,
+      "arm": "mqr",
+      "step": 0,
+      "language": "de",
+      "full_nll": 11.090120606124401,
+      "macro_nll": 11.090315978042781,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 0,
+      "arm": "mqr",
+      "step": 0,
+      "language": "ar",
+      "full_nll": 11.090544007718563,
+      "macro_nll": 11.090315978042781,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 0,
+      "arm": "mqr",
+      "step": 0,
+      "language": "fa",
+      "full_nll": 11.09056043997407,
+      "macro_nll": 11.090315978042781,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 0,
+      "arm": "mqr",
+      "step": 2,
+      "language": "en",
+      "full_nll": 11.087685227394104,
+      "macro_nll": 11.08877484779805,
+      "successful_training_tokens": 32768
+    },
+    {
+      "seed": 0,
+      "arm": "mqr",
+      "step": 2,
+      "language": "de",
+      "full_nll": 11.088856123387814,
+      "macro_nll": 11.08877484779805,
+      "successful_training_tokens": 32768
+    },
+    {
+      "seed": 0,
+      "arm": "mqr",
+      "step": 2,
+      "language": "ar",
+      "full_nll": 11.089423891156912,
+      "macro_nll": 11.08877484779805,
+      "successful_training_tokens": 32768
+    },
+    {
+      "seed": 0,
+      "arm": "mqr",
+      "step": 2,
+      "language": "fa",
+      "full_nll": 11.089134149253368,
+      "macro_nll": 11.08877484779805,
+      "successful_training_tokens": 32768
+    },
+    {
+      "seed": 0,
+      "arm": "mqr",
+      "step": 50,
+      "language": "en",
+      "full_nll": 8.996971759945154,
+      "macro_nll": 9.323028531391174,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 0,
+      "arm": "mqr",
+      "step": 50,
+      "language": "de",
+      "full_nll": 9.481892183423042,
+      "macro_nll": 9.323028531391174,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 0,
+      "arm": "mqr",
+      "step": 50,
+      "language": "ar",
+      "full_nll": 9.724516965448856,
+      "macro_nll": 9.323028531391174,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 0,
+      "arm": "mqr",
+      "step": 50,
+      "language": "fa",
+      "full_nll": 9.088733216747642,
+      "macro_nll": 9.323028531391174,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 0,
+      "arm": "mqr",
+      "step": 125,
+      "language": "en",
+      "full_nll": 8.41294545121491,
+      "macro_nll": 8.79273172095418,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 0,
+      "arm": "mqr",
+      "step": 125,
+      "language": "de",
+      "full_nll": 8.987577863037586,
+      "macro_nll": 8.79273172095418,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 0,
+      "arm": "mqr",
+      "step": 125,
+      "language": "ar",
+      "full_nll": 9.24770912900567,
+      "macro_nll": 8.79273172095418,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 0,
+      "arm": "mqr",
+      "step": 125,
+      "language": "fa",
+      "full_nll": 8.522694440558553,
+      "macro_nll": 8.79273172095418,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 0,
+      "arm": "mqr",
+      "step": 250,
+      "language": "en",
+      "full_nll": 7.79379559867084,
+      "macro_nll": 8.228918939828873,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 0,
+      "arm": "mqr",
+      "step": 250,
+      "language": "de",
+      "full_nll": 8.436485070735216,
+      "macro_nll": 8.228918939828873,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 0,
+      "arm": "mqr",
+      "step": 250,
+      "language": "ar",
+      "full_nll": 8.696455733850598,
+      "macro_nll": 8.228918939828873,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 0,
+      "arm": "mqr",
+      "step": 250,
+      "language": "fa",
+      "full_nll": 7.988939356058836,
+      "macro_nll": 8.228918939828873,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 0,
+      "arm": "mqr",
+      "step": 500,
+      "language": "en",
+      "full_nll": 7.219668136909604,
+      "macro_nll": 7.630933730863035,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 0,
+      "arm": "mqr",
+      "step": 500,
+      "language": "de",
+      "full_nll": 7.799893064424396,
+      "macro_nll": 7.630933730863035,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 0,
+      "arm": "mqr",
+      "step": 500,
+      "language": "ar",
+      "full_nll": 8.133873503655195,
+      "macro_nll": 7.630933730863035,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 0,
+      "arm": "mqr",
+      "step": 500,
+      "language": "fa",
+      "full_nll": 7.370300218462944,
+      "macro_nll": 7.630933730863035,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 0,
+      "arm": "mqr",
+      "step": 750,
+      "language": "en",
+      "full_nll": 6.944465704262257,
+      "macro_nll": 7.289584066718817,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 0,
+      "arm": "mqr",
+      "step": 750,
+      "language": "de",
+      "full_nll": 7.455880332738161,
+      "macro_nll": 7.289584066718817,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 0,
+      "arm": "mqr",
+      "step": 750,
+      "language": "ar",
+      "full_nll": 7.673212615773082,
+      "macro_nll": 7.289584066718817,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 0,
+      "arm": "mqr",
+      "step": 750,
+      "language": "fa",
+      "full_nll": 7.0847776141017675,
+      "macro_nll": 7.289584066718817,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 0,
+      "arm": "mqr",
+      "step": 1000,
+      "language": "en",
+      "full_nll": 6.770379854366183,
+      "macro_nll": 7.112491311039776,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 0,
+      "arm": "mqr",
+      "step": 1000,
+      "language": "de",
+      "full_nll": 7.2739764004945755,
+      "macro_nll": 7.112491311039776,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 0,
+      "arm": "mqr",
+      "step": 1000,
+      "language": "ar",
+      "full_nll": 7.5016248263418674,
+      "macro_nll": 7.112491311039776,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 0,
+      "arm": "mqr",
+      "step": 1000,
+      "language": "fa",
+      "full_nll": 6.903984162956476,
+      "macro_nll": 7.112491311039776,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 1,
+      "arm": "mqr_scale",
+      "step": 0,
+      "language": "en",
+      "full_nll": 11.211925759911537,
+      "macro_nll": 11.190191142261028,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 1,
+      "arm": "mqr_scale",
+      "step": 0,
+      "language": "de",
+      "full_nll": 11.16357796266675,
+      "macro_nll": 11.190191142261028,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 1,
+      "arm": "mqr_scale",
+      "step": 0,
+      "language": "ar",
+      "full_nll": 11.18318560346961,
+      "macro_nll": 11.190191142261028,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 1,
+      "arm": "mqr_scale",
+      "step": 0,
+      "language": "fa",
+      "full_nll": 11.202075242996216,
+      "macro_nll": 11.190191142261028,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 1,
+      "arm": "mqr_scale",
+      "step": 50,
+      "language": "en",
+      "full_nll": 8.176447562873363,
+      "macro_nll": 8.586787364445627,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 1,
+      "arm": "mqr_scale",
+      "step": 50,
+      "language": "de",
+      "full_nll": 8.778940852731466,
+      "macro_nll": 8.586787364445627,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 1,
+      "arm": "mqr_scale",
+      "step": 50,
+      "language": "ar",
+      "full_nll": 9.061635315418243,
+      "macro_nll": 8.586787364445627,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 1,
+      "arm": "mqr_scale",
+      "step": 50,
+      "language": "fa",
+      "full_nll": 8.330125726759434,
+      "macro_nll": 8.586787364445627,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 1,
+      "arm": "mqr_scale",
+      "step": 125,
+      "language": "en",
+      "full_nll": 7.447874238714576,
+      "macro_nll": 7.908683297690004,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 1,
+      "arm": "mqr_scale",
+      "step": 125,
+      "language": "de",
+      "full_nll": 8.093138290569186,
+      "macro_nll": 7.908683297690004,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 1,
+      "arm": "mqr_scale",
+      "step": 125,
+      "language": "ar",
+      "full_nll": 8.447159001603723,
+      "macro_nll": 7.908683297690004,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 1,
+      "arm": "mqr_scale",
+      "step": 125,
+      "language": "fa",
+      "full_nll": 7.646561659872532,
+      "macro_nll": 7.908683297690004,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 1,
+      "arm": "mqr_scale",
+      "step": 250,
+      "language": "en",
+      "full_nll": 6.991696026176214,
+      "macro_nll": 7.438047825824469,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 1,
+      "arm": "mqr_scale",
+      "step": 250,
+      "language": "de",
+      "full_nll": 7.617575123906136,
+      "macro_nll": 7.438047825824469,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 1,
+      "arm": "mqr_scale",
+      "step": 250,
+      "language": "ar",
+      "full_nll": 7.960953393951058,
+      "macro_nll": 7.438047825824469,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 1,
+      "arm": "mqr_scale",
+      "step": 250,
+      "language": "fa",
+      "full_nll": 7.181966759264469,
+      "macro_nll": 7.438047825824469,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 1,
+      "arm": "mqr_scale",
+      "step": 500,
+      "language": "en",
+      "full_nll": 6.678917460143566,
+      "macro_nll": 7.037490589544177,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 1,
+      "arm": "mqr_scale",
+      "step": 500,
+      "language": "de",
+      "full_nll": 7.232058284804225,
+      "macro_nll": 7.037490589544177,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 1,
+      "arm": "mqr_scale",
+      "step": 500,
+      "language": "ar",
+      "full_nll": 7.454670716077089,
+      "macro_nll": 7.037490589544177,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 1,
+      "arm": "mqr_scale",
+      "step": 500,
+      "language": "fa",
+      "full_nll": 6.784315897151828,
+      "macro_nll": 7.037490589544177,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 1,
+      "arm": "mqr_scale",
+      "step": 750,
+      "language": "en",
+      "full_nll": 6.488192541524768,
+      "macro_nll": 6.8275097738951445,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 1,
+      "arm": "mqr_scale",
+      "step": 750,
+      "language": "de",
+      "full_nll": 7.033606106415391,
+      "macro_nll": 6.8275097738951445,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 1,
+      "arm": "mqr_scale",
+      "step": 750,
+      "language": "ar",
+      "full_nll": 7.217581609264016,
+      "macro_nll": 6.8275097738951445,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 1,
+      "arm": "mqr_scale",
+      "step": 750,
+      "language": "fa",
+      "full_nll": 6.570658838376403,
+      "macro_nll": 6.8275097738951445,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 1,
+      "arm": "mqr_scale",
+      "step": 1000,
+      "language": "en",
+      "full_nll": 6.358783390372992,
+      "macro_nll": 6.669332436285913,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 1,
+      "arm": "mqr_scale",
+      "step": 1000,
+      "language": "de",
+      "full_nll": 6.854687623679638,
+      "macro_nll": 6.669332436285913,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 1,
+      "arm": "mqr_scale",
+      "step": 1000,
+      "language": "ar",
+      "full_nll": 7.0492975898087025,
+      "macro_nll": 6.669332436285913,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 1,
+      "arm": "mqr_scale",
+      "step": 1000,
+      "language": "fa",
+      "full_nll": 6.41456114128232,
+      "macro_nll": 6.669332436285913,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 2,
+      "arm": "direct1_scale",
+      "step": 0,
+      "language": "en",
+      "full_nll": 11.176309250295162,
+      "macro_nll": 11.194148478098214,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 2,
+      "arm": "direct1_scale",
+      "step": 0,
+      "language": "de",
+      "full_nll": 11.202554903924465,
+      "macro_nll": 11.194148478098214,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 2,
+      "arm": "direct1_scale",
+      "step": 0,
+      "language": "ar",
+      "full_nll": 11.191516067832708,
+      "macro_nll": 11.194148478098214,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 2,
+      "arm": "direct1_scale",
+      "step": 0,
+      "language": "fa",
+      "full_nll": 11.206213690340519,
+      "macro_nll": 11.194148478098214,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 2,
+      "arm": "direct1_scale",
+      "step": 50,
+      "language": "en",
+      "full_nll": 8.30236142501235,
+      "macro_nll": 8.657796822022647,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 2,
+      "arm": "direct1_scale",
+      "step": 50,
+      "language": "de",
+      "full_nll": 8.87305285781622,
+      "macro_nll": 8.657796822022647,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 2,
+      "arm": "direct1_scale",
+      "step": 50,
+      "language": "ar",
+      "full_nll": 9.0792699418962,
+      "macro_nll": 8.657796822022647,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 2,
+      "arm": "direct1_scale",
+      "step": 50,
+      "language": "fa",
+      "full_nll": 8.376503063365817,
+      "macro_nll": 8.657796822022647,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 2,
+      "arm": "direct1_scale",
+      "step": 125,
+      "language": "en",
+      "full_nll": 7.486961901187897,
+      "macro_nll": 7.924009444192052,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 2,
+      "arm": "direct1_scale",
+      "step": 125,
+      "language": "de",
+      "full_nll": 8.157926933839917,
+      "macro_nll": 7.924009444192052,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 2,
+      "arm": "direct1_scale",
+      "step": 125,
+      "language": "ar",
+      "full_nll": 8.396524995565414,
+      "macro_nll": 7.924009444192052,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 2,
+      "arm": "direct1_scale",
+      "step": 125,
+      "language": "fa",
+      "full_nll": 7.654623946174979,
+      "macro_nll": 7.924009444192052,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 2,
+      "arm": "direct1_scale",
+      "step": 250,
+      "language": "en",
+      "full_nll": 7.004884269088507,
+      "macro_nll": 7.442841688171029,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 2,
+      "arm": "direct1_scale",
+      "step": 250,
+      "language": "de",
+      "full_nll": 7.629914121702313,
+      "macro_nll": 7.442841688171029,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 2,
+      "arm": "direct1_scale",
+      "step": 250,
+      "language": "ar",
+      "full_nll": 7.923122068867087,
+      "macro_nll": 7.442841688171029,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 2,
+      "arm": "direct1_scale",
+      "step": 250,
+      "language": "fa",
+      "full_nll": 7.213446293026209,
+      "macro_nll": 7.442841688171029,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 2,
+      "arm": "direct1_scale",
+      "step": 500,
+      "language": "en",
+      "full_nll": 6.661485308781266,
+      "macro_nll": 7.025475224945694,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 2,
+      "arm": "direct1_scale",
+      "step": 500,
+      "language": "de",
+      "full_nll": 7.213518176227808,
+      "macro_nll": 7.025475224945694,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 2,
+      "arm": "direct1_scale",
+      "step": 500,
+      "language": "ar",
+      "full_nll": 7.441603526473045,
+      "macro_nll": 7.025475224945694,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 2,
+      "arm": "direct1_scale",
+      "step": 500,
+      "language": "fa",
+      "full_nll": 6.785293888300657,
+      "macro_nll": 7.025475224945694,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 2,
+      "arm": "direct1_scale",
+      "step": 750,
+      "language": "en",
+      "full_nll": 6.461524739861488,
+      "macro_nll": 6.795655294787139,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 2,
+      "arm": "direct1_scale",
+      "step": 750,
+      "language": "de",
+      "full_nll": 6.986595381051302,
+      "macro_nll": 6.795655294787139,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 2,
+      "arm": "direct1_scale",
+      "step": 750,
+      "language": "ar",
+      "full_nll": 7.183025013655424,
+      "macro_nll": 6.795655294787139,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 2,
+      "arm": "direct1_scale",
+      "step": 750,
+      "language": "fa",
+      "full_nll": 6.55147604458034,
+      "macro_nll": 6.795655294787139,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 2,
+      "arm": "direct1_scale",
+      "step": 1000,
+      "language": "en",
+      "full_nll": 6.329705748707056,
+      "macro_nll": 6.6299592880532146,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 2,
+      "arm": "direct1_scale",
+      "step": 1000,
+      "language": "de",
+      "full_nll": 6.815008474513888,
+      "macro_nll": 6.6299592880532146,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 2,
+      "arm": "direct1_scale",
+      "step": 1000,
+      "language": "ar",
+      "full_nll": 6.994535960257053,
+      "macro_nll": 6.6299592880532146,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 2,
+      "arm": "direct1_scale",
+      "step": 1000,
+      "language": "fa",
+      "full_nll": 6.38058696873486,
+      "macro_nll": 6.6299592880532146,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 0,
+      "arm": "mqr_scale",
+      "step": 0,
+      "language": "en",
+      "full_nll": 11.178830791264772,
+      "macro_nll": 11.198477351106703,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 0,
+      "arm": "mqr_scale",
+      "step": 0,
+      "language": "de",
+      "full_nll": 11.19425742700696,
+      "macro_nll": 11.198477351106703,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 0,
+      "arm": "mqr_scale",
+      "step": 0,
+      "language": "ar",
+      "full_nll": 11.210468888282776,
+      "macro_nll": 11.198477351106703,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 0,
+      "arm": "mqr_scale",
+      "step": 0,
+      "language": "fa",
+      "full_nll": 11.210352297872305,
+      "macro_nll": 11.198477351106703,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 0,
+      "arm": "mqr_scale",
+      "step": 2,
+      "language": "en",
+      "full_nll": 11.088893212378025,
+      "macro_nll": 11.129708412103355,
+      "successful_training_tokens": 32768
+    },
+    {
+      "seed": 0,
+      "arm": "mqr_scale",
+      "step": 2,
+      "language": "de",
+      "full_nll": 11.132964335381985,
+      "macro_nll": 11.129708412103355,
+      "successful_training_tokens": 32768
+    },
+    {
+      "seed": 0,
+      "arm": "mqr_scale",
+      "step": 2,
+      "language": "ar",
+      "full_nll": 11.155287764966488,
+      "macro_nll": 11.129708412103355,
+      "successful_training_tokens": 32768
+    },
+    {
+      "seed": 0,
+      "arm": "mqr_scale",
+      "step": 2,
+      "language": "fa",
+      "full_nll": 11.141688335686922,
+      "macro_nll": 11.129708412103355,
+      "successful_training_tokens": 32768
+    },
+    {
+      "seed": 0,
+      "arm": "mqr_scale",
+      "step": 50,
+      "language": "en",
+      "full_nll": 8.205010157078505,
+      "macro_nll": 8.61983162816614,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 0,
+      "arm": "mqr_scale",
+      "step": 50,
+      "language": "de",
+      "full_nll": 8.802686478942633,
+      "macro_nll": 8.61983162816614,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 0,
+      "arm": "mqr_scale",
+      "step": 50,
+      "language": "ar",
+      "full_nll": 9.100298773497343,
+      "macro_nll": 8.61983162816614,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 0,
+      "arm": "mqr_scale",
+      "step": 50,
+      "language": "fa",
+      "full_nll": 8.371331103146076,
+      "macro_nll": 8.61983162816614,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 0,
+      "arm": "mqr_scale",
+      "step": 125,
+      "language": "en",
+      "full_nll": 7.479164047166705,
+      "macro_nll": 7.925167354289442,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 0,
+      "arm": "mqr_scale",
+      "step": 125,
+      "language": "de",
+      "full_nll": 8.11614865809679,
+      "macro_nll": 7.925167354289442,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 0,
+      "arm": "mqr_scale",
+      "step": 125,
+      "language": "ar",
+      "full_nll": 8.442737836390734,
+      "macro_nll": 7.925167354289442,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 0,
+      "arm": "mqr_scale",
+      "step": 125,
+      "language": "fa",
+      "full_nll": 7.66261887550354,
+      "macro_nll": 7.925167354289442,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 0,
+      "arm": "mqr_scale",
+      "step": 250,
+      "language": "en",
+      "full_nll": 7.015880715101957,
+      "macro_nll": 7.467463916633278,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 0,
+      "arm": "mqr_scale",
+      "step": 250,
+      "language": "de",
+      "full_nll": 7.645602539181709,
+      "macro_nll": 7.467463916633278,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 0,
+      "arm": "mqr_scale",
+      "step": 250,
+      "language": "ar",
+      "full_nll": 8.000530928373337,
+      "macro_nll": 7.467463916633278,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 0,
+      "arm": "mqr_scale",
+      "step": 250,
+      "language": "fa",
+      "full_nll": 7.207841483876109,
+      "macro_nll": 7.467463916633278,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 0,
+      "arm": "mqr_scale",
+      "step": 500,
+      "language": "en",
+      "full_nll": 6.664190165698528,
+      "macro_nll": 7.038417839910835,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 0,
+      "arm": "mqr_scale",
+      "step": 500,
+      "language": "de",
+      "full_nll": 7.238413980230689,
+      "macro_nll": 7.038417839910835,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 0,
+      "arm": "mqr_scale",
+      "step": 500,
+      "language": "ar",
+      "full_nll": 7.460591923445463,
+      "macro_nll": 7.038417839910835,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 0,
+      "arm": "mqr_scale",
+      "step": 500,
+      "language": "fa",
+      "full_nll": 6.79047529026866,
+      "macro_nll": 7.038417839910835,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 0,
+      "arm": "mqr_scale",
+      "step": 750,
+      "language": "en",
+      "full_nll": 6.483094671741128,
+      "macro_nll": 6.8255561529658735,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 0,
+      "arm": "mqr_scale",
+      "step": 750,
+      "language": "de",
+      "full_nll": 7.011466797441244,
+      "macro_nll": 6.8255561529658735,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 0,
+      "arm": "mqr_scale",
+      "step": 750,
+      "language": "ar",
+      "full_nll": 7.212542355060577,
+      "macro_nll": 6.8255561529658735,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 0,
+      "arm": "mqr_scale",
+      "step": 750,
+      "language": "fa",
+      "full_nll": 6.595120787620544,
+      "macro_nll": 6.8255561529658735,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 0,
+      "arm": "mqr_scale",
+      "step": 1000,
+      "language": "en",
+      "full_nll": 6.337304646149278,
+      "macro_nll": 6.646511169150472,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 0,
+      "arm": "mqr_scale",
+      "step": 1000,
+      "language": "de",
+      "full_nll": 6.842222701758146,
+      "macro_nll": 6.646511169150472,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 0,
+      "arm": "mqr_scale",
+      "step": 1000,
+      "language": "ar",
+      "full_nll": 7.021470591425896,
+      "macro_nll": 6.646511169150472,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 0,
+      "arm": "mqr_scale",
+      "step": 1000,
+      "language": "fa",
+      "full_nll": 6.385046737268567,
+      "macro_nll": 6.646511169150472,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 1,
+      "arm": "direct1_scale",
+      "step": 0,
+      "language": "en",
+      "full_nll": 11.230569332838058,
+      "macro_nll": 11.193803531117737,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 1,
+      "arm": "direct1_scale",
+      "step": 0,
+      "language": "de",
+      "full_nll": 11.17121547460556,
+      "macro_nll": 11.193803531117737,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 1,
+      "arm": "direct1_scale",
+      "step": 0,
+      "language": "ar",
+      "full_nll": 11.18103675544262,
+      "macro_nll": 11.193803531117737,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 1,
+      "arm": "direct1_scale",
+      "step": 0,
+      "language": "fa",
+      "full_nll": 11.192392561584711,
+      "macro_nll": 11.193803531117737,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 1,
+      "arm": "direct1_scale",
+      "step": 50,
+      "language": "en",
+      "full_nll": 8.3245606161654,
+      "macro_nll": 8.676564376335591,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 1,
+      "arm": "direct1_scale",
+      "step": 50,
+      "language": "de",
+      "full_nll": 8.86632402613759,
+      "macro_nll": 8.676564376335591,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 1,
+      "arm": "direct1_scale",
+      "step": 50,
+      "language": "ar",
+      "full_nll": 9.112509779632092,
+      "macro_nll": 8.676564376335591,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 1,
+      "arm": "direct1_scale",
+      "step": 50,
+      "language": "fa",
+      "full_nll": 8.402863083407283,
+      "macro_nll": 8.676564376335591,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 1,
+      "arm": "direct1_scale",
+      "step": 125,
+      "language": "en",
+      "full_nll": 7.477801915258169,
+      "macro_nll": 7.919874015729874,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 1,
+      "arm": "direct1_scale",
+      "step": 125,
+      "language": "de",
+      "full_nll": 8.129745850339532,
+      "macro_nll": 7.919874015729874,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 1,
+      "arm": "direct1_scale",
+      "step": 125,
+      "language": "ar",
+      "full_nll": 8.430143162608147,
+      "macro_nll": 7.919874015729874,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 1,
+      "arm": "direct1_scale",
+      "step": 125,
+      "language": "fa",
+      "full_nll": 7.64180513471365,
+      "macro_nll": 7.919874015729874,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 1,
+      "arm": "direct1_scale",
+      "step": 250,
+      "language": "en",
+      "full_nll": 7.015969425439835,
+      "macro_nll": 7.456054053269327,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 1,
+      "arm": "direct1_scale",
+      "step": 250,
+      "language": "de",
+      "full_nll": 7.629230545833707,
+      "macro_nll": 7.456054053269327,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 1,
+      "arm": "direct1_scale",
+      "step": 250,
+      "language": "ar",
+      "full_nll": 7.957747902721167,
+      "macro_nll": 7.456054053269327,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 1,
+      "arm": "direct1_scale",
+      "step": 250,
+      "language": "fa",
+      "full_nll": 7.221268339082599,
+      "macro_nll": 7.456054053269327,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 1,
+      "arm": "direct1_scale",
+      "step": 500,
+      "language": "en",
+      "full_nll": 6.657140078023076,
+      "macro_nll": 7.028902523685247,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 1,
+      "arm": "direct1_scale",
+      "step": 500,
+      "language": "de",
+      "full_nll": 7.228096282109618,
+      "macro_nll": 7.028902523685247,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 1,
+      "arm": "direct1_scale",
+      "step": 500,
+      "language": "ar",
+      "full_nll": 7.4466834627091885,
+      "macro_nll": 7.028902523685247,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 1,
+      "arm": "direct1_scale",
+      "step": 500,
+      "language": "fa",
+      "full_nll": 6.783690271899104,
+      "macro_nll": 7.028902523685247,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 1,
+      "arm": "direct1_scale",
+      "step": 750,
+      "language": "en",
+      "full_nll": 6.459708653390408,
+      "macro_nll": 6.802349511999637,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 1,
+      "arm": "direct1_scale",
+      "step": 750,
+      "language": "de",
+      "full_nll": 7.010879565030336,
+      "macro_nll": 6.802349511999637,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 1,
+      "arm": "direct1_scale",
+      "step": 750,
+      "language": "ar",
+      "full_nll": 7.191404078155756,
+      "macro_nll": 6.802349511999637,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 1,
+      "arm": "direct1_scale",
+      "step": 750,
+      "language": "fa",
+      "full_nll": 6.547405751422048,
+      "macro_nll": 6.802349511999637,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 1,
+      "arm": "direct1_scale",
+      "step": 1000,
+      "language": "en",
+      "full_nll": 6.310472950339317,
+      "macro_nll": 6.631955961696804,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 1,
+      "arm": "direct1_scale",
+      "step": 1000,
+      "language": "de",
+      "full_nll": 6.828855417668819,
+      "macro_nll": 6.631955961696804,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 1,
+      "arm": "direct1_scale",
+      "step": 1000,
+      "language": "ar",
+      "full_nll": 7.010306591168046,
+      "macro_nll": 6.631955961696804,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 1,
+      "arm": "direct1_scale",
+      "step": 1000,
+      "language": "fa",
+      "full_nll": 6.3781888876110315,
+      "macro_nll": 6.631955961696804,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 2,
+      "arm": "direct4_scale",
+      "step": 0,
+      "language": "en",
+      "full_nll": 11.187557268887758,
+      "macro_nll": 11.188248434104025,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 2,
+      "arm": "direct4_scale",
+      "step": 0,
+      "language": "de",
+      "full_nll": 11.19241552054882,
+      "macro_nll": 11.188248434104025,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 2,
+      "arm": "direct4_scale",
+      "step": 0,
+      "language": "ar",
+      "full_nll": 11.189142610877752,
+      "macro_nll": 11.188248434104025,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 2,
+      "arm": "direct4_scale",
+      "step": 0,
+      "language": "fa",
+      "full_nll": 11.18387833610177,
+      "macro_nll": 11.188248434104025,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 2,
+      "arm": "direct4_scale",
+      "step": 50,
+      "language": "en",
+      "full_nll": 8.293881889432669,
+      "macro_nll": 8.650903074070811,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 2,
+      "arm": "direct4_scale",
+      "step": 50,
+      "language": "de",
+      "full_nll": 8.822833139449358,
+      "macro_nll": 8.650903074070811,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 2,
+      "arm": "direct4_scale",
+      "step": 50,
+      "language": "ar",
+      "full_nll": 9.085563763976097,
+      "macro_nll": 8.650903074070811,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 2,
+      "arm": "direct4_scale",
+      "step": 50,
+      "language": "fa",
+      "full_nll": 8.401333503425121,
+      "macro_nll": 8.650903074070811,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 2,
+      "arm": "direct4_scale",
+      "step": 125,
+      "language": "en",
+      "full_nll": 7.461610930040479,
+      "macro_nll": 7.918543498031795,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 2,
+      "arm": "direct4_scale",
+      "step": 125,
+      "language": "de",
+      "full_nll": 8.135439587756991,
+      "macro_nll": 7.918543498031795,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 2,
+      "arm": "direct4_scale",
+      "step": 125,
+      "language": "ar",
+      "full_nll": 8.410520024597645,
+      "macro_nll": 7.918543498031795,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 2,
+      "arm": "direct4_scale",
+      "step": 125,
+      "language": "fa",
+      "full_nll": 7.666603449732065,
+      "macro_nll": 7.918543498031795,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 2,
+      "arm": "direct4_scale",
+      "step": 250,
+      "language": "en",
+      "full_nll": 6.979180790483952,
+      "macro_nll": 7.45712936995551,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 2,
+      "arm": "direct4_scale",
+      "step": 250,
+      "language": "de",
+      "full_nll": 7.622256521135569,
+      "macro_nll": 7.45712936995551,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 2,
+      "arm": "direct4_scale",
+      "step": 250,
+      "language": "ar",
+      "full_nll": 8.015370771288872,
+      "macro_nll": 7.45712936995551,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 2,
+      "arm": "direct4_scale",
+      "step": 250,
+      "language": "fa",
+      "full_nll": 7.211709396913648,
+      "macro_nll": 7.45712936995551,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 2,
+      "arm": "direct4_scale",
+      "step": 500,
+      "language": "en",
+      "full_nll": 6.643167920410633,
+      "macro_nll": 7.017382340040058,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 2,
+      "arm": "direct4_scale",
+      "step": 500,
+      "language": "de",
+      "full_nll": 7.203668111935258,
+      "macro_nll": 7.017382340040058,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 2,
+      "arm": "direct4_scale",
+      "step": 500,
+      "language": "ar",
+      "full_nll": 7.456499584019184,
+      "macro_nll": 7.017382340040058,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 2,
+      "arm": "direct4_scale",
+      "step": 500,
+      "language": "fa",
+      "full_nll": 6.7661937437951565,
+      "macro_nll": 7.017382340040058,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 2,
+      "arm": "direct4_scale",
+      "step": 750,
+      "language": "en",
+      "full_nll": 6.449596155434847,
+      "macro_nll": 6.783063942100853,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 2,
+      "arm": "direct4_scale",
+      "step": 750,
+      "language": "de",
+      "full_nll": 6.983292290940881,
+      "macro_nll": 6.783063942100853,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 2,
+      "arm": "direct4_scale",
+      "step": 750,
+      "language": "ar",
+      "full_nll": 7.176266418769956,
+      "macro_nll": 6.783063942100853,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 2,
+      "arm": "direct4_scale",
+      "step": 750,
+      "language": "fa",
+      "full_nll": 6.523100903257728,
+      "macro_nll": 6.783063942100853,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 2,
+      "arm": "direct4_scale",
+      "step": 1000,
+      "language": "en",
+      "full_nll": 6.298452375456691,
+      "macro_nll": 6.6098571377806365,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 2,
+      "arm": "direct4_scale",
+      "step": 1000,
+      "language": "de",
+      "full_nll": 6.807483235374093,
+      "macro_nll": 6.6098571377806365,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 2,
+      "arm": "direct4_scale",
+      "step": 1000,
+      "language": "ar",
+      "full_nll": 6.989905437454581,
+      "macro_nll": 6.6098571377806365,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 2,
+      "arm": "direct4_scale",
+      "step": 1000,
+      "language": "fa",
+      "full_nll": 6.343587502837181,
+      "macro_nll": 6.6098571377806365,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 0,
+      "arm": "direct1_scale",
+      "step": 0,
+      "language": "en",
+      "full_nll": 11.191671218723059,
+      "macro_nll": 11.199324720539153,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 0,
+      "arm": "direct1_scale",
+      "step": 0,
+      "language": "de",
+      "full_nll": 11.197757080197334,
+      "macro_nll": 11.199324720539153,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 0,
+      "arm": "direct1_scale",
+      "step": 0,
+      "language": "ar",
+      "full_nll": 11.205559309571981,
+      "macro_nll": 11.199324720539153,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 0,
+      "arm": "direct1_scale",
+      "step": 0,
+      "language": "fa",
+      "full_nll": 11.202311273664236,
+      "macro_nll": 11.199324720539153,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 0,
+      "arm": "direct1_scale",
+      "step": 2,
+      "language": "en",
+      "full_nll": 11.09607133641839,
+      "macro_nll": 11.12666939292103,
+      "successful_training_tokens": 32768
+    },
+    {
+      "seed": 0,
+      "arm": "direct1_scale",
+      "step": 2,
+      "language": "de",
+      "full_nll": 11.127816379070282,
+      "macro_nll": 11.12666939292103,
+      "successful_training_tokens": 32768
+    },
+    {
+      "seed": 0,
+      "arm": "direct1_scale",
+      "step": 2,
+      "language": "ar",
+      "full_nll": 11.153115794062614,
+      "macro_nll": 11.12666939292103,
+      "successful_training_tokens": 32768
+    },
+    {
+      "seed": 0,
+      "arm": "direct1_scale",
+      "step": 2,
+      "language": "fa",
+      "full_nll": 11.129674062132835,
+      "macro_nll": 11.12666939292103,
+      "successful_training_tokens": 32768
+    },
+    {
+      "seed": 0,
+      "arm": "direct1_scale",
+      "step": 50,
+      "language": "en",
+      "full_nll": 8.338529221713543,
+      "macro_nll": 8.684303460177034,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 0,
+      "arm": "direct1_scale",
+      "step": 50,
+      "language": "de",
+      "full_nll": 8.8742705732584,
+      "macro_nll": 8.684303460177034,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 0,
+      "arm": "direct1_scale",
+      "step": 50,
+      "language": "ar",
+      "full_nll": 9.113057550042868,
+      "macro_nll": 8.684303460177034,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 0,
+      "arm": "direct1_scale",
+      "step": 50,
+      "language": "fa",
+      "full_nll": 8.411356495693326,
+      "macro_nll": 8.684303460177034,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 0,
+      "arm": "direct1_scale",
+      "step": 125,
+      "language": "en",
+      "full_nll": 7.506583144888282,
+      "macro_nll": 7.922968813218176,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 0,
+      "arm": "direct1_scale",
+      "step": 125,
+      "language": "de",
+      "full_nll": 8.12867478840053,
+      "macro_nll": 7.922968813218176,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 0,
+      "arm": "direct1_scale",
+      "step": 125,
+      "language": "ar",
+      "full_nll": 8.416482666507363,
+      "macro_nll": 7.922968813218176,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 0,
+      "arm": "direct1_scale",
+      "step": 125,
+      "language": "fa",
+      "full_nll": 7.6401346530765295,
+      "macro_nll": 7.922968813218176,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 0,
+      "arm": "direct1_scale",
+      "step": 250,
+      "language": "en",
+      "full_nll": 7.014855183660984,
+      "macro_nll": 7.458202443085611,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 0,
+      "arm": "direct1_scale",
+      "step": 250,
+      "language": "de",
+      "full_nll": 7.630234615877271,
+      "macro_nll": 7.458202443085611,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 0,
+      "arm": "direct1_scale",
+      "step": 250,
+      "language": "ar",
+      "full_nll": 7.975097198039293,
+      "macro_nll": 7.458202443085611,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 0,
+      "arm": "direct1_scale",
+      "step": 250,
+      "language": "fa",
+      "full_nll": 7.212622774764895,
+      "macro_nll": 7.458202443085611,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 0,
+      "arm": "direct1_scale",
+      "step": 500,
+      "language": "en",
+      "full_nll": 6.67834547907114,
+      "macro_nll": 7.05177279561758,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 0,
+      "arm": "direct1_scale",
+      "step": 500,
+      "language": "de",
+      "full_nll": 7.247746085748076,
+      "macro_nll": 7.05177279561758,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 0,
+      "arm": "direct1_scale",
+      "step": 500,
+      "language": "ar",
+      "full_nll": 7.471759146079421,
+      "macro_nll": 7.05177279561758,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 0,
+      "arm": "direct1_scale",
+      "step": 500,
+      "language": "fa",
+      "full_nll": 6.809240471571684,
+      "macro_nll": 7.05177279561758,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 0,
+      "arm": "direct1_scale",
+      "step": 750,
+      "language": "en",
+      "full_nll": 6.465488739311695,
+      "macro_nll": 6.815420945640653,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 0,
+      "arm": "direct1_scale",
+      "step": 750,
+      "language": "de",
+      "full_nll": 7.013385280966759,
+      "macro_nll": 6.815420945640653,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 0,
+      "arm": "direct1_scale",
+      "step": 750,
+      "language": "ar",
+      "full_nll": 7.2009199149906635,
+      "macro_nll": 6.815420945640653,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 0,
+      "arm": "direct1_scale",
+      "step": 750,
+      "language": "fa",
+      "full_nll": 6.581889847293496,
+      "macro_nll": 6.815420945640653,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 0,
+      "arm": "direct1_scale",
+      "step": 1000,
+      "language": "en",
+      "full_nll": 6.324977748095989,
+      "macro_nll": 6.640038202051073,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 0,
+      "arm": "direct1_scale",
+      "step": 1000,
+      "language": "de",
+      "full_nll": 6.840517399832606,
+      "macro_nll": 6.640038202051073,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 0,
+      "arm": "direct1_scale",
+      "step": 1000,
+      "language": "ar",
+      "full_nll": 7.0090314745903015,
+      "macro_nll": 6.640038202051073,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 0,
+      "arm": "direct1_scale",
+      "step": 1000,
+      "language": "fa",
+      "full_nll": 6.385626185685396,
+      "macro_nll": 6.640038202051073,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 1,
+      "arm": "direct4_scale",
+      "step": 0,
+      "language": "en",
+      "full_nll": 11.210420060902834,
+      "macro_nll": 11.19263217318803,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 1,
+      "arm": "direct4_scale",
+      "step": 0,
+      "language": "de",
+      "full_nll": 11.198904380202293,
+      "macro_nll": 11.19263217318803,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 1,
+      "arm": "direct4_scale",
+      "step": 0,
+      "language": "ar",
+      "full_nll": 11.168358407914639,
+      "macro_nll": 11.19263217318803,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 1,
+      "arm": "direct4_scale",
+      "step": 0,
+      "language": "fa",
+      "full_nll": 11.192845843732357,
+      "macro_nll": 11.19263217318803,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 1,
+      "arm": "direct4_scale",
+      "step": 50,
+      "language": "en",
+      "full_nll": 8.256609676405787,
+      "macro_nll": 8.623076597694308,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 1,
+      "arm": "direct4_scale",
+      "step": 50,
+      "language": "de",
+      "full_nll": 8.82194896414876,
+      "macro_nll": 8.623076597694308,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 1,
+      "arm": "direct4_scale",
+      "step": 50,
+      "language": "ar",
+      "full_nll": 9.034698337316513,
+      "macro_nll": 8.623076597694308,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 1,
+      "arm": "direct4_scale",
+      "step": 50,
+      "language": "fa",
+      "full_nll": 8.37904941290617,
+      "macro_nll": 8.623076597694308,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 1,
+      "arm": "direct4_scale",
+      "step": 125,
+      "language": "en",
+      "full_nll": 7.450443660840392,
+      "macro_nll": 7.898391155991703,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 1,
+      "arm": "direct4_scale",
+      "step": 125,
+      "language": "de",
+      "full_nll": 8.078893166035414,
+      "macro_nll": 7.898391155991703,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 1,
+      "arm": "direct4_scale",
+      "step": 125,
+      "language": "ar",
+      "full_nll": 8.429080167785287,
+      "macro_nll": 7.898391155991703,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 1,
+      "arm": "direct4_scale",
+      "step": 125,
+      "language": "fa",
+      "full_nll": 7.63514762930572,
+      "macro_nll": 7.898391155991703,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 1,
+      "arm": "direct4_scale",
+      "step": 250,
+      "language": "en",
+      "full_nll": 6.988386377692223,
+      "macro_nll": 7.443115178961307,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 1,
+      "arm": "direct4_scale",
+      "step": 250,
+      "language": "de",
+      "full_nll": 7.6191241554915905,
+      "macro_nll": 7.443115178961307,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 1,
+      "arm": "direct4_scale",
+      "step": 250,
+      "language": "ar",
+      "full_nll": 7.974215094000101,
+      "macro_nll": 7.443115178961307,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 1,
+      "arm": "direct4_scale",
+      "step": 250,
+      "language": "fa",
+      "full_nll": 7.190735088661313,
+      "macro_nll": 7.443115178961307,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 1,
+      "arm": "direct4_scale",
+      "step": 500,
+      "language": "en",
+      "full_nll": 6.640809375792742,
+      "macro_nll": 7.007608928717673,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 1,
+      "arm": "direct4_scale",
+      "step": 500,
+      "language": "de",
+      "full_nll": 7.207158230245113,
+      "macro_nll": 7.007608928717673,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 1,
+      "arm": "direct4_scale",
+      "step": 500,
+      "language": "ar",
+      "full_nll": 7.434831028804183,
+      "macro_nll": 7.007608928717673,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 1,
+      "arm": "direct4_scale",
+      "step": 500,
+      "language": "fa",
+      "full_nll": 6.747637080028653,
+      "macro_nll": 7.007608928717673,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 1,
+      "arm": "direct4_scale",
+      "step": 750,
+      "language": "en",
+      "full_nll": 6.4458848759531975,
+      "macro_nll": 6.787234717048705,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 1,
+      "arm": "direct4_scale",
+      "step": 750,
+      "language": "de",
+      "full_nll": 7.010501112788916,
+      "macro_nll": 6.787234717048705,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 1,
+      "arm": "direct4_scale",
+      "step": 750,
+      "language": "ar",
+      "full_nll": 7.17749940417707,
+      "macro_nll": 6.787234717048705,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 1,
+      "arm": "direct4_scale",
+      "step": 750,
+      "language": "fa",
+      "full_nll": 6.515053475275636,
+      "macro_nll": 6.787234717048705,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 1,
+      "arm": "direct4_scale",
+      "step": 1000,
+      "language": "en",
+      "full_nll": 6.304211249575019,
+      "macro_nll": 6.621412056963891,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 1,
+      "arm": "direct4_scale",
+      "step": 1000,
+      "language": "de",
+      "full_nll": 6.8254960756748915,
+      "macro_nll": 6.621412056963891,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 1,
+      "arm": "direct4_scale",
+      "step": 1000,
+      "language": "ar",
+      "full_nll": 7.0108734127134085,
+      "macro_nll": 6.621412056963891,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 1,
+      "arm": "direct4_scale",
+      "step": 1000,
+      "language": "fa",
+      "full_nll": 6.345067489892244,
+      "macro_nll": 6.621412056963891,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 2,
+      "arm": "dense",
+      "step": 0,
+      "language": "en",
+      "full_nll": 11.130070969462395,
+      "macro_nll": 11.153157451190054,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 2,
+      "arm": "dense",
+      "step": 0,
+      "language": "de",
+      "full_nll": 11.14420198276639,
+      "macro_nll": 11.153157451190054,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 2,
+      "arm": "dense",
+      "step": 0,
+      "language": "ar",
+      "full_nll": 11.17738539725542,
+      "macro_nll": 11.153157451190054,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 2,
+      "arm": "dense",
+      "step": 0,
+      "language": "fa",
+      "full_nll": 11.160971455276012,
+      "macro_nll": 11.153157451190054,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 2,
+      "arm": "dense",
+      "step": 50,
+      "language": "en",
+      "full_nll": 8.339887514710426,
+      "macro_nll": 8.653636144008487,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 2,
+      "arm": "dense",
+      "step": 50,
+      "language": "de",
+      "full_nll": 8.808101147413254,
+      "macro_nll": 8.653636144008487,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 2,
+      "arm": "dense",
+      "step": 50,
+      "language": "ar",
+      "full_nll": 9.018523305654526,
+      "macro_nll": 8.653636144008487,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 2,
+      "arm": "dense",
+      "step": 50,
+      "language": "fa",
+      "full_nll": 8.448032608255744,
+      "macro_nll": 8.653636144008487,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 2,
+      "arm": "dense",
+      "step": 125,
+      "language": "en",
+      "full_nll": 7.446505691856146,
+      "macro_nll": 7.882806469220668,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 2,
+      "arm": "dense",
+      "step": 125,
+      "language": "de",
+      "full_nll": 8.085659040138125,
+      "macro_nll": 7.882806469220668,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 2,
+      "arm": "dense",
+      "step": 125,
+      "language": "ar",
+      "full_nll": 8.374780740588903,
+      "macro_nll": 7.882806469220668,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 2,
+      "arm": "dense",
+      "step": 125,
+      "language": "fa",
+      "full_nll": 7.624280404299498,
+      "macro_nll": 7.882806469220668,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 2,
+      "arm": "dense",
+      "step": 250,
+      "language": "en",
+      "full_nll": 6.969235552474856,
+      "macro_nll": 7.391019220463932,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 2,
+      "arm": "dense",
+      "step": 250,
+      "language": "de",
+      "full_nll": 7.5595188699662685,
+      "macro_nll": 7.391019220463932,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 2,
+      "arm": "dense",
+      "step": 250,
+      "language": "ar",
+      "full_nll": 7.884685339406133,
+      "macro_nll": 7.391019220463932,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 2,
+      "arm": "dense",
+      "step": 250,
+      "language": "fa",
+      "full_nll": 7.150637120008469,
+      "macro_nll": 7.391019220463932,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 2,
+      "arm": "dense",
+      "step": 500,
+      "language": "en",
+      "full_nll": 6.584781082347035,
+      "macro_nll": 6.957455920055509,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 2,
+      "arm": "dense",
+      "step": 500,
+      "language": "de",
+      "full_nll": 7.143974304199219,
+      "macro_nll": 6.957455920055509,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 2,
+      "arm": "dense",
+      "step": 500,
+      "language": "ar",
+      "full_nll": 7.365963084623218,
+      "macro_nll": 6.957455920055509,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 2,
+      "arm": "dense",
+      "step": 500,
+      "language": "fa",
+      "full_nll": 6.735105209052563,
+      "macro_nll": 6.957455920055509,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 2,
+      "arm": "dense",
+      "step": 750,
+      "language": "en",
+      "full_nll": 6.375528980046511,
+      "macro_nll": 6.703221666626632,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 2,
+      "arm": "dense",
+      "step": 750,
+      "language": "de",
+      "full_nll": 6.895829539746046,
+      "macro_nll": 6.703221666626632,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 2,
+      "arm": "dense",
+      "step": 750,
+      "language": "ar",
+      "full_nll": 7.083987599238753,
+      "macro_nll": 6.703221666626632,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 2,
+      "arm": "dense",
+      "step": 750,
+      "language": "fa",
+      "full_nll": 6.457540547475219,
+      "macro_nll": 6.703221666626632,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 2,
+      "arm": "dense",
+      "step": 1000,
+      "language": "en",
+      "full_nll": 6.223393885418773,
+      "macro_nll": 6.51561576128006,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 2,
+      "arm": "dense",
+      "step": 1000,
+      "language": "de",
+      "full_nll": 6.703681139275432,
+      "macro_nll": 6.51561576128006,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 2,
+      "arm": "dense",
+      "step": 1000,
+      "language": "ar",
+      "full_nll": 6.876115221530199,
+      "macro_nll": 6.51561576128006,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 2,
+      "arm": "dense",
+      "step": 1000,
+      "language": "fa",
+      "full_nll": 6.259272798895836,
+      "macro_nll": 6.51561576128006,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 0,
+      "arm": "direct4_scale",
+      "step": 0,
+      "language": "en",
+      "full_nll": 11.20228784903884,
+      "macro_nll": 11.188270880840719,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 0,
+      "arm": "direct4_scale",
+      "step": 0,
+      "language": "de",
+      "full_nll": 11.183763664215803,
+      "macro_nll": 11.188270880840719,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 0,
+      "arm": "direct4_scale",
+      "step": 0,
+      "language": "ar",
+      "full_nll": 11.189420342445374,
+      "macro_nll": 11.188270880840719,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 0,
+      "arm": "direct4_scale",
+      "step": 0,
+      "language": "fa",
+      "full_nll": 11.177611667662859,
+      "macro_nll": 11.188270880840719,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 0,
+      "arm": "direct4_scale",
+      "step": 2,
+      "language": "en",
+      "full_nll": 11.107112430036068,
+      "macro_nll": 11.12158744968474,
+      "successful_training_tokens": 32768
+    },
+    {
+      "seed": 0,
+      "arm": "direct4_scale",
+      "step": 2,
+      "language": "de",
+      "full_nll": 11.124297741800547,
+      "macro_nll": 11.12158744968474,
+      "successful_training_tokens": 32768
+    },
+    {
+      "seed": 0,
+      "arm": "direct4_scale",
+      "step": 2,
+      "language": "ar",
+      "full_nll": 11.14106959477067,
+      "macro_nll": 11.12158744968474,
+      "successful_training_tokens": 32768
+    },
+    {
+      "seed": 0,
+      "arm": "direct4_scale",
+      "step": 2,
+      "language": "fa",
+      "full_nll": 11.113870032131672,
+      "macro_nll": 11.12158744968474,
+      "successful_training_tokens": 32768
+    },
+    {
+      "seed": 0,
+      "arm": "direct4_scale",
+      "step": 50,
+      "language": "en",
+      "full_nll": 8.301019873470068,
+      "macro_nll": 8.682962153106928,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 0,
+      "arm": "direct4_scale",
+      "step": 50,
+      "language": "de",
+      "full_nll": 8.87419443950057,
+      "macro_nll": 8.682962153106928,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 0,
+      "arm": "direct4_scale",
+      "step": 50,
+      "language": "ar",
+      "full_nll": 9.134709753096104,
+      "macro_nll": 8.682962153106928,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 0,
+      "arm": "direct4_scale",
+      "step": 50,
+      "language": "fa",
+      "full_nll": 8.42192454636097,
+      "macro_nll": 8.682962153106928,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 0,
+      "arm": "direct4_scale",
+      "step": 125,
+      "language": "en",
+      "full_nll": 7.459900204092264,
+      "macro_nll": 7.903356825001538,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 0,
+      "arm": "direct4_scale",
+      "step": 125,
+      "language": "de",
+      "full_nll": 8.10417770780623,
+      "macro_nll": 7.903356825001538,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 0,
+      "arm": "direct4_scale",
+      "step": 125,
+      "language": "ar",
+      "full_nll": 8.420849919319153,
+      "macro_nll": 7.903356825001538,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 0,
+      "arm": "direct4_scale",
+      "step": 125,
+      "language": "fa",
+      "full_nll": 7.628499468788505,
+      "macro_nll": 7.903356825001538,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 0,
+      "arm": "direct4_scale",
+      "step": 250,
+      "language": "en",
+      "full_nll": 6.983686588704586,
+      "macro_nll": 7.442924269475043,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 0,
+      "arm": "direct4_scale",
+      "step": 250,
+      "language": "de",
+      "full_nll": 7.602572929114103,
+      "macro_nll": 7.442924269475043,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 0,
+      "arm": "direct4_scale",
+      "step": 250,
+      "language": "ar",
+      "full_nll": 7.981272699311376,
+      "macro_nll": 7.442924269475043,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 0,
+      "arm": "direct4_scale",
+      "step": 250,
+      "language": "fa",
+      "full_nll": 7.204164860770106,
+      "macro_nll": 7.442924269475043,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 0,
+      "arm": "direct4_scale",
+      "step": 500,
+      "language": "en",
+      "full_nll": 6.650063078850508,
+      "macro_nll": 7.016747950576246,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 0,
+      "arm": "direct4_scale",
+      "step": 500,
+      "language": "de",
+      "full_nll": 7.213479725643992,
+      "macro_nll": 7.016747950576246,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 0,
+      "arm": "direct4_scale",
+      "step": 500,
+      "language": "ar",
+      "full_nll": 7.44352275505662,
+      "macro_nll": 7.016747950576246,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 0,
+      "arm": "direct4_scale",
+      "step": 500,
+      "language": "fa",
+      "full_nll": 6.759926242753863,
+      "macro_nll": 7.016747950576246,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 0,
+      "arm": "direct4_scale",
+      "step": 750,
+      "language": "en",
+      "full_nll": 6.459251502528787,
+      "macro_nll": 6.787828031927347,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 0,
+      "arm": "direct4_scale",
+      "step": 750,
+      "language": "de",
+      "full_nll": 6.967431576922536,
+      "macro_nll": 6.787828031927347,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 0,
+      "arm": "direct4_scale",
+      "step": 750,
+      "language": "ar",
+      "full_nll": 7.196564177051187,
+      "macro_nll": 6.787828031927347,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 0,
+      "arm": "direct4_scale",
+      "step": 750,
+      "language": "fa",
+      "full_nll": 6.52806487120688,
+      "macro_nll": 6.787828031927347,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 0,
+      "arm": "direct4_scale",
+      "step": 1000,
+      "language": "en",
+      "full_nll": 6.308736907318234,
+      "macro_nll": 6.608858888503164,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 0,
+      "arm": "direct4_scale",
+      "step": 1000,
+      "language": "de",
+      "full_nll": 6.797547305002809,
+      "macro_nll": 6.608858888503164,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 0,
+      "arm": "direct4_scale",
+      "step": 1000,
+      "language": "ar",
+      "full_nll": 6.988904235884547,
+      "macro_nll": 6.608858888503164,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 0,
+      "arm": "direct4_scale",
+      "step": 1000,
+      "language": "fa",
+      "full_nll": 6.340247105807066,
+      "macro_nll": 6.608858888503164,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 1,
+      "arm": "dense",
+      "step": 0,
+      "language": "en",
+      "full_nll": 11.196299597620964,
+      "macro_nll": 11.197764036245644,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 1,
+      "arm": "dense",
+      "step": 0,
+      "language": "de",
+      "full_nll": 11.19866617769003,
+      "macro_nll": 11.197764036245644,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 1,
+      "arm": "dense",
+      "step": 0,
+      "language": "ar",
+      "full_nll": 11.195510569959879,
+      "macro_nll": 11.197764036245644,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 1,
+      "arm": "dense",
+      "step": 0,
+      "language": "fa",
+      "full_nll": 11.200579799711704,
+      "macro_nll": 11.197764036245644,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 1,
+      "arm": "dense",
+      "step": 50,
+      "language": "en",
+      "full_nll": 8.351197453215718,
+      "macro_nll": 8.661857543047518,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 1,
+      "arm": "dense",
+      "step": 50,
+      "language": "de",
+      "full_nll": 8.819928117096424,
+      "macro_nll": 8.661857543047518,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 1,
+      "arm": "dense",
+      "step": 50,
+      "language": "ar",
+      "full_nll": 9.013789657503366,
+      "macro_nll": 8.661857543047518,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 1,
+      "arm": "dense",
+      "step": 50,
+      "language": "fa",
+      "full_nll": 8.462514944374561,
+      "macro_nll": 8.661857543047518,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 1,
+      "arm": "dense",
+      "step": 125,
+      "language": "en",
+      "full_nll": 7.482938310131431,
+      "macro_nll": 7.877308900468051,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 1,
+      "arm": "dense",
+      "step": 125,
+      "language": "de",
+      "full_nll": 8.055942758917809,
+      "macro_nll": 7.877308900468051,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 1,
+      "arm": "dense",
+      "step": 125,
+      "language": "ar",
+      "full_nll": 8.374401275068521,
+      "macro_nll": 7.877308900468051,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 1,
+      "arm": "dense",
+      "step": 125,
+      "language": "fa",
+      "full_nll": 7.595953257754445,
+      "macro_nll": 7.877308900468051,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 1,
+      "arm": "dense",
+      "step": 250,
+      "language": "en",
+      "full_nll": 6.98528290912509,
+      "macro_nll": 7.384393755812198,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 1,
+      "arm": "dense",
+      "step": 250,
+      "language": "de",
+      "full_nll": 7.558499256148934,
+      "macro_nll": 7.384393755812198,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 1,
+      "arm": "dense",
+      "step": 250,
+      "language": "ar",
+      "full_nll": 7.8666119780391455,
+      "macro_nll": 7.384393755812198,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 1,
+      "arm": "dense",
+      "step": 250,
+      "language": "fa",
+      "full_nll": 7.127180879935622,
+      "macro_nll": 7.384393755812198,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 1,
+      "arm": "dense",
+      "step": 500,
+      "language": "en",
+      "full_nll": 6.585754323750734,
+      "macro_nll": 6.949853921774775,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 1,
+      "arm": "dense",
+      "step": 500,
+      "language": "de",
+      "full_nll": 7.147049320861697,
+      "macro_nll": 6.949853921774775,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 1,
+      "arm": "dense",
+      "step": 500,
+      "language": "ar",
+      "full_nll": 7.3670007083565,
+      "macro_nll": 6.949853921774775,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 1,
+      "arm": "dense",
+      "step": 500,
+      "language": "fa",
+      "full_nll": 6.699611334130168,
+      "macro_nll": 6.949853921774775,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 1,
+      "arm": "dense",
+      "step": 750,
+      "language": "en",
+      "full_nll": 6.367991294711828,
+      "macro_nll": 6.697097089607269,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 1,
+      "arm": "dense",
+      "step": 750,
+      "language": "de",
+      "full_nll": 6.90322501771152,
+      "macro_nll": 6.697097089607269,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 1,
+      "arm": "dense",
+      "step": 750,
+      "language": "ar",
+      "full_nll": 7.084773350507021,
+      "macro_nll": 6.697097089607269,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 1,
+      "arm": "dense",
+      "step": 750,
+      "language": "fa",
+      "full_nll": 6.432398695498705,
+      "macro_nll": 6.697097089607269,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 1,
+      "arm": "dense",
+      "step": 1000,
+      "language": "en",
+      "full_nll": 6.212364790961146,
+      "macro_nll": 6.514587672892958,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 1,
+      "arm": "dense",
+      "step": 1000,
+      "language": "de",
+      "full_nll": 6.72081052698195,
+      "macro_nll": 6.514587672892958,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 1,
+      "arm": "dense",
+      "step": 1000,
+      "language": "ar",
+      "full_nll": 6.883719911798835,
+      "macro_nll": 6.514587672892958,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 1,
+      "arm": "dense",
+      "step": 1000,
+      "language": "fa",
+      "full_nll": 6.241455461829901,
+      "macro_nll": 6.514587672892958,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 2,
+      "arm": "mqr",
+      "step": 0,
+      "language": "en",
+      "full_nll": 11.091612484306097,
+      "macro_nll": 11.090949345380068,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 2,
+      "arm": "mqr",
+      "step": 0,
+      "language": "de",
+      "full_nll": 11.090994734317064,
+      "macro_nll": 11.090949345380068,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 2,
+      "arm": "mqr",
+      "step": 0,
+      "language": "ar",
+      "full_nll": 11.090202175080776,
+      "macro_nll": 11.090949345380068,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 2,
+      "arm": "mqr",
+      "step": 0,
+      "language": "fa",
+      "full_nll": 11.090987987816334,
+      "macro_nll": 11.090949345380068,
+      "successful_training_tokens": 0
+    },
+    {
+      "seed": 2,
+      "arm": "mqr",
+      "step": 50,
+      "language": "en",
+      "full_nll": 8.988657243549824,
+      "macro_nll": 9.356651202775538,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 2,
+      "arm": "mqr",
+      "step": 50,
+      "language": "de",
+      "full_nll": 9.525320503860712,
+      "macro_nll": 9.356651202775538,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 2,
+      "arm": "mqr",
+      "step": 50,
+      "language": "ar",
+      "full_nll": 9.745856985449791,
+      "macro_nll": 9.356651202775538,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 2,
+      "arm": "mqr",
+      "step": 50,
+      "language": "fa",
+      "full_nll": 9.166770078241825,
+      "macro_nll": 9.356651202775538,
+      "successful_training_tokens": 819200
+    },
+    {
+      "seed": 2,
+      "arm": "mqr",
+      "step": 125,
+      "language": "en",
+      "full_nll": 8.53746403567493,
+      "macro_nll": 8.908549738582224,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 2,
+      "arm": "mqr",
+      "step": 125,
+      "language": "de",
+      "full_nll": 9.08080668747425,
+      "macro_nll": 8.908549738582224,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 2,
+      "arm": "mqr",
+      "step": 125,
+      "language": "ar",
+      "full_nll": 9.340682551264763,
+      "macro_nll": 8.908549738582224,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 2,
+      "arm": "mqr",
+      "step": 125,
+      "language": "fa",
+      "full_nll": 8.675245679914951,
+      "macro_nll": 8.908549738582224,
+      "successful_training_tokens": 2048000
+    },
+    {
+      "seed": 2,
+      "arm": "mqr",
+      "step": 250,
+      "language": "en",
+      "full_nll": 7.920796571299434,
+      "macro_nll": 8.286489938385785,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 2,
+      "arm": "mqr",
+      "step": 250,
+      "language": "de",
+      "full_nll": 8.462172836065292,
+      "macro_nll": 8.286489938385785,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 2,
+      "arm": "mqr",
+      "step": 250,
+      "language": "ar",
+      "full_nll": 8.729547780007124,
+      "macro_nll": 8.286489938385785,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 2,
+      "arm": "mqr",
+      "step": 250,
+      "language": "fa",
+      "full_nll": 8.033442566171288,
+      "macro_nll": 8.286489938385785,
+      "successful_training_tokens": 4096000
+    },
+    {
+      "seed": 2,
+      "arm": "mqr",
+      "step": 500,
+      "language": "en",
+      "full_nll": 7.197680441662669,
+      "macro_nll": 7.598327322397381,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 2,
+      "arm": "mqr",
+      "step": 500,
+      "language": "de",
+      "full_nll": 7.771390445530415,
+      "macro_nll": 7.598327322397381,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 2,
+      "arm": "mqr",
+      "step": 500,
+      "language": "ar",
+      "full_nll": 8.085816202685237,
+      "macro_nll": 7.598327322397381,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 2,
+      "arm": "mqr",
+      "step": 500,
+      "language": "fa",
+      "full_nll": 7.338422199711204,
+      "macro_nll": 7.598327322397381,
+      "successful_training_tokens": 8192000
+    },
+    {
+      "seed": 2,
+      "arm": "mqr",
+      "step": 750,
+      "language": "en",
+      "full_nll": 6.902083769440651,
+      "macro_nll": 7.2760663367807865,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 2,
+      "arm": "mqr",
+      "step": 750,
+      "language": "de",
+      "full_nll": 7.441720558330417,
+      "macro_nll": 7.2760663367807865,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 2,
+      "arm": "mqr",
+      "step": 750,
+      "language": "ar",
+      "full_nll": 7.703443508595228,
+      "macro_nll": 7.2760663367807865,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 2,
+      "arm": "mqr",
+      "step": 750,
+      "language": "fa",
+      "full_nll": 7.05701751075685,
+      "macro_nll": 7.2760663367807865,
+      "successful_training_tokens": 12288000
+    },
+    {
+      "seed": 2,
+      "arm": "mqr",
+      "step": 1000,
+      "language": "en",
+      "full_nll": 6.753061294555664,
+      "macro_nll": 7.116229715757072,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 2,
+      "arm": "mqr",
+      "step": 1000,
+      "language": "de",
+      "full_nll": 7.272564178332686,
+      "macro_nll": 7.116229715757072,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 2,
+      "arm": "mqr",
+      "step": 1000,
+      "language": "ar",
+      "full_nll": 7.525040375068784,
+      "macro_nll": 7.116229715757072,
+      "successful_training_tokens": 16384000
+    },
+    {
+      "seed": 2,
+      "arm": "mqr",
+      "step": 1000,
+      "language": "fa",
+      "full_nll": 6.914253015071154,
+      "macro_nll": 7.116229715757072,
+      "successful_training_tokens": 16384000
+    }
+  ],
+  "final_or_downstream_quality_claim": false
+}

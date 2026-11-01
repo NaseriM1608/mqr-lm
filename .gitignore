@@ -1,0 +1,62 @@
+# Local environments and build products
+.venv/
+.cache/
+.local/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+.coverage
+htmlcov/
+
+# Private corpora, checkpoints and original execution workspaces
+/data/
+/artifacts/
+/results/
+/tmp/
+/output/
+/papers/
+/reports/
+/tracking/
+/handoff.md
+*.pt
+*.pth
+*.npy
+*.faiss
+*.zip
+*.log
+
+# The research showcase is deliberately not part of this repository
+/brag-output/
+/brag-output-*/
+*.mp4
+*.mov
+*.avi
+*.webm
+*.wav
+*.mp3
+*.flac
+
+# Local credentials and editor/OS state
+.env
+.env.*
+!.env.example
+kaggle.json
+credentials.json
+secrets.json
+auth.json
+token.json
+service-account.json
+service_account.json
+*.pem
+*.key
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Rebuilding the paper must not replace the archived original by accident
+research/paper/paper-rebuilt.pdf
+research/paper/paper-rebuilt.layout.json

@@ -1,0 +1,4193 @@
+{
+  "status": "complete_audited_fixed_checkpoint_search",
+  "new_training": false,
+  "gpu_requested": false,
+  "arms": [
+    {
+      "arm": "dense",
+      "selected": {
+        "config_id": "b128_ef1024",
+        "B": 128,
+        "ef_search": 1024,
+        "method": "hnsw"
+      },
+      "selection_status": "diagnostic_only_no_tuning_eligible",
+      "tuning_eligible_configurations": 0,
+      "confirmation_joint_screen_passed": false,
+      "eligible_after_both_phases": false,
+      "confirmation": {
+        "candidate_count": 128.80078125,
+        "full_topk_mass": 0.43792181540629826,
+        "gold_included": 0.48046875,
+        "retained_mass": 0.4474887054093415,
+        "retained_topk_mass": 0.3698342686839169,
+        "top1_agreement": 0.875,
+        "topk_mass_recall": 0.8062095617860905,
+        "topk_recall": 0.726015624095453
+      },
+      "confirmation_by_language": {
+        "en": {
+          "candidate_count": 128.890625,
+          "full_topk_mass": 0.49469133862294257,
+          "gold_included": 0.609375,
+          "retained_mass": 0.5019349558860995,
+          "retained_topk_mass": 0.4321770195965655,
+          "top1_agreement": 0.90625,
+          "topk_mass_recall": 0.8484720439591911,
+          "topk_recall": 0.7678124979138374
+        },
+        "de": {
+          "candidate_count": 128.78125,
+          "full_topk_mass": 0.4445090552326292,
+          "gold_included": 0.53125,
+          "retained_mass": 0.4589175805449486,
+          "retained_topk_mass": 0.3836855862173252,
+          "top1_agreement": 0.8125,
+          "topk_mass_recall": 0.8026057526003569,
+          "topk_recall": 0.7403124989941716
+        },
+        "ar": {
+          "candidate_count": 128.8125,
+          "full_topk_mass": 0.3697342415107414,
+          "gold_included": 0.375,
+          "retained_mass": 0.39002042752690613,
+          "retained_topk_mass": 0.30204085033619776,
+          "top1_agreement": 0.890625,
+          "topk_mass_recall": 0.7798479301854968,
+          "topk_recall": 0.6918749965261668
+        },
+        "fa": {
+          "candidate_count": 128.71875,
+          "full_topk_mass": 0.4427526262588799,
+          "gold_included": 0.40625,
+          "retained_mass": 0.43908185767941177,
+          "retained_topk_mass": 0.3614336185855791,
+          "top1_agreement": 0.890625,
+          "topk_mass_recall": 0.7939125203993171,
+          "topk_recall": 0.704062502947636
+        }
+      },
+      "exact_decode_ms_per_prediction": 20.202781746093244,
+      "selected_decode_ms_per_prediction": 15.9538371484369,
+      "observed_latency_reduction_fraction": 0.21031482946540236,
+      "matched_fidelity_speed_screen_passed": false,
+      "exact_combined_ms_per_16": 397.74865337500034,
+      "selected_combined_ms_per_16": 331.88186268750286,
+      "existing_three_seed_mean_macro_nll": 6.509684240290274,
+      "model_parameter_bytes": 419655680,
+      "serialized_index_bytes": 152055266,
+      "coverage_summaries": [
+        {
+          "phase": "tune",
+          "method": "flat",
+          "config_id": "flat_b128",
+          "B": 128,
+          "ef_search": null,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 128.875,
+              "full_topk_mass": 0.4900534808402881,
+              "gold_included": 0.59375,
+              "retained_mass": 0.5703206653706729,
+              "retained_topk_mass": 0.4900534808402881,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            },
+            "de": {
+              "candidate_count": 128.78125,
+              "full_topk_mass": 0.40476934681646526,
+              "gold_included": 0.5625,
+              "retained_mass": 0.4942838957067579,
+              "retained_topk_mass": 0.40476934681646526,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            },
+            "ar": {
+              "candidate_count": 128.75,
+              "full_topk_mass": 0.3821036024019122,
+              "gold_included": 0.578125,
+              "retained_mass": 0.4807123029604554,
+              "retained_topk_mass": 0.3821036024019122,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            },
+            "fa": {
+              "candidate_count": 128.765625,
+              "full_topk_mass": 0.4231310021132231,
+              "gold_included": 0.46875,
+              "retained_mass": 0.5155768624972552,
+              "retained_topk_mass": 0.4231310021132231,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            }
+          },
+          "macro": {
+            "candidate_count": 128.79296875,
+            "full_topk_mass": 0.42501435804297216,
+            "gold_included": 0.55078125,
+            "retained_mass": 0.5152234316337854,
+            "retained_topk_mass": 0.42501435804297216,
+            "top1_agreement": 1.0,
+            "topk_mass_recall": 1.0,
+            "topk_recall": 1.0
+          }
+        },
+        {
+          "phase": "tune",
+          "method": "flat",
+          "config_id": "flat_b256",
+          "B": 256,
+          "ef_search": null,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 256.8125,
+              "full_topk_mass": 0.4900534808402881,
+              "gold_included": 0.625,
+              "retained_mass": 0.6305517246946692,
+              "retained_topk_mass": 0.4900534808402881,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            },
+            "de": {
+              "candidate_count": 256.703125,
+              "full_topk_mass": 0.40476934681646526,
+              "gold_included": 0.65625,
+              "retained_mass": 0.5621716761961579,
+              "retained_topk_mass": 0.40476934681646526,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            },
+            "ar": {
+              "candidate_count": 256.640625,
+              "full_topk_mass": 0.3821036024019122,
+              "gold_included": 0.6875,
+              "retained_mass": 0.5592609182931483,
+              "retained_topk_mass": 0.3821036024019122,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            },
+            "fa": {
+              "candidate_count": 256.671875,
+              "full_topk_mass": 0.4231310021132231,
+              "gold_included": 0.59375,
+              "retained_mass": 0.5902558108791709,
+              "retained_topk_mass": 0.4231310021132231,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            }
+          },
+          "macro": {
+            "candidate_count": 256.70703125,
+            "full_topk_mass": 0.42501435804297216,
+            "gold_included": 0.640625,
+            "retained_mass": 0.5855600325157866,
+            "retained_topk_mass": 0.42501435804297216,
+            "top1_agreement": 1.0,
+            "topk_mass_recall": 1.0,
+            "topk_recall": 1.0
+          }
+        },
+        {
+          "phase": "tune",
+          "method": "flat",
+          "config_id": "flat_b512",
+          "B": 512,
+          "ef_search": null,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 512.6875,
+              "full_topk_mass": 0.4900534808402881,
+              "gold_included": 0.65625,
+              "retained_mass": 0.6916753980331123,
+              "retained_topk_mass": 0.4900534808402881,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            },
+            "de": {
+              "candidate_count": 512.578125,
+              "full_topk_mass": 0.40476934681646526,
+              "gold_included": 0.71875,
+              "retained_mass": 0.6308538895100355,
+              "retained_topk_mass": 0.40476934681646526,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            },
+            "ar": {
+              "candidate_count": 512.4375,
+              "full_topk_mass": 0.3821036024019122,
+              "gold_included": 0.703125,
+              "retained_mass": 0.6404191027395427,
+              "retained_topk_mass": 0.3821036024019122,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            },
+            "fa": {
+              "candidate_count": 512.515625,
+              "full_topk_mass": 0.4231310021132231,
+              "gold_included": 0.6875,
+              "retained_mass": 0.6681028846651316,
+              "retained_topk_mass": 0.4231310021132231,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            }
+          },
+          "macro": {
+            "candidate_count": 512.5546875,
+            "full_topk_mass": 0.42501435804297216,
+            "gold_included": 0.69140625,
+            "retained_mass": 0.6577628187369555,
+            "retained_topk_mass": 0.42501435804297216,
+            "top1_agreement": 1.0,
+            "topk_mass_recall": 1.0,
+            "topk_recall": 1.0
+          }
+        },
+        {
+          "phase": "tune",
+          "method": "hnsw",
+          "config_id": "b128_ef128",
+          "B": 128,
+          "ef_search": 128,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 128.8125,
+              "full_topk_mass": 0.4900534808402881,
+              "gold_included": 0.5625,
+              "retained_mass": 0.516423998400569,
+              "retained_topk_mass": 0.4486762061715126,
+              "top1_agreement": 0.9375,
+              "topk_mass_recall": 0.8747754308860749,
+              "topk_recall": 0.8059374990407377
+            },
+            "de": {
+              "candidate_count": 128.71875,
+              "full_topk_mass": 0.40476934681646526,
+              "gold_included": 0.5,
+              "retained_mass": 0.42507260071579367,
+              "retained_topk_mass": 0.34984259272459894,
+              "top1_agreement": 0.921875,
+              "topk_mass_recall": 0.8188148709014058,
+              "topk_recall": 0.7315624970942736
+            },
+            "ar": {
+              "candidate_count": 128.625,
+              "full_topk_mass": 0.3821036024019122,
+              "gold_included": 0.4375,
+              "retained_mass": 0.4005051979329437,
+              "retained_topk_mass": 0.31910878675989807,
+              "top1_agreement": 0.9375,
+              "topk_mass_recall": 0.7753722951747477,
+              "topk_recall": 0.6884374984074384
+            },
+            "fa": {
+              "candidate_count": 128.703125,
+              "full_topk_mass": 0.4231310021132231,
+              "gold_included": 0.40625,
+              "retained_mass": 0.4143873956054449,
+              "retained_topk_mass": 0.3360835659841541,
+              "top1_agreement": 0.828125,
+              "topk_mass_recall": 0.7541699641151354,
+              "topk_recall": 0.6859375031781383
+            }
+          },
+          "macro": {
+            "candidate_count": 128.71484375,
+            "full_topk_mass": 0.42501435804297216,
+            "gold_included": 0.4765625,
+            "retained_mass": 0.4390972981636878,
+            "retained_topk_mass": 0.36342778791004093,
+            "top1_agreement": 0.90625,
+            "topk_mass_recall": 0.805783140269341,
+            "topk_recall": 0.727968749430147
+          }
+        },
+        {
+          "phase": "tune",
+          "method": "hnsw",
+          "config_id": "b128_ef256",
+          "B": 128,
+          "ef_search": 256,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 128.8125,
+              "full_topk_mass": 0.4900534808402881,
+              "gold_included": 0.5625,
+              "retained_mass": 0.5168447298929095,
+              "retained_topk_mass": 0.4489044175716117,
+              "top1_agreement": 0.9375,
+              "topk_mass_recall": 0.8756347370799631,
+              "topk_recall": 0.8078124991152436
+            },
+            "de": {
+              "candidate_count": 128.71875,
+              "full_topk_mass": 0.40476934681646526,
+              "gold_included": 0.484375,
+              "retained_mass": 0.42555011867079884,
+              "retained_topk_mass": 0.349960595020093,
+              "top1_agreement": 0.921875,
+              "topk_mass_recall": 0.8191443029791117,
+              "topk_recall": 0.7328124972991645
+            },
+            "ar": {
+              "candidate_count": 128.625,
+              "full_topk_mass": 0.3821036024019122,
+              "gold_included": 0.4375,
+              "retained_mass": 0.4008681579725817,
+              "retained_topk_mass": 0.31917439703829587,
+              "top1_agreement": 0.9375,
+              "topk_mass_recall": 0.7756184954196215,
+              "topk_recall": 0.6890624992083758
+            },
+            "fa": {
+              "candidate_count": 128.703125,
+              "full_topk_mass": 0.4231310021132231,
+              "gold_included": 0.40625,
+              "retained_mass": 0.4152729414636269,
+              "retained_topk_mass": 0.33676499911234714,
+              "top1_agreement": 0.828125,
+              "topk_mass_recall": 0.7559753292007372,
+              "topk_recall": 0.6890625020605512
+            }
+          },
+          "macro": {
+            "candidate_count": 128.71484375,
+            "full_topk_mass": 0.42501435804297216,
+            "gold_included": 0.47265625,
+            "retained_mass": 0.43963398699997924,
+            "retained_topk_mass": 0.36370110218558693,
+            "top1_agreement": 0.90625,
+            "topk_mass_recall": 0.8065932161698584,
+            "topk_recall": 0.7296874994208338
+          }
+        },
+        {
+          "phase": "tune",
+          "method": "hnsw",
+          "config_id": "b128_ef512",
+          "B": 128,
+          "ef_search": 512,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 128.8125,
+              "full_topk_mass": 0.4900534808402881,
+              "gold_included": 0.5625,
+              "retained_mass": 0.5172895826399326,
+              "retained_topk_mass": 0.44925779628101736,
+              "top1_agreement": 0.9375,
+              "topk_mass_recall": 0.877056677127257,
+              "topk_recall": 0.8096874996554106
+            },
+            "de": {
+              "candidate_count": 128.71875,
+              "full_topk_mass": 0.40476934681646526,
+              "gold_included": 0.484375,
+              "retained_mass": 0.4256952981231734,
+              "retained_topk_mass": 0.35003671108279377,
+              "top1_agreement": 0.921875,
+              "topk_mass_recall": 0.8193326415494084,
+              "topk_recall": 0.7334374976344407
+            },
+            "ar": {
+              "candidate_count": 128.625,
+              "full_topk_mass": 0.3821036024019122,
+              "gold_included": 0.4375,
+              "retained_mass": 0.4013030242640525,
+              "retained_topk_mass": 0.31955152680166066,
+              "top1_agreement": 0.9375,
+              "topk_mass_recall": 0.7767912573181093,
+              "topk_recall": 0.6896874993108213
+            },
+            "fa": {
+              "candidate_count": 128.703125,
+              "full_topk_mass": 0.4231310021132231,
+              "gold_included": 0.40625,
+              "retained_mass": 0.4158027517842129,
+              "retained_topk_mass": 0.3370382240100298,
+              "top1_agreement": 0.828125,
+              "topk_mass_recall": 0.7566050364403054,
+              "topk_recall": 0.6906250015017577
+            }
+          },
+          "macro": {
+            "candidate_count": 128.71484375,
+            "full_topk_mass": 0.42501435804297216,
+            "gold_included": 0.47265625,
+            "retained_mass": 0.44002266420284286,
+            "retained_topk_mass": 0.3639710645438754,
+            "top1_agreement": 0.90625,
+            "topk_mass_recall": 0.80744640310877,
+            "topk_recall": 0.7308593745256076
+          }
+        },
+        {
+          "phase": "tune",
+          "method": "hnsw",
+          "config_id": "b128_ef1024",
+          "B": 128,
+          "ef_search": 1024,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 128.8125,
+              "full_topk_mass": 0.4900534808402881,
+              "gold_included": 0.5625,
+              "retained_mass": 0.5173192275688052,
+              "retained_topk_mass": 0.44925779628101736,
+              "top1_agreement": 0.9375,
+              "topk_mass_recall": 0.877056677127257,
+              "topk_recall": 0.8096874996554106
+            },
+            "de": {
+              "candidate_count": 128.71875,
+              "full_topk_mass": 0.40476934681646526,
+              "gold_included": 0.484375,
+              "retained_mass": 0.42578113975469023,
+              "retained_topk_mass": 0.35007628111634403,
+              "top1_agreement": 0.921875,
+              "topk_mass_recall": 0.8193932510912418,
+              "topk_recall": 0.7337499978020787
+            },
+            "ar": {
+              "candidate_count": 128.640625,
+              "full_topk_mass": 0.3821036024019122,
+              "gold_included": 0.4375,
+              "retained_mass": 0.4015018878271803,
+              "retained_topk_mass": 0.3196919374167919,
+              "top1_agreement": 0.9375,
+              "topk_mass_recall": 0.7773251920007169,
+              "topk_recall": 0.6906250002793968
+            },
+            "fa": {
+              "candidate_count": 128.703125,
+              "full_topk_mass": 0.4231310021132231,
+              "gold_included": 0.421875,
+              "retained_mass": 0.4166676929453388,
+              "retained_topk_mass": 0.33787524644867517,
+              "top1_agreement": 0.828125,
+              "topk_mass_recall": 0.7584225317696109,
+              "topk_recall": 0.694375001185108
+            }
+          },
+          "macro": {
+            "candidate_count": 128.71875,
+            "full_topk_mass": 0.42501435804297216,
+            "gold_included": 0.4765625,
+            "retained_mass": 0.44031748702400364,
+            "retained_topk_mass": 0.3642253153157071,
+            "top1_agreement": 0.90625,
+            "topk_mass_recall": 0.8080494129972067,
+            "topk_recall": 0.7321093747304985
+          }
+        },
+        {
+          "phase": "tune",
+          "method": "hnsw",
+          "config_id": "b256_ef128",
+          "B": 256,
+          "ef_search": 128,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 256.65625,
+              "full_topk_mass": 0.4900534808402881,
+              "gold_included": 0.5625,
+              "retained_mass": 0.5448425200302154,
+              "retained_topk_mass": 0.4486762061715126,
+              "top1_agreement": 0.9375,
+              "topk_mass_recall": 0.8747754308860749,
+              "topk_recall": 0.8059374990407377
+            },
+            "de": {
+              "candidate_count": 256.578125,
+              "full_topk_mass": 0.40476934681646526,
+              "gold_included": 0.515625,
+              "retained_mass": 0.4586848464095965,
+              "retained_topk_mass": 0.34984259272459894,
+              "top1_agreement": 0.921875,
+              "topk_mass_recall": 0.8188148709014058,
+              "topk_recall": 0.7315624970942736
+            },
+            "ar": {
+              "candidate_count": 256.4375,
+              "full_topk_mass": 0.3821036024019122,
+              "gold_included": 0.4375,
+              "retained_mass": 0.43187255784869194,
+              "retained_topk_mass": 0.31910878675989807,
+              "top1_agreement": 0.9375,
+              "topk_mass_recall": 0.7753722951747477,
+              "topk_recall": 0.6884374984074384
+            },
+            "fa": {
+              "candidate_count": 256.421875,
+              "full_topk_mass": 0.4231310021132231,
+              "gold_included": 0.453125,
+              "retained_mass": 0.4466099028941244,
+              "retained_topk_mass": 0.3360835659841541,
+              "top1_agreement": 0.828125,
+              "topk_mass_recall": 0.7541699641151354,
+              "topk_recall": 0.6859375031781383
+            }
+          },
+          "macro": {
+            "candidate_count": 256.5234375,
+            "full_topk_mass": 0.42501435804297216,
+            "gold_included": 0.4921875,
+            "retained_mass": 0.47050245679565705,
+            "retained_topk_mass": 0.36342778791004093,
+            "top1_agreement": 0.90625,
+            "topk_mass_recall": 0.805783140269341,
+            "topk_recall": 0.727968749430147
+          }
+        },
+        {
+          "phase": "tune",
+          "method": "hnsw",
+          "config_id": "b256_ef256",
+          "B": 256,
+          "ef_search": 256,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 256.6875,
+              "full_topk_mass": 0.4900534808402881,
+              "gold_included": 0.5625,
+              "retained_mass": 0.5460098390467465,
+              "retained_topk_mass": 0.4489044175716117,
+              "top1_agreement": 0.9375,
+              "topk_mass_recall": 0.8756347370799631,
+              "topk_recall": 0.8078124991152436
+            },
+            "de": {
+              "candidate_count": 256.578125,
+              "full_topk_mass": 0.40476934681646526,
+              "gold_included": 0.515625,
+              "retained_mass": 0.46011860470753163,
+              "retained_topk_mass": 0.349960595020093,
+              "top1_agreement": 0.921875,
+              "topk_mass_recall": 0.8191443029791117,
+              "topk_recall": 0.7328124972991645
+            },
+            "ar": {
+              "candidate_count": 256.4375,
+              "full_topk_mass": 0.3821036024019122,
+              "gold_included": 0.4375,
+              "retained_mass": 0.4328327290713787,
+              "retained_topk_mass": 0.31917439703829587,
+              "top1_agreement": 0.9375,
+              "topk_mass_recall": 0.7756184954196215,
+              "topk_recall": 0.6890624992083758
+            },
+            "fa": {
+              "candidate_count": 256.421875,
+              "full_topk_mass": 0.4231310021132231,
+              "gold_included": 0.46875,
+              "retained_mass": 0.4481636706041172,
+              "retained_topk_mass": 0.33676499911234714,
+              "top1_agreement": 0.828125,
+              "topk_mass_recall": 0.7559753292007372,
+              "topk_recall": 0.6890625020605512
+            }
+          },
+          "macro": {
+            "candidate_count": 256.53125,
+            "full_topk_mass": 0.42501435804297216,
+            "gold_included": 0.49609375,
+            "retained_mass": 0.4717812108574435,
+            "retained_topk_mass": 0.36370110218558693,
+            "top1_agreement": 0.90625,
+            "topk_mass_recall": 0.8065932161698584,
+            "topk_recall": 0.7296874994208338
+          }
+        },
+        {
+          "phase": "tune",
+          "method": "hnsw",
+          "config_id": "b256_ef512",
+          "B": 256,
+          "ef_search": 512,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 256.6875,
+              "full_topk_mass": 0.4900534808402881,
+              "gold_included": 0.5625,
+              "retained_mass": 0.5466791538055986,
+              "retained_topk_mass": 0.44925779628101736,
+              "top1_agreement": 0.9375,
+              "topk_mass_recall": 0.877056677127257,
+              "topk_recall": 0.8096874996554106
+            },
+            "de": {
+              "candidate_count": 256.578125,
+              "full_topk_mass": 0.40476934681646526,
+              "gold_included": 0.515625,
+              "retained_mass": 0.46045354241505265,
+              "retained_topk_mass": 0.35003671108279377,
+              "top1_agreement": 0.921875,
+              "topk_mass_recall": 0.8193326415494084,
+              "topk_recall": 0.7334374976344407
+            },
+            "ar": {
+              "candidate_count": 256.4375,
+              "full_topk_mass": 0.3821036024019122,
+              "gold_included": 0.4375,
+              "retained_mass": 0.4333937927149236,
+              "retained_topk_mass": 0.31955152680166066,
+              "top1_agreement": 0.9375,
+              "topk_mass_recall": 0.7767912573181093,
+              "topk_recall": 0.6896874993108213
+            },
+            "fa": {
+              "candidate_count": 256.421875,
+              "full_topk_mass": 0.4231310021132231,
+              "gold_included": 0.46875,
+              "retained_mass": 0.4491142666665837,
+              "retained_topk_mass": 0.3370382240100298,
+              "top1_agreement": 0.828125,
+              "topk_mass_recall": 0.7566050364403054,
+              "topk_recall": 0.6906250015017577
+            }
+          },
+          "macro": {
+            "candidate_count": 256.53125,
+            "full_topk_mass": 0.42501435804297216,
+            "gold_included": 0.49609375,
+            "retained_mass": 0.47241018890053965,
+            "retained_topk_mass": 0.3639710645438754,
+            "top1_agreement": 0.90625,
+            "topk_mass_recall": 0.80744640310877,
+            "topk_recall": 0.7308593745256076
+          }
+        },
+        {
+          "phase": "tune",
+          "method": "hnsw",
+          "config_id": "b256_ef1024",
+          "B": 256,
+          "ef_search": 1024,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 256.6875,
+              "full_topk_mass": 0.4900534808402881,
+              "gold_included": 0.5625,
+              "retained_mass": 0.5467723421752453,
+              "retained_topk_mass": 0.44925779628101736,
+              "top1_agreement": 0.9375,
+              "topk_mass_recall": 0.877056677127257,
+              "topk_recall": 0.8096874996554106
+            },
+            "de": {
+              "candidate_count": 256.578125,
+              "full_topk_mass": 0.40476934681646526,
+              "gold_included": 0.515625,
+              "retained_mass": 0.46060114935971797,
+              "retained_topk_mass": 0.35007628111634403,
+              "top1_agreement": 0.921875,
+              "topk_mass_recall": 0.8193932510912418,
+              "topk_recall": 0.7337499978020787
+            },
+            "ar": {
+              "candidate_count": 256.4375,
+              "full_topk_mass": 0.3821036024019122,
+              "gold_included": 0.4375,
+              "retained_mass": 0.43370923725888133,
+              "retained_topk_mass": 0.3196919374167919,
+              "top1_agreement": 0.9375,
+              "topk_mass_recall": 0.7773251920007169,
+              "topk_recall": 0.6906250002793968
+            },
+            "fa": {
+              "candidate_count": 256.421875,
+              "full_topk_mass": 0.4231310021132231,
+              "gold_included": 0.5,
+              "retained_mass": 0.4501548222033307,
+              "retained_topk_mass": 0.33787524644867517,
+              "top1_agreement": 0.828125,
+              "topk_mass_recall": 0.7584225317696109,
+              "topk_recall": 0.694375001185108
+            }
+          },
+          "macro": {
+            "candidate_count": 256.53125,
+            "full_topk_mass": 0.42501435804297216,
+            "gold_included": 0.50390625,
+            "retained_mass": 0.4728093877492938,
+            "retained_topk_mass": 0.3642253153157071,
+            "top1_agreement": 0.90625,
+            "topk_mass_recall": 0.8080494129972067,
+            "topk_recall": 0.7321093747304985
+          }
+        },
+        {
+          "phase": "tune",
+          "method": "hnsw",
+          "config_id": "b512_ef128",
+          "B": 512,
+          "ef_search": 128,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 512.3125,
+              "full_topk_mass": 0.4900534808402881,
+              "gold_included": 0.59375,
+              "retained_mass": 0.5591724431142211,
+              "retained_topk_mass": 0.4486762061715126,
+              "top1_agreement": 0.9375,
+              "topk_mass_recall": 0.8747754308860749,
+              "topk_recall": 0.8059374990407377
+            },
+            "de": {
+              "candidate_count": 512.328125,
+              "full_topk_mass": 0.40476934681646526,
+              "gold_included": 0.53125,
+              "retained_mass": 0.4783525732345879,
+              "retained_topk_mass": 0.34984259272459894,
+              "top1_agreement": 0.921875,
+              "topk_mass_recall": 0.8188148709014058,
+              "topk_recall": 0.7315624970942736
+            },
+            "ar": {
+              "candidate_count": 512.296875,
+              "full_topk_mass": 0.3821036024019122,
+              "gold_included": 0.4375,
+              "retained_mass": 0.4470848988275975,
+              "retained_topk_mass": 0.31910878675989807,
+              "top1_agreement": 0.9375,
+              "topk_mass_recall": 0.7753722951747477,
+              "topk_recall": 0.6884374984074384
+            },
+            "fa": {
+              "candidate_count": 512.265625,
+              "full_topk_mass": 0.4231310021132231,
+              "gold_included": 0.46875,
+              "retained_mass": 0.4637900135712698,
+              "retained_topk_mass": 0.3360835659841541,
+              "top1_agreement": 0.828125,
+              "topk_mass_recall": 0.7541699641151354,
+              "topk_recall": 0.6859375031781383
+            }
+          },
+          "macro": {
+            "candidate_count": 512.30078125,
+            "full_topk_mass": 0.42501435804297216,
+            "gold_included": 0.5078125,
+            "retained_mass": 0.4870999821869191,
+            "retained_topk_mass": 0.36342778791004093,
+            "top1_agreement": 0.90625,
+            "topk_mass_recall": 0.805783140269341,
+            "topk_recall": 0.727968749430147
+          }
+        },
+        {
+          "phase": "tune",
+          "method": "hnsw",
+          "config_id": "b512_ef256",
+          "B": 512,
+          "ef_search": 256,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 512.328125,
+              "full_topk_mass": 0.4900534808402881,
+              "gold_included": 0.59375,
+              "retained_mass": 0.5623132921755314,
+              "retained_topk_mass": 0.4489044175716117,
+              "top1_agreement": 0.9375,
+              "topk_mass_recall": 0.8756347370799631,
+              "topk_recall": 0.8078124991152436
+            },
+            "de": {
+              "candidate_count": 512.3125,
+              "full_topk_mass": 0.40476934681646526,
+              "gold_included": 0.53125,
+              "retained_mass": 0.48225533310323954,
+              "retained_topk_mass": 0.349960595020093,
+              "top1_agreement": 0.921875,
+              "topk_mass_recall": 0.8191443029791117,
+              "topk_recall": 0.7328124972991645
+            },
+            "ar": {
+              "candidate_count": 512.171875,
+              "full_topk_mass": 0.3821036024019122,
+              "gold_included": 0.4375,
+              "retained_mass": 0.4498283814173192,
+              "retained_topk_mass": 0.31917439703829587,
+              "top1_agreement": 0.9375,
+              "topk_mass_recall": 0.7756184954196215,
+              "topk_recall": 0.6890624992083758
+            },
+            "fa": {
+              "candidate_count": 512.171875,
+              "full_topk_mass": 0.4231310021132231,
+              "gold_included": 0.484375,
+              "retained_mass": 0.467124740825966,
+              "retained_topk_mass": 0.33676499911234714,
+              "top1_agreement": 0.828125,
+              "topk_mass_recall": 0.7559753292007372,
+              "topk_recall": 0.6890625020605512
+            }
+          },
+          "macro": {
+            "candidate_count": 512.24609375,
+            "full_topk_mass": 0.42501435804297216,
+            "gold_included": 0.51171875,
+            "retained_mass": 0.490380436880514,
+            "retained_topk_mass": 0.36370110218558693,
+            "top1_agreement": 0.90625,
+            "topk_mass_recall": 0.8065932161698584,
+            "topk_recall": 0.7296874994208338
+          }
+        },
+        {
+          "phase": "tune",
+          "method": "hnsw",
+          "config_id": "b512_ef512",
+          "B": 512,
+          "ef_search": 512,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 512.328125,
+              "full_topk_mass": 0.4900534808402881,
+              "gold_included": 0.59375,
+              "retained_mass": 0.5636110950727016,
+              "retained_topk_mass": 0.44925779628101736,
+              "top1_agreement": 0.9375,
+              "topk_mass_recall": 0.877056677127257,
+              "topk_recall": 0.8096874996554106
+            },
+            "de": {
+              "candidate_count": 512.328125,
+              "full_topk_mass": 0.40476934681646526,
+              "gold_included": 0.53125,
+              "retained_mass": 0.48334050131961703,
+              "retained_topk_mass": 0.35003671108279377,
+              "top1_agreement": 0.921875,
+              "topk_mass_recall": 0.8193326415494084,
+              "topk_recall": 0.7334374976344407
+            },
+            "ar": {
+              "candidate_count": 512.171875,
+              "full_topk_mass": 0.3821036024019122,
+              "gold_included": 0.4375,
+              "retained_mass": 0.45098342187702656,
+              "retained_topk_mass": 0.31955152680166066,
+              "top1_agreement": 0.9375,
+              "topk_mass_recall": 0.7767912573181093,
+              "topk_recall": 0.6896874993108213
+            },
+            "fa": {
+              "candidate_count": 512.125,
+              "full_topk_mass": 0.4231310021132231,
+              "gold_included": 0.484375,
+              "retained_mass": 0.4688573178136721,
+              "retained_topk_mass": 0.3370382240100298,
+              "top1_agreement": 0.828125,
+              "topk_mass_recall": 0.7566050364403054,
+              "topk_recall": 0.6906250015017577
+            }
+          },
+          "macro": {
+            "candidate_count": 512.23828125,
+            "full_topk_mass": 0.42501435804297216,
+            "gold_included": 0.51171875,
+            "retained_mass": 0.4916980840207543,
+            "retained_topk_mass": 0.3639710645438754,
+            "top1_agreement": 0.90625,
+            "topk_mass_recall": 0.80744640310877,
+            "topk_recall": 0.7308593745256076
+          }
+        },
+        {
+          "phase": "tune",
+          "method": "hnsw",
+          "config_id": "b512_ef1024",
+          "B": 512,
+          "ef_search": 1024,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 512.328125,
+              "full_topk_mass": 0.4900534808402881,
+              "gold_included": 0.59375,
+              "retained_mass": 0.5638693829532713,
+              "retained_topk_mass": 0.44925779628101736,
+              "top1_agreement": 0.9375,
+              "topk_mass_recall": 0.877056677127257,
+              "topk_recall": 0.8096874996554106
+            },
+            "de": {
+              "candidate_count": 512.34375,
+              "full_topk_mass": 0.40476934681646526,
+              "gold_included": 0.53125,
+              "retained_mass": 0.4836410766001791,
+              "retained_topk_mass": 0.35007628111634403,
+              "top1_agreement": 0.921875,
+              "topk_mass_recall": 0.8193932510912418,
+              "topk_recall": 0.7337499978020787
+            },
+            "ar": {
+              "candidate_count": 512.171875,
+              "full_topk_mass": 0.3821036024019122,
+              "gold_included": 0.4375,
+              "retained_mass": 0.45147485635243356,
+              "retained_topk_mass": 0.3196919374167919,
+              "top1_agreement": 0.9375,
+              "topk_mass_recall": 0.7773251920007169,
+              "topk_recall": 0.6906250002793968
+            },
+            "fa": {
+              "candidate_count": 512.140625,
+              "full_topk_mass": 0.4231310021132231,
+              "gold_included": 0.515625,
+              "retained_mass": 0.47013509063981473,
+              "retained_topk_mass": 0.33787524644867517,
+              "top1_agreement": 0.828125,
+              "topk_mass_recall": 0.7584225317696109,
+              "topk_recall": 0.694375001185108
+            }
+          },
+          "macro": {
+            "candidate_count": 512.24609375,
+            "full_topk_mass": 0.42501435804297216,
+            "gold_included": 0.51953125,
+            "retained_mass": 0.49228010163642466,
+            "retained_topk_mass": 0.3642253153157071,
+            "top1_agreement": 0.90625,
+            "topk_mass_recall": 0.8080494129972067,
+            "topk_recall": 0.7321093747304985
+          }
+        },
+        {
+          "phase": "confirmation",
+          "method": "flat",
+          "config_id": "flat_b128",
+          "B": 128,
+          "ef_search": null,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 128.90625,
+              "full_topk_mass": 0.49469133862294257,
+              "gold_included": 0.640625,
+              "retained_mass": 0.5788213335908949,
+              "retained_topk_mass": 0.49469133862294257,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            },
+            "de": {
+              "candidate_count": 128.796875,
+              "full_topk_mass": 0.4445090552326292,
+              "gold_included": 0.671875,
+              "retained_mass": 0.537927258759737,
+              "retained_topk_mass": 0.4445090552326292,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            },
+            "ar": {
+              "candidate_count": 128.859375,
+              "full_topk_mass": 0.3697342415107414,
+              "gold_included": 0.46875,
+              "retained_mass": 0.4768336834385991,
+              "retained_topk_mass": 0.3697342415107414,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            },
+            "fa": {
+              "candidate_count": 128.765625,
+              "full_topk_mass": 0.4427526262588799,
+              "gold_included": 0.578125,
+              "retained_mass": 0.5380169579293579,
+              "retained_topk_mass": 0.4427526262588799,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            }
+          },
+          "macro": {
+            "candidate_count": 128.83203125,
+            "full_topk_mass": 0.43792181540629826,
+            "gold_included": 0.58984375,
+            "retained_mass": 0.5328998084296472,
+            "retained_topk_mass": 0.43792181540629826,
+            "top1_agreement": 1.0,
+            "topk_mass_recall": 1.0,
+            "topk_recall": 1.0
+          }
+        },
+        {
+          "phase": "confirmation",
+          "method": "flat",
+          "config_id": "flat_b256",
+          "B": 256,
+          "ef_search": null,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 256.875,
+              "full_topk_mass": 0.49469133862294257,
+              "gold_included": 0.71875,
+              "retained_mass": 0.6406741868704557,
+              "retained_topk_mass": 0.49469133862294257,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            },
+            "de": {
+              "candidate_count": 256.765625,
+              "full_topk_mass": 0.4445090552326292,
+              "gold_included": 0.703125,
+              "retained_mass": 0.6046691578812897,
+              "retained_topk_mass": 0.4445090552326292,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            },
+            "ar": {
+              "candidate_count": 256.8125,
+              "full_topk_mass": 0.3697342415107414,
+              "gold_included": 0.5,
+              "retained_mass": 0.5615577595308423,
+              "retained_topk_mass": 0.3697342415107414,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            },
+            "fa": {
+              "candidate_count": 256.6875,
+              "full_topk_mass": 0.4427526262588799,
+              "gold_included": 0.6875,
+              "retained_mass": 0.6107226805761456,
+              "retained_topk_mass": 0.4427526262588799,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            }
+          },
+          "macro": {
+            "candidate_count": 256.78515625,
+            "full_topk_mass": 0.43792181540629826,
+            "gold_included": 0.65234375,
+            "retained_mass": 0.6044059462146834,
+            "retained_topk_mass": 0.43792181540629826,
+            "top1_agreement": 1.0,
+            "topk_mass_recall": 1.0,
+            "topk_recall": 1.0
+          }
+        },
+        {
+          "phase": "confirmation",
+          "method": "flat",
+          "config_id": "flat_b512",
+          "B": 512,
+          "ef_search": null,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 512.78125,
+              "full_topk_mass": 0.49469133862294257,
+              "gold_included": 0.78125,
+              "retained_mass": 0.7022272059693933,
+              "retained_topk_mass": 0.49469133862294257,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            },
+            "de": {
+              "candidate_count": 512.625,
+              "full_topk_mass": 0.4445090552326292,
+              "gold_included": 0.796875,
+              "retained_mass": 0.669545297510922,
+              "retained_topk_mass": 0.4445090552326292,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            },
+            "ar": {
+              "candidate_count": 512.703125,
+              "full_topk_mass": 0.3697342415107414,
+              "gold_included": 0.671875,
+              "retained_mass": 0.6471406356431544,
+              "retained_topk_mass": 0.3697342415107414,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            },
+            "fa": {
+              "candidate_count": 512.5625,
+              "full_topk_mass": 0.4427526262588799,
+              "gold_included": 0.734375,
+              "retained_mass": 0.6844360162504017,
+              "retained_topk_mass": 0.4427526262588799,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            }
+          },
+          "macro": {
+            "candidate_count": 512.66796875,
+            "full_topk_mass": 0.43792181540629826,
+            "gold_included": 0.74609375,
+            "retained_mass": 0.6758372888434678,
+            "retained_topk_mass": 0.43792181540629826,
+            "top1_agreement": 1.0,
+            "topk_mass_recall": 1.0,
+            "topk_recall": 1.0
+          }
+        },
+        {
+          "phase": "confirmation",
+          "method": "hnsw",
+          "config_id": "b128_ef1024",
+          "B": 128,
+          "ef_search": 1024,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 128.890625,
+              "full_topk_mass": 0.49469133862294257,
+              "gold_included": 0.609375,
+              "retained_mass": 0.5019349558860995,
+              "retained_topk_mass": 0.4321770195965655,
+              "top1_agreement": 0.90625,
+              "topk_mass_recall": 0.8484720439591911,
+              "topk_recall": 0.7678124979138374
+            },
+            "de": {
+              "candidate_count": 128.78125,
+              "full_topk_mass": 0.4445090552326292,
+              "gold_included": 0.53125,
+              "retained_mass": 0.4589175805449486,
+              "retained_topk_mass": 0.3836855862173252,
+              "top1_agreement": 0.8125,
+              "topk_mass_recall": 0.8026057526003569,
+              "topk_recall": 0.7403124989941716
+            },
+            "ar": {
+              "candidate_count": 128.8125,
+              "full_topk_mass": 0.3697342415107414,
+              "gold_included": 0.375,
+              "retained_mass": 0.39002042752690613,
+              "retained_topk_mass": 0.30204085033619776,
+              "top1_agreement": 0.890625,
+              "topk_mass_recall": 0.7798479301854968,
+              "topk_recall": 0.6918749965261668
+            },
+            "fa": {
+              "candidate_count": 128.71875,
+              "full_topk_mass": 0.4427526262588799,
+              "gold_included": 0.40625,
+              "retained_mass": 0.43908185767941177,
+              "retained_topk_mass": 0.3614336185855791,
+              "top1_agreement": 0.890625,
+              "topk_mass_recall": 0.7939125203993171,
+              "topk_recall": 0.704062502947636
+            }
+          },
+          "macro": {
+            "candidate_count": 128.80078125,
+            "full_topk_mass": 0.43792181540629826,
+            "gold_included": 0.48046875,
+            "retained_mass": 0.4474887054093415,
+            "retained_topk_mass": 0.3698342686839169,
+            "top1_agreement": 0.875,
+            "topk_mass_recall": 0.8062095617860905,
+            "topk_recall": 0.726015624095453
+          }
+        }
+      ],
+      "timing_summaries": [
+        {
+          "phase": "confirmation",
+          "config_id": "b128_ef1024",
+          "family": "prefill_and_decode",
+          "B": 128,
+          "ef_search": 1024,
+          "cells": 16,
+          "mean_cell_median_ms": 331.88186268750286,
+          "ms_per_prediction": 20.74261641796893
+        },
+        {
+          "phase": "confirmation",
+          "config_id": "b128_ef1024",
+          "family": "warm_decode",
+          "B": 128,
+          "ef_search": 1024,
+          "cells": 16,
+          "mean_cell_median_ms": 255.2613943749904,
+          "ms_per_prediction": 15.9538371484369
+        },
+        {
+          "phase": "confirmation",
+          "config_id": "exact",
+          "family": "prefill_and_decode",
+          "B": null,
+          "ef_search": null,
+          "cells": 16,
+          "mean_cell_median_ms": 397.74865337500034,
+          "ms_per_prediction": 24.85929083593752
+        },
+        {
+          "phase": "confirmation",
+          "config_id": "exact",
+          "family": "warm_decode",
+          "B": null,
+          "ef_search": null,
+          "cells": 16,
+          "mean_cell_median_ms": 323.2445079374919,
+          "ms_per_prediction": 20.202781746093244
+        },
+        {
+          "phase": "tune",
+          "config_id": "b128_ef1024",
+          "family": "warm_decode",
+          "B": 128,
+          "ef_search": 1024,
+          "cells": 8,
+          "mean_cell_median_ms": 256.2671235000096,
+          "ms_per_prediction": 16.0166952187506
+        },
+        {
+          "phase": "tune",
+          "config_id": "b128_ef128",
+          "family": "warm_decode",
+          "B": 128,
+          "ef_search": 128,
+          "cells": 8,
+          "mean_cell_median_ms": 231.26218850001834,
+          "ms_per_prediction": 14.453886781251146
+        },
+        {
+          "phase": "tune",
+          "config_id": "b128_ef256",
+          "family": "warm_decode",
+          "B": 128,
+          "ef_search": 256,
+          "cells": 8,
+          "mean_cell_median_ms": 236.8789811250096,
+          "ms_per_prediction": 14.8049363203131
+        },
+        {
+          "phase": "tune",
+          "config_id": "b128_ef512",
+          "family": "warm_decode",
+          "B": 128,
+          "ef_search": 512,
+          "cells": 8,
+          "mean_cell_median_ms": 240.8479392500098,
+          "ms_per_prediction": 15.052996203125613
+        },
+        {
+          "phase": "tune",
+          "config_id": "b256_ef1024",
+          "family": "warm_decode",
+          "B": 256,
+          "ef_search": 1024,
+          "cells": 8,
+          "mean_cell_median_ms": 256.3247065000027,
+          "ms_per_prediction": 16.02029415625017
+        },
+        {
+          "phase": "tune",
+          "config_id": "b256_ef128",
+          "family": "warm_decode",
+          "B": 256,
+          "ef_search": 128,
+          "cells": 8,
+          "mean_cell_median_ms": 234.35023850000647,
+          "ms_per_prediction": 14.646889906250404
+        },
+        {
+          "phase": "tune",
+          "config_id": "b256_ef256",
+          "family": "warm_decode",
+          "B": 256,
+          "ef_search": 256,
+          "cells": 8,
+          "mean_cell_median_ms": 239.70728937499786,
+          "ms_per_prediction": 14.981705585937366
+        },
+        {
+          "phase": "tune",
+          "config_id": "b256_ef512",
+          "family": "warm_decode",
+          "B": 256,
+          "ef_search": 512,
+          "cells": 8,
+          "mean_cell_median_ms": 241.69329024999797,
+          "ms_per_prediction": 15.105830640624873
+        },
+        {
+          "phase": "tune",
+          "config_id": "b512_ef1024",
+          "family": "warm_decode",
+          "B": 512,
+          "ef_search": 1024,
+          "cells": 8,
+          "mean_cell_median_ms": 261.45741250001464,
+          "ms_per_prediction": 16.341088281250915
+        },
+        {
+          "phase": "tune",
+          "config_id": "b512_ef128",
+          "family": "warm_decode",
+          "B": 512,
+          "ef_search": 128,
+          "cells": 8,
+          "mean_cell_median_ms": 237.33723962499198,
+          "ms_per_prediction": 14.833577476561999
+        },
+        {
+          "phase": "tune",
+          "config_id": "b512_ef256",
+          "family": "warm_decode",
+          "B": 512,
+          "ef_search": 256,
+          "cells": 8,
+          "mean_cell_median_ms": 241.15736099999197,
+          "ms_per_prediction": 15.072335062499498
+        },
+        {
+          "phase": "tune",
+          "config_id": "b512_ef512",
+          "family": "warm_decode",
+          "B": 512,
+          "ef_search": 512,
+          "cells": 8,
+          "mean_cell_median_ms": 247.9178752499962,
+          "ms_per_prediction": 15.494867203124763
+        },
+        {
+          "phase": "tune",
+          "config_id": "exact",
+          "family": "warm_decode",
+          "B": null,
+          "ef_search": null,
+          "cells": 8,
+          "mean_cell_median_ms": 330.3212000000215,
+          "ms_per_prediction": 20.645075000001345
+        }
+      ],
+      "verified_counts": {
+        "coverage": 4864,
+        "reference": 512,
+        "timing": 168
+      }
+    },
+    {
+      "arm": "direct1_scale",
+      "selected": {
+        "config_id": "b256_ef1024",
+        "B": 256,
+        "ef_search": 1024,
+        "method": "hnsw"
+      },
+      "selection_status": "diagnostic_only_no_tuning_eligible",
+      "tuning_eligible_configurations": 0,
+      "confirmation_joint_screen_passed": false,
+      "eligible_after_both_phases": false,
+      "confirmation": {
+        "candidate_count": 256.59765625,
+        "full_topk_mass": 0.4289168718387373,
+        "gold_included": 0.453125,
+        "retained_mass": 0.44374678180611227,
+        "retained_topk_mass": 0.3415765688259853,
+        "top1_agreement": 0.87109375,
+        "topk_mass_recall": 0.7505240422178758,
+        "topk_recall": 0.6472656234400347
+      },
+      "confirmation_by_language": {
+        "en": {
+          "candidate_count": 256.765625,
+          "full_topk_mass": 0.502183370757848,
+          "gold_included": 0.546875,
+          "retained_mass": 0.509217343875207,
+          "retained_topk_mass": 0.4177275899273809,
+          "top1_agreement": 0.875,
+          "topk_mass_recall": 0.8005515417316929,
+          "topk_recall": 0.693749996367842
+        },
+        "de": {
+          "candidate_count": 256.5,
+          "full_topk_mass": 0.42769374372437596,
+          "gold_included": 0.515625,
+          "retained_mass": 0.4830105903092772,
+          "retained_topk_mass": 0.3686769890191499,
+          "top1_agreement": 0.890625,
+          "topk_mass_recall": 0.8089613958727568,
+          "topk_recall": 0.7368749992456287
+        },
+        "ar": {
+          "candidate_count": 256.65625,
+          "full_topk_mass": 0.3399923644028604,
+          "gold_included": 0.34375,
+          "retained_mass": 0.34839626238681376,
+          "retained_topk_mass": 0.24301473394734785,
+          "top1_agreement": 0.84375,
+          "topk_mass_recall": 0.6773541048169136,
+          "topk_recall": 0.5800000010058284
+        },
+        "fa": {
+          "candidate_count": 256.46875,
+          "full_topk_mass": 0.4457980084698647,
+          "gold_included": 0.40625,
+          "retained_mass": 0.4343629306531511,
+          "retained_topk_mass": 0.33688696241006255,
+          "top1_agreement": 0.875,
+          "topk_mass_recall": 0.71522912645014,
+          "topk_recall": 0.5784374971408397
+        }
+      },
+      "exact_decode_ms_per_prediction": 15.544795136719358,
+      "selected_decode_ms_per_prediction": 15.994945335938038,
+      "observed_latency_reduction_fraction": -0.02895825871357749,
+      "matched_fidelity_speed_screen_passed": false,
+      "exact_combined_ms_per_16": 323.7729623124892,
+      "selected_combined_ms_per_16": 333.55002118751287,
+      "existing_three_seed_mean_macro_nll": 6.633984483933697,
+      "model_parameter_bytes": 319255040,
+      "serialized_index_bytes": 51391970,
+      "coverage_summaries": [
+        {
+          "phase": "tune",
+          "method": "flat",
+          "config_id": "flat_b128",
+          "B": 128,
+          "ef_search": null,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 128.875,
+              "full_topk_mass": 0.4987201406620443,
+              "gold_included": 0.59375,
+              "retained_mass": 0.5848039817065,
+              "retained_topk_mass": 0.4987201406620443,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            },
+            "de": {
+              "candidate_count": 128.78125,
+              "full_topk_mass": 0.3958852904615924,
+              "gold_included": 0.5625,
+              "retained_mass": 0.4888978728558868,
+              "retained_topk_mass": 0.3958852904615924,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            },
+            "ar": {
+              "candidate_count": 128.8125,
+              "full_topk_mass": 0.3672203829046339,
+              "gold_included": 0.5625,
+              "retained_mass": 0.46659516100771725,
+              "retained_topk_mass": 0.3672203829046339,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            },
+            "fa": {
+              "candidate_count": 128.828125,
+              "full_topk_mass": 0.41365250176750124,
+              "gold_included": 0.515625,
+              "retained_mass": 0.5101871956139803,
+              "retained_topk_mass": 0.41365250176750124,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            }
+          },
+          "macro": {
+            "candidate_count": 128.82421875,
+            "full_topk_mass": 0.41886957894894294,
+            "gold_included": 0.55859375,
+            "retained_mass": 0.5126210527960211,
+            "retained_topk_mass": 0.41886957894894294,
+            "top1_agreement": 1.0,
+            "topk_mass_recall": 1.0,
+            "topk_recall": 1.0
+          }
+        },
+        {
+          "phase": "tune",
+          "method": "flat",
+          "config_id": "flat_b256",
+          "B": 256,
+          "ef_search": null,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 256.796875,
+              "full_topk_mass": 0.4987201406620443,
+              "gold_included": 0.59375,
+              "retained_mass": 0.6479138527065516,
+              "retained_topk_mass": 0.4987201406620443,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            },
+            "de": {
+              "candidate_count": 256.65625,
+              "full_topk_mass": 0.3958852904615924,
+              "gold_included": 0.578125,
+              "retained_mass": 0.5609374009072781,
+              "retained_topk_mass": 0.3958852904615924,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            },
+            "ar": {
+              "candidate_count": 256.640625,
+              "full_topk_mass": 0.3672203829046339,
+              "gold_included": 0.640625,
+              "retained_mass": 0.5480336667969823,
+              "retained_topk_mass": 0.3672203829046339,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            },
+            "fa": {
+              "candidate_count": 256.6875,
+              "full_topk_mass": 0.41365250176750124,
+              "gold_included": 0.59375,
+              "retained_mass": 0.5892748236656189,
+              "retained_topk_mass": 0.41365250176750124,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            }
+          },
+          "macro": {
+            "candidate_count": 256.6953125,
+            "full_topk_mass": 0.41886957894894294,
+            "gold_included": 0.6015625,
+            "retained_mass": 0.5865399360191077,
+            "retained_topk_mass": 0.41886957894894294,
+            "top1_agreement": 1.0,
+            "topk_mass_recall": 1.0,
+            "topk_recall": 1.0
+          }
+        },
+        {
+          "phase": "tune",
+          "method": "flat",
+          "config_id": "flat_b512",
+          "B": 512,
+          "ef_search": null,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 512.703125,
+              "full_topk_mass": 0.4987201406620443,
+              "gold_included": 0.625,
+              "retained_mass": 0.7119869217276573,
+              "retained_topk_mass": 0.4987201406620443,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            },
+            "de": {
+              "candidate_count": 512.578125,
+              "full_topk_mass": 0.3958852904615924,
+              "gold_included": 0.6875,
+              "retained_mass": 0.6348481429740787,
+              "retained_topk_mass": 0.3958852904615924,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            },
+            "ar": {
+              "candidate_count": 512.59375,
+              "full_topk_mass": 0.3672203829046339,
+              "gold_included": 0.71875,
+              "retained_mass": 0.6347499126568437,
+              "retained_topk_mass": 0.3672203829046339,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            },
+            "fa": {
+              "candidate_count": 512.5625,
+              "full_topk_mass": 0.41365250176750124,
+              "gold_included": 0.671875,
+              "retained_mass": 0.6723808064125478,
+              "retained_topk_mass": 0.41365250176750124,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            }
+          },
+          "macro": {
+            "candidate_count": 512.609375,
+            "full_topk_mass": 0.41886957894894294,
+            "gold_included": 0.67578125,
+            "retained_mass": 0.6634914459427819,
+            "retained_topk_mass": 0.41886957894894294,
+            "top1_agreement": 1.0,
+            "topk_mass_recall": 1.0,
+            "topk_recall": 1.0
+          }
+        },
+        {
+          "phase": "tune",
+          "method": "hnsw",
+          "config_id": "b128_ef128",
+          "B": 128,
+          "ef_search": 128,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 128.84375,
+              "full_topk_mass": 0.4987201406620443,
+              "gold_included": 0.46875,
+              "retained_mass": 0.5087013695156202,
+              "retained_topk_mass": 0.44323231623275205,
+              "top1_agreement": 0.921875,
+              "topk_mass_recall": 0.8426686273887753,
+              "topk_recall": 0.7431249965447932
+            },
+            "de": {
+              "candidate_count": 128.71875,
+              "full_topk_mass": 0.3958852904615924,
+              "gold_included": 0.5,
+              "retained_mass": 0.41546625387854874,
+              "retained_topk_mass": 0.33682711282745004,
+              "top1_agreement": 0.859375,
+              "topk_mass_recall": 0.8063980953302234,
+              "topk_recall": 0.7434374967124313
+            },
+            "ar": {
+              "candidate_count": 128.640625,
+              "full_topk_mass": 0.3672203829046339,
+              "gold_included": 0.390625,
+              "retained_mass": 0.3637827809434384,
+              "retained_topk_mass": 0.28935800591716543,
+              "top1_agreement": 0.875,
+              "topk_mass_recall": 0.726728419191204,
+              "topk_recall": 0.6212500019464642
+            },
+            "fa": {
+              "candidate_count": 128.625,
+              "full_topk_mass": 0.41365250176750124,
+              "gold_included": 0.375,
+              "retained_mass": 0.394165440229699,
+              "retained_topk_mass": 0.3220076363068074,
+              "top1_agreement": 0.84375,
+              "topk_mass_recall": 0.7073466641595587,
+              "topk_recall": 0.5768750031711534
+            }
+          },
+          "macro": {
+            "candidate_count": 128.70703125,
+            "full_topk_mass": 0.41886957894894294,
+            "gold_included": 0.43359375,
+            "retained_mass": 0.4205289611418266,
+            "retained_topk_mass": 0.34785626782104373,
+            "top1_agreement": 0.875,
+            "topk_mass_recall": 0.7707854515174404,
+            "topk_recall": 0.6711718745937105
+          }
+        },
+        {
+          "phase": "tune",
+          "method": "hnsw",
+          "config_id": "b128_ef256",
+          "B": 128,
+          "ef_search": 256,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 128.84375,
+              "full_topk_mass": 0.4987201406620443,
+              "gold_included": 0.46875,
+              "retained_mass": 0.5096959366928786,
+              "retained_topk_mass": 0.4436622681678273,
+              "top1_agreement": 0.921875,
+              "topk_mass_recall": 0.8440644843503833,
+              "topk_recall": 0.7465624974574894
+            },
+            "de": {
+              "candidate_count": 128.734375,
+              "full_topk_mass": 0.3958852904615924,
+              "gold_included": 0.5,
+              "retained_mass": 0.4163302860688418,
+              "retained_topk_mass": 0.3372310359845869,
+              "top1_agreement": 0.859375,
+              "topk_mass_recall": 0.8081898700911552,
+              "topk_recall": 0.74656249769032
+            },
+            "ar": {
+              "candidate_count": 128.640625,
+              "full_topk_mass": 0.3672203829046339,
+              "gold_included": 0.40625,
+              "retained_mass": 0.36466972320340574,
+              "retained_topk_mass": 0.28963644156465307,
+              "top1_agreement": 0.875,
+              "topk_mass_recall": 0.7279999759048223,
+              "topk_recall": 0.6231250010896474
+            },
+            "fa": {
+              "candidate_count": 128.625,
+              "full_topk_mass": 0.41365250176750124,
+              "gold_included": 0.375,
+              "retained_mass": 0.39614402363076806,
+              "retained_topk_mass": 0.32332265365403146,
+              "top1_agreement": 0.84375,
+              "topk_mass_recall": 0.7125033155316487,
+              "topk_recall": 0.5843750018393621
+            }
+          },
+          "macro": {
+            "candidate_count": 128.7109375,
+            "full_topk_mass": 0.41886957894894294,
+            "gold_included": 0.4375,
+            "retained_mass": 0.42170999239897355,
+            "retained_topk_mass": 0.3484630998427747,
+            "top1_agreement": 0.875,
+            "topk_mass_recall": 0.7731894114695024,
+            "topk_recall": 0.6751562495192047
+          }
+        },
+        {
+          "phase": "tune",
+          "method": "hnsw",
+          "config_id": "b128_ef512",
+          "B": 128,
+          "ef_search": 512,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 128.84375,
+              "full_topk_mass": 0.4987201406620443,
+              "gold_included": 0.46875,
+              "retained_mass": 0.5105902189388871,
+              "retained_topk_mass": 0.4439415382803418,
+              "top1_agreement": 0.921875,
+              "topk_mass_recall": 0.8449660651385784,
+              "topk_recall": 0.7490624987985939
+            },
+            "de": {
+              "candidate_count": 128.734375,
+              "full_topk_mass": 0.3958852904615924,
+              "gold_included": 0.5,
+              "retained_mass": 0.41824820078909397,
+              "retained_topk_mass": 0.33899268065579236,
+              "top1_agreement": 0.859375,
+              "topk_mass_recall": 0.8132391606923193,
+              "topk_recall": 0.751562500372529
+            },
+            "ar": {
+              "candidate_count": 128.640625,
+              "full_topk_mass": 0.3672203829046339,
+              "gold_included": 0.40625,
+              "retained_mass": 0.3653110055020079,
+              "retained_topk_mass": 0.289939786947798,
+              "top1_agreement": 0.875,
+              "topk_mass_recall": 0.7292993664741516,
+              "topk_recall": 0.6246875012293458
+            },
+            "fa": {
+              "candidate_count": 128.640625,
+              "full_topk_mass": 0.41365250176750124,
+              "gold_included": 0.375,
+              "retained_mass": 0.39702522358857095,
+              "retained_topk_mass": 0.32351689820643514,
+              "top1_agreement": 0.84375,
+              "topk_mass_recall": 0.7129087575012818,
+              "topk_recall": 0.5853125009452924
+            }
+          },
+          "macro": {
+            "candidate_count": 128.71484375,
+            "full_topk_mass": 0.41886957894894294,
+            "gold_included": 0.4375,
+            "retained_mass": 0.42279366220464,
+            "retained_topk_mass": 0.3490977260225918,
+            "top1_agreement": 0.875,
+            "topk_mass_recall": 0.7751033374515828,
+            "topk_recall": 0.6776562503364403
+          }
+        },
+        {
+          "phase": "tune",
+          "method": "hnsw",
+          "config_id": "b128_ef1024",
+          "B": 128,
+          "ef_search": 1024,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 128.84375,
+              "full_topk_mass": 0.4987201406620443,
+              "gold_included": 0.46875,
+              "retained_mass": 0.5114539494970813,
+              "retained_topk_mass": 0.444352867139969,
+              "top1_agreement": 0.921875,
+              "topk_mass_recall": 0.846557920332998,
+              "topk_recall": 0.7524999994784594
+            },
+            "de": {
+              "candidate_count": 128.734375,
+              "full_topk_mass": 0.3958852904615924,
+              "gold_included": 0.5,
+              "retained_mass": 0.421791935688816,
+              "retained_topk_mass": 0.34244081436190754,
+              "top1_agreement": 0.890625,
+              "topk_mass_recall": 0.8220643121749163,
+              "topk_recall": 0.7562500010244548
+            },
+            "ar": {
+              "candidate_count": 128.640625,
+              "full_topk_mass": 0.3672203829046339,
+              "gold_included": 0.40625,
+              "retained_mass": 0.3657197743887082,
+              "retained_topk_mass": 0.29004687507404014,
+              "top1_agreement": 0.875,
+              "topk_mass_recall": 0.7295941328629851,
+              "topk_recall": 0.6253125006332994
+            },
+            "fa": {
+              "candidate_count": 128.65625,
+              "full_topk_mass": 0.41365250176750124,
+              "gold_included": 0.375,
+              "retained_mass": 0.399090459337458,
+              "retained_topk_mass": 0.3249811000423506,
+              "top1_agreement": 0.859375,
+              "topk_mass_recall": 0.7169220467330888,
+              "topk_recall": 0.5915625022025779
+            }
+          },
+          "macro": {
+            "candidate_count": 128.71875,
+            "full_topk_mass": 0.41886957894894294,
+            "gold_included": 0.4375,
+            "retained_mass": 0.4245140297280159,
+            "retained_topk_mass": 0.3504554141545668,
+            "top1_agreement": 0.88671875,
+            "topk_mass_recall": 0.7787846030259971,
+            "topk_recall": 0.6814062508346979
+          }
+        },
+        {
+          "phase": "tune",
+          "method": "hnsw",
+          "config_id": "b256_ef128",
+          "B": 256,
+          "ef_search": 128,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 256.59375,
+              "full_topk_mass": 0.4987201406620443,
+              "gold_included": 0.484375,
+              "retained_mass": 0.5320824238006026,
+              "retained_topk_mass": 0.44323231623275205,
+              "top1_agreement": 0.921875,
+              "topk_mass_recall": 0.8426686273887753,
+              "topk_recall": 0.7431249965447932
+            },
+            "de": {
+              "candidate_count": 256.546875,
+              "full_topk_mass": 0.3958852904615924,
+              "gold_included": 0.53125,
+              "retained_mass": 0.4512817212380469,
+              "retained_topk_mass": 0.33682711282745004,
+              "top1_agreement": 0.859375,
+              "topk_mass_recall": 0.8063980953302234,
+              "topk_recall": 0.7434374967124313
+            },
+            "ar": {
+              "candidate_count": 256.515625,
+              "full_topk_mass": 0.3672203829046339,
+              "gold_included": 0.421875,
+              "retained_mass": 0.386415971792303,
+              "retained_topk_mass": 0.28935800591716543,
+              "top1_agreement": 0.875,
+              "topk_mass_recall": 0.726728419191204,
+              "topk_recall": 0.6212500019464642
+            },
+            "fa": {
+              "candidate_count": 256.359375,
+              "full_topk_mass": 0.41365250176750124,
+              "gold_included": 0.421875,
+              "retained_mass": 0.41615652316249907,
+              "retained_topk_mass": 0.3220076363068074,
+              "top1_agreement": 0.84375,
+              "topk_mass_recall": 0.7073466641595587,
+              "topk_recall": 0.5768750031711534
+            }
+          },
+          "macro": {
+            "candidate_count": 256.50390625,
+            "full_topk_mass": 0.41886957894894294,
+            "gold_included": 0.46484375,
+            "retained_mass": 0.4464841599983629,
+            "retained_topk_mass": 0.34785626782104373,
+            "top1_agreement": 0.875,
+            "topk_mass_recall": 0.7707854515174404,
+            "topk_recall": 0.6711718745937105
+          }
+        },
+        {
+          "phase": "tune",
+          "method": "hnsw",
+          "config_id": "b256_ef256",
+          "B": 256,
+          "ef_search": 256,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 256.671875,
+              "full_topk_mass": 0.4987201406620443,
+              "gold_included": 0.484375,
+              "retained_mass": 0.5340745287248865,
+              "retained_topk_mass": 0.4436622681678273,
+              "top1_agreement": 0.921875,
+              "topk_mass_recall": 0.8440644843503833,
+              "topk_recall": 0.7465624974574894
+            },
+            "de": {
+              "candidate_count": 256.546875,
+              "full_topk_mass": 0.3958852904615924,
+              "gold_included": 0.546875,
+              "retained_mass": 0.45308968983590603,
+              "retained_topk_mass": 0.3372310359845869,
+              "top1_agreement": 0.859375,
+              "topk_mass_recall": 0.8081898700911552,
+              "topk_recall": 0.74656249769032
+            },
+            "ar": {
+              "candidate_count": 256.515625,
+              "full_topk_mass": 0.3672203829046339,
+              "gold_included": 0.4375,
+              "retained_mass": 0.388273062184453,
+              "retained_topk_mass": 0.28963644156465307,
+              "top1_agreement": 0.875,
+              "topk_mass_recall": 0.7279999759048223,
+              "topk_recall": 0.6231250010896474
+            },
+            "fa": {
+              "candidate_count": 256.328125,
+              "full_topk_mass": 0.41365250176750124,
+              "gold_included": 0.421875,
+              "retained_mass": 0.4193073492497206,
+              "retained_topk_mass": 0.32332265365403146,
+              "top1_agreement": 0.84375,
+              "topk_mass_recall": 0.7125033155316487,
+              "topk_recall": 0.5843750018393621
+            }
+          },
+          "macro": {
+            "candidate_count": 256.515625,
+            "full_topk_mass": 0.41886957894894294,
+            "gold_included": 0.47265625,
+            "retained_mass": 0.4486861574987415,
+            "retained_topk_mass": 0.3484630998427747,
+            "top1_agreement": 0.875,
+            "topk_mass_recall": 0.7731894114695024,
+            "topk_recall": 0.6751562495192047
+          }
+        },
+        {
+          "phase": "tune",
+          "method": "hnsw",
+          "config_id": "b256_ef512",
+          "B": 256,
+          "ef_search": 512,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 256.6875,
+              "full_topk_mass": 0.4987201406620443,
+              "gold_included": 0.484375,
+              "retained_mass": 0.5356003304477781,
+              "retained_topk_mass": 0.4439415382803418,
+              "top1_agreement": 0.921875,
+              "topk_mass_recall": 0.8449660651385784,
+              "topk_recall": 0.7490624987985939
+            },
+            "de": {
+              "candidate_count": 256.546875,
+              "full_topk_mass": 0.3958852904615924,
+              "gold_included": 0.546875,
+              "retained_mass": 0.45551943010650575,
+              "retained_topk_mass": 0.33899268065579236,
+              "top1_agreement": 0.859375,
+              "topk_mass_recall": 0.8132391606923193,
+              "topk_recall": 0.751562500372529
+            },
+            "ar": {
+              "candidate_count": 256.515625,
+              "full_topk_mass": 0.3672203829046339,
+              "gold_included": 0.4375,
+              "retained_mass": 0.38950115896295756,
+              "retained_topk_mass": 0.289939786947798,
+              "top1_agreement": 0.875,
+              "topk_mass_recall": 0.7292993664741516,
+              "topk_recall": 0.6246875012293458
+            },
+            "fa": {
+              "candidate_count": 256.34375,
+              "full_topk_mass": 0.41365250176750124,
+              "gold_included": 0.421875,
+              "retained_mass": 0.42090647341683507,
+              "retained_topk_mass": 0.32351689820643514,
+              "top1_agreement": 0.84375,
+              "topk_mass_recall": 0.7129087575012818,
+              "topk_recall": 0.5853125009452924
+            }
+          },
+          "macro": {
+            "candidate_count": 256.5234375,
+            "full_topk_mass": 0.41886957894894294,
+            "gold_included": 0.47265625,
+            "retained_mass": 0.4503818482335191,
+            "retained_topk_mass": 0.3490977260225918,
+            "top1_agreement": 0.875,
+            "topk_mass_recall": 0.7751033374515828,
+            "topk_recall": 0.6776562503364403
+          }
+        },
+        {
+          "phase": "tune",
+          "method": "hnsw",
+          "config_id": "b256_ef1024",
+          "B": 256,
+          "ef_search": 1024,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 256.6875,
+              "full_topk_mass": 0.4987201406620443,
+              "gold_included": 0.484375,
+              "retained_mass": 0.5370804705889896,
+              "retained_topk_mass": 0.444352867139969,
+              "top1_agreement": 0.921875,
+              "topk_mass_recall": 0.846557920332998,
+              "topk_recall": 0.7524999994784594
+            },
+            "de": {
+              "candidate_count": 256.546875,
+              "full_topk_mass": 0.3958852904615924,
+              "gold_included": 0.546875,
+              "retained_mass": 0.4594003402162343,
+              "retained_topk_mass": 0.34244081436190754,
+              "top1_agreement": 0.890625,
+              "topk_mass_recall": 0.8220643121749163,
+              "topk_recall": 0.7562500010244548
+            },
+            "ar": {
+              "candidate_count": 256.515625,
+              "full_topk_mass": 0.3672203829046339,
+              "gold_included": 0.4375,
+              "retained_mass": 0.39039027667604387,
+              "retained_topk_mass": 0.29004687507404014,
+              "top1_agreement": 0.875,
+              "topk_mass_recall": 0.7295941328629851,
+              "topk_recall": 0.6253125006332994
+            },
+            "fa": {
+              "candidate_count": 256.359375,
+              "full_topk_mass": 0.41365250176750124,
+              "gold_included": 0.421875,
+              "retained_mass": 0.4237314616329968,
+              "retained_topk_mass": 0.3249811000423506,
+              "top1_agreement": 0.859375,
+              "topk_mass_recall": 0.7169220467330888,
+              "topk_recall": 0.5915625022025779
+            }
+          },
+          "macro": {
+            "candidate_count": 256.52734375,
+            "full_topk_mass": 0.41886957894894294,
+            "gold_included": 0.47265625,
+            "retained_mass": 0.45265063727856614,
+            "retained_topk_mass": 0.3504554141545668,
+            "top1_agreement": 0.88671875,
+            "topk_mass_recall": 0.7787846030259971,
+            "topk_recall": 0.6814062508346979
+          }
+        },
+        {
+          "phase": "tune",
+          "method": "hnsw",
+          "config_id": "b512_ef128",
+          "B": 512,
+          "ef_search": 128,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 512.375,
+              "full_topk_mass": 0.4987201406620443,
+              "gold_included": 0.5,
+              "retained_mass": 0.5435656607151031,
+              "retained_topk_mass": 0.44323231623275205,
+              "top1_agreement": 0.921875,
+              "topk_mass_recall": 0.8426686273887753,
+              "topk_recall": 0.7431249965447932
+            },
+            "de": {
+              "candidate_count": 512.328125,
+              "full_topk_mass": 0.3958852904615924,
+              "gold_included": 0.578125,
+              "retained_mass": 0.4718884490430355,
+              "retained_topk_mass": 0.33682711282745004,
+              "top1_agreement": 0.859375,
+              "topk_mass_recall": 0.8063980953302234,
+              "topk_recall": 0.7434374967124313
+            },
+            "ar": {
+              "candidate_count": 512.375,
+              "full_topk_mass": 0.3672203829046339,
+              "gold_included": 0.421875,
+              "retained_mass": 0.3969022616511211,
+              "retained_topk_mass": 0.28935800591716543,
+              "top1_agreement": 0.875,
+              "topk_mass_recall": 0.726728419191204,
+              "topk_recall": 0.6212500019464642
+            },
+            "fa": {
+              "candidate_count": 512.234375,
+              "full_topk_mass": 0.41365250176750124,
+              "gold_included": 0.4375,
+              "retained_mass": 0.4274425932671875,
+              "retained_topk_mass": 0.3220076363068074,
+              "top1_agreement": 0.84375,
+              "topk_mass_recall": 0.7073466641595587,
+              "topk_recall": 0.5768750031711534
+            }
+          },
+          "macro": {
+            "candidate_count": 512.328125,
+            "full_topk_mass": 0.41886957894894294,
+            "gold_included": 0.484375,
+            "retained_mass": 0.4599497411691118,
+            "retained_topk_mass": 0.34785626782104373,
+            "top1_agreement": 0.875,
+            "topk_mass_recall": 0.7707854515174404,
+            "topk_recall": 0.6711718745937105
+          }
+        },
+        {
+          "phase": "tune",
+          "method": "hnsw",
+          "config_id": "b512_ef256",
+          "B": 512,
+          "ef_search": 256,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 512.3125,
+              "full_topk_mass": 0.4987201406620443,
+              "gold_included": 0.5,
+              "retained_mass": 0.5469397257547826,
+              "retained_topk_mass": 0.4436622681678273,
+              "top1_agreement": 0.921875,
+              "topk_mass_recall": 0.8440644843503833,
+              "topk_recall": 0.7465624974574894
+            },
+            "de": {
+              "candidate_count": 512.28125,
+              "full_topk_mass": 0.3958852904615924,
+              "gold_included": 0.59375,
+              "retained_mass": 0.47537475381977856,
+              "retained_topk_mass": 0.3372310359845869,
+              "top1_agreement": 0.859375,
+              "topk_mass_recall": 0.8081898700911552,
+              "topk_recall": 0.74656249769032
+            },
+            "ar": {
+              "candidate_count": 512.28125,
+              "full_topk_mass": 0.3672203829046339,
+              "gold_included": 0.4375,
+              "retained_mass": 0.4000751314451918,
+              "retained_topk_mass": 0.28963644156465307,
+              "top1_agreement": 0.875,
+              "topk_mass_recall": 0.7279999759048223,
+              "topk_recall": 0.6231250010896474
+            },
+            "fa": {
+              "candidate_count": 512.15625,
+              "full_topk_mass": 0.41365250176750124,
+              "gold_included": 0.4375,
+              "retained_mass": 0.4319994072429836,
+              "retained_topk_mass": 0.32332265365403146,
+              "top1_agreement": 0.84375,
+              "topk_mass_recall": 0.7125033155316487,
+              "topk_recall": 0.5843750018393621
+            }
+          },
+          "macro": {
+            "candidate_count": 512.2578125,
+            "full_topk_mass": 0.41886957894894294,
+            "gold_included": 0.4921875,
+            "retained_mass": 0.4635972545656841,
+            "retained_topk_mass": 0.3484630998427747,
+            "top1_agreement": 0.875,
+            "topk_mass_recall": 0.7731894114695024,
+            "topk_recall": 0.6751562495192047
+          }
+        },
+        {
+          "phase": "tune",
+          "method": "hnsw",
+          "config_id": "b512_ef512",
+          "B": 512,
+          "ef_search": 512,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 512.3125,
+              "full_topk_mass": 0.4987201406620443,
+              "gold_included": 0.5,
+              "retained_mass": 0.5491681618150324,
+              "retained_topk_mass": 0.4439415382803418,
+              "top1_agreement": 0.921875,
+              "topk_mass_recall": 0.8449660651385784,
+              "topk_recall": 0.7490624987985939
+            },
+            "de": {
+              "candidate_count": 512.28125,
+              "full_topk_mass": 0.3958852904615924,
+              "gold_included": 0.59375,
+              "retained_mass": 0.478596247266978,
+              "retained_topk_mass": 0.33899268065579236,
+              "top1_agreement": 0.859375,
+              "topk_mass_recall": 0.8132391606923193,
+              "topk_recall": 0.751562500372529
+            },
+            "ar": {
+              "candidate_count": 512.328125,
+              "full_topk_mass": 0.3672203829046339,
+              "gold_included": 0.4375,
+              "retained_mass": 0.4020696956431493,
+              "retained_topk_mass": 0.289939786947798,
+              "top1_agreement": 0.875,
+              "topk_mass_recall": 0.7292993664741516,
+              "topk_recall": 0.6246875012293458
+            },
+            "fa": {
+              "candidate_count": 512.15625,
+              "full_topk_mass": 0.41365250176750124,
+              "gold_included": 0.4375,
+              "retained_mass": 0.43443813594058156,
+              "retained_topk_mass": 0.32351689820643514,
+              "top1_agreement": 0.84375,
+              "topk_mass_recall": 0.7129087575012818,
+              "topk_recall": 0.5853125009452924
+            }
+          },
+          "macro": {
+            "candidate_count": 512.26953125,
+            "full_topk_mass": 0.41886957894894294,
+            "gold_included": 0.4921875,
+            "retained_mass": 0.4660680601664353,
+            "retained_topk_mass": 0.3490977260225918,
+            "top1_agreement": 0.875,
+            "topk_mass_recall": 0.7751033374515828,
+            "topk_recall": 0.6776562503364403
+          }
+        },
+        {
+          "phase": "tune",
+          "method": "hnsw",
+          "config_id": "b512_ef1024",
+          "B": 512,
+          "ef_search": 1024,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 512.328125,
+              "full_topk_mass": 0.4987201406620443,
+              "gold_included": 0.5,
+              "retained_mass": 0.5512045391369611,
+              "retained_topk_mass": 0.444352867139969,
+              "top1_agreement": 0.921875,
+              "topk_mass_recall": 0.846557920332998,
+              "topk_recall": 0.7524999994784594
+            },
+            "de": {
+              "candidate_count": 512.296875,
+              "full_topk_mass": 0.3958852904615924,
+              "gold_included": 0.59375,
+              "retained_mass": 0.48299828986637294,
+              "retained_topk_mass": 0.34244081436190754,
+              "top1_agreement": 0.890625,
+              "topk_mass_recall": 0.8220643121749163,
+              "topk_recall": 0.7562500010244548
+            },
+            "ar": {
+              "candidate_count": 512.328125,
+              "full_topk_mass": 0.3672203829046339,
+              "gold_included": 0.4375,
+              "retained_mass": 0.40353954629972577,
+              "retained_topk_mass": 0.29004687507404014,
+              "top1_agreement": 0.875,
+              "topk_mass_recall": 0.7295941328629851,
+              "topk_recall": 0.6253125006332994
+            },
+            "fa": {
+              "candidate_count": 512.15625,
+              "full_topk_mass": 0.41365250176750124,
+              "gold_included": 0.4375,
+              "retained_mass": 0.43799706385470927,
+              "retained_topk_mass": 0.3249811000423506,
+              "top1_agreement": 0.859375,
+              "topk_mass_recall": 0.7169220467330888,
+              "topk_recall": 0.5915625022025779
+            }
+          },
+          "macro": {
+            "candidate_count": 512.27734375,
+            "full_topk_mass": 0.41886957894894294,
+            "gold_included": 0.4921875,
+            "retained_mass": 0.46893485978944227,
+            "retained_topk_mass": 0.3504554141545668,
+            "top1_agreement": 0.88671875,
+            "topk_mass_recall": 0.7787846030259971,
+            "topk_recall": 0.6814062508346979
+          }
+        },
+        {
+          "phase": "confirmation",
+          "method": "flat",
+          "config_id": "flat_b128",
+          "B": 128,
+          "ef_search": null,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 128.90625,
+              "full_topk_mass": 0.502183370757848,
+              "gold_included": 0.640625,
+              "retained_mass": 0.5895510364789516,
+              "retained_topk_mass": 0.502183370757848,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            },
+            "de": {
+              "candidate_count": 128.75,
+              "full_topk_mass": 0.42769374372437596,
+              "gold_included": 0.625,
+              "retained_mass": 0.5257284145336598,
+              "retained_topk_mass": 0.42769374372437596,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            },
+            "ar": {
+              "candidate_count": 128.890625,
+              "full_topk_mass": 0.3399923644028604,
+              "gold_included": 0.453125,
+              "retained_mass": 0.4479366422165185,
+              "retained_topk_mass": 0.3399923644028604,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            },
+            "fa": {
+              "candidate_count": 128.796875,
+              "full_topk_mass": 0.4457980084698647,
+              "gold_included": 0.484375,
+              "retained_mass": 0.5468884757719934,
+              "retained_topk_mass": 0.4457980084698647,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            }
+          },
+          "macro": {
+            "candidate_count": 128.8359375,
+            "full_topk_mass": 0.4289168718387373,
+            "gold_included": 0.55078125,
+            "retained_mass": 0.5275261422502808,
+            "retained_topk_mass": 0.4289168718387373,
+            "top1_agreement": 1.0,
+            "topk_mass_recall": 1.0,
+            "topk_recall": 1.0
+          }
+        },
+        {
+          "phase": "confirmation",
+          "method": "flat",
+          "config_id": "flat_b256",
+          "B": 256,
+          "ef_search": null,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 256.859375,
+              "full_topk_mass": 0.502183370757848,
+              "gold_included": 0.71875,
+              "retained_mass": 0.6540552549995482,
+              "retained_topk_mass": 0.502183370757848,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            },
+            "de": {
+              "candidate_count": 256.703125,
+              "full_topk_mass": 0.42769374372437596,
+              "gold_included": 0.6875,
+              "retained_mass": 0.5989235634915531,
+              "retained_topk_mass": 0.42769374372437596,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            },
+            "ar": {
+              "candidate_count": 256.78125,
+              "full_topk_mass": 0.3399923644028604,
+              "gold_included": 0.53125,
+              "retained_mass": 0.5358163267374039,
+              "retained_topk_mass": 0.3399923644028604,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            },
+            "fa": {
+              "candidate_count": 256.734375,
+              "full_topk_mass": 0.4457980084698647,
+              "gold_included": 0.609375,
+              "retained_mass": 0.6251835878938437,
+              "retained_topk_mass": 0.4457980084698647,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            }
+          },
+          "macro": {
+            "candidate_count": 256.76953125,
+            "full_topk_mass": 0.4289168718387373,
+            "gold_included": 0.63671875,
+            "retained_mass": 0.6034946832805872,
+            "retained_topk_mass": 0.4289168718387373,
+            "top1_agreement": 1.0,
+            "topk_mass_recall": 1.0,
+            "topk_recall": 1.0
+          }
+        },
+        {
+          "phase": "confirmation",
+          "method": "flat",
+          "config_id": "flat_b512",
+          "B": 512,
+          "ef_search": null,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 512.796875,
+              "full_topk_mass": 0.502183370757848,
+              "gold_included": 0.734375,
+              "retained_mass": 0.7185264811851084,
+              "retained_topk_mass": 0.502183370757848,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            },
+            "de": {
+              "candidate_count": 512.5625,
+              "full_topk_mass": 0.42769374372437596,
+              "gold_included": 0.75,
+              "retained_mass": 0.6716168997809291,
+              "retained_topk_mass": 0.42769374372437596,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            },
+            "ar": {
+              "candidate_count": 512.703125,
+              "full_topk_mass": 0.3399923644028604,
+              "gold_included": 0.640625,
+              "retained_mass": 0.6267036139033735,
+              "retained_topk_mass": 0.3399923644028604,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            },
+            "fa": {
+              "candidate_count": 512.640625,
+              "full_topk_mass": 0.4457980084698647,
+              "gold_included": 0.71875,
+              "retained_mass": 0.7044362742453814,
+              "retained_topk_mass": 0.4457980084698647,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            }
+          },
+          "macro": {
+            "candidate_count": 512.67578125,
+            "full_topk_mass": 0.4289168718387373,
+            "gold_included": 0.7109375,
+            "retained_mass": 0.6803208172786981,
+            "retained_topk_mass": 0.4289168718387373,
+            "top1_agreement": 1.0,
+            "topk_mass_recall": 1.0,
+            "topk_recall": 1.0
+          }
+        },
+        {
+          "phase": "confirmation",
+          "method": "hnsw",
+          "config_id": "b256_ef1024",
+          "B": 256,
+          "ef_search": 1024,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 256.765625,
+              "full_topk_mass": 0.502183370757848,
+              "gold_included": 0.546875,
+              "retained_mass": 0.509217343875207,
+              "retained_topk_mass": 0.4177275899273809,
+              "top1_agreement": 0.875,
+              "topk_mass_recall": 0.8005515417316929,
+              "topk_recall": 0.693749996367842
+            },
+            "de": {
+              "candidate_count": 256.5,
+              "full_topk_mass": 0.42769374372437596,
+              "gold_included": 0.515625,
+              "retained_mass": 0.4830105903092772,
+              "retained_topk_mass": 0.3686769890191499,
+              "top1_agreement": 0.890625,
+              "topk_mass_recall": 0.8089613958727568,
+              "topk_recall": 0.7368749992456287
+            },
+            "ar": {
+              "candidate_count": 256.65625,
+              "full_topk_mass": 0.3399923644028604,
+              "gold_included": 0.34375,
+              "retained_mass": 0.34839626238681376,
+              "retained_topk_mass": 0.24301473394734785,
+              "top1_agreement": 0.84375,
+              "topk_mass_recall": 0.6773541048169136,
+              "topk_recall": 0.5800000010058284
+            },
+            "fa": {
+              "candidate_count": 256.46875,
+              "full_topk_mass": 0.4457980084698647,
+              "gold_included": 0.40625,
+              "retained_mass": 0.4343629306531511,
+              "retained_topk_mass": 0.33688696241006255,
+              "top1_agreement": 0.875,
+              "topk_mass_recall": 0.71522912645014,
+              "topk_recall": 0.5784374971408397
+            }
+          },
+          "macro": {
+            "candidate_count": 256.59765625,
+            "full_topk_mass": 0.4289168718387373,
+            "gold_included": 0.453125,
+            "retained_mass": 0.44374678180611227,
+            "retained_topk_mass": 0.3415765688259853,
+            "top1_agreement": 0.87109375,
+            "topk_mass_recall": 0.7505240422178758,
+            "topk_recall": 0.6472656234400347
+          }
+        }
+      ],
+      "timing_summaries": [
+        {
+          "phase": "confirmation",
+          "config_id": "b256_ef1024",
+          "family": "prefill_and_decode",
+          "B": 256,
+          "ef_search": 1024,
+          "cells": 16,
+          "mean_cell_median_ms": 333.55002118751287,
+          "ms_per_prediction": 20.846876324219554
+        },
+        {
+          "phase": "confirmation",
+          "config_id": "b256_ef1024",
+          "family": "warm_decode",
+          "B": 256,
+          "ef_search": 1024,
+          "cells": 16,
+          "mean_cell_median_ms": 255.9191253750086,
+          "ms_per_prediction": 15.994945335938038
+        },
+        {
+          "phase": "confirmation",
+          "config_id": "exact",
+          "family": "prefill_and_decode",
+          "B": null,
+          "ef_search": null,
+          "cells": 16,
+          "mean_cell_median_ms": 323.7729623124892,
+          "ms_per_prediction": 20.235810144530575
+        },
+        {
+          "phase": "confirmation",
+          "config_id": "exact",
+          "family": "warm_decode",
+          "B": null,
+          "ef_search": null,
+          "cells": 16,
+          "mean_cell_median_ms": 248.71672218750973,
+          "ms_per_prediction": 15.544795136719358
+        },
+        {
+          "phase": "tune",
+          "config_id": "b128_ef1024",
+          "family": "warm_decode",
+          "B": 128,
+          "ef_search": 1024,
+          "cells": 8,
+          "mean_cell_median_ms": 253.7398848750172,
+          "ms_per_prediction": 15.858742804688575
+        },
+        {
+          "phase": "tune",
+          "config_id": "b128_ef128",
+          "family": "warm_decode",
+          "B": 128,
+          "ef_search": 128,
+          "cells": 8,
+          "mean_cell_median_ms": 230.73094162499785,
+          "ms_per_prediction": 14.420683851562366
+        },
+        {
+          "phase": "tune",
+          "config_id": "b128_ef256",
+          "family": "warm_decode",
+          "B": 128,
+          "ef_search": 256,
+          "cells": 8,
+          "mean_cell_median_ms": 232.71301074997552,
+          "ms_per_prediction": 14.54456317187347
+        },
+        {
+          "phase": "tune",
+          "config_id": "b128_ef512",
+          "family": "warm_decode",
+          "B": 128,
+          "ef_search": 512,
+          "cells": 8,
+          "mean_cell_median_ms": 237.6703572499821,
+          "ms_per_prediction": 14.85439732812388
+        },
+        {
+          "phase": "tune",
+          "config_id": "b256_ef1024",
+          "family": "warm_decode",
+          "B": 256,
+          "ef_search": 1024,
+          "cells": 8,
+          "mean_cell_median_ms": 251.23157725001022,
+          "ms_per_prediction": 15.701973578125639
+        },
+        {
+          "phase": "tune",
+          "config_id": "b256_ef128",
+          "family": "warm_decode",
+          "B": 256,
+          "ef_search": 128,
+          "cells": 8,
+          "mean_cell_median_ms": 233.09230737498865,
+          "ms_per_prediction": 14.56826921093679
+        },
+        {
+          "phase": "tune",
+          "config_id": "b256_ef256",
+          "family": "warm_decode",
+          "B": 256,
+          "ef_search": 256,
+          "cells": 8,
+          "mean_cell_median_ms": 234.28948125001625,
+          "ms_per_prediction": 14.643092578126016
+        },
+        {
+          "phase": "tune",
+          "config_id": "b256_ef512",
+          "family": "warm_decode",
+          "B": 256,
+          "ef_search": 512,
+          "cells": 8,
+          "mean_cell_median_ms": 240.25161237496206,
+          "ms_per_prediction": 15.015725773435129
+        },
+        {
+          "phase": "tune",
+          "config_id": "b512_ef1024",
+          "family": "warm_decode",
+          "B": 512,
+          "ef_search": 1024,
+          "cells": 8,
+          "mean_cell_median_ms": 252.2159630000118,
+          "ms_per_prediction": 15.763497687500738
+        },
+        {
+          "phase": "tune",
+          "config_id": "b512_ef128",
+          "family": "warm_decode",
+          "B": 512,
+          "ef_search": 128,
+          "cells": 8,
+          "mean_cell_median_ms": 236.7487903750174,
+          "ms_per_prediction": 14.796799398438587
+        },
+        {
+          "phase": "tune",
+          "config_id": "b512_ef256",
+          "family": "warm_decode",
+          "B": 512,
+          "ef_search": 256,
+          "cells": 8,
+          "mean_cell_median_ms": 236.8000787500364,
+          "ms_per_prediction": 14.800004921877274
+        },
+        {
+          "phase": "tune",
+          "config_id": "b512_ef512",
+          "family": "warm_decode",
+          "B": 512,
+          "ef_search": 512,
+          "cells": 8,
+          "mean_cell_median_ms": 243.9097731249973,
+          "ms_per_prediction": 15.24436082031233
+        },
+        {
+          "phase": "tune",
+          "config_id": "exact",
+          "family": "warm_decode",
+          "B": null,
+          "ef_search": null,
+          "cells": 8,
+          "mean_cell_median_ms": 248.6684117499891,
+          "ms_per_prediction": 15.541775734374319
+        }
+      ],
+      "verified_counts": {
+        "coverage": 4864,
+        "reference": 512,
+        "timing": 168
+      }
+    },
+    {
+      "arm": "direct4_scale",
+      "selected": {
+        "config_id": "b512_ef1024",
+        "B": 512,
+        "ef_search": 1024,
+        "method": "hnsw"
+      },
+      "selection_status": "diagnostic_only_no_tuning_eligible",
+      "tuning_eligible_configurations": 0,
+      "confirmation_joint_screen_passed": false,
+      "eligible_after_both_phases": false,
+      "confirmation": {
+        "candidate_count": 488.7109375,
+        "full_topk_mass": 0.44260748085798696,
+        "gold_included": 0.671875,
+        "retained_mass": 0.6606332316296175,
+        "retained_topk_mass": 0.43761599174467847,
+        "top1_agreement": 1.0,
+        "topk_mass_recall": 0.9828725564293563,
+        "topk_recall": 0.9742968769278377
+      },
+      "confirmation_by_language": {
+        "en": {
+          "candidate_count": 493.578125,
+          "full_topk_mass": 0.5129135064780712,
+          "gold_included": 0.734375,
+          "retained_mass": 0.7082120729610324,
+          "retained_topk_mass": 0.5109800712671131,
+          "top1_agreement": 1.0,
+          "topk_mass_recall": 0.993423075415194,
+          "topk_recall": 0.9881250029429793
+        },
+        "de": {
+          "candidate_count": 492.421875,
+          "full_topk_mass": 0.46239514322951436,
+          "gold_included": 0.71875,
+          "retained_mass": 0.6647953549399972,
+          "retained_topk_mass": 0.45903295930474997,
+          "top1_agreement": 1.0,
+          "topk_mass_recall": 0.985211817547679,
+          "topk_recall": 0.9793750010430813
+        },
+        "ar": {
+          "candidate_count": 489.046875,
+          "full_topk_mass": 0.3610078829806298,
+          "gold_included": 0.625,
+          "retained_mass": 0.6085079540498555,
+          "retained_topk_mass": 0.3525658552534878,
+          "top1_agreement": 1.0,
+          "topk_mass_recall": 0.9699667934328318,
+          "topk_recall": 0.9556250013411045
+        },
+        "fa": {
+          "candidate_count": 479.796875,
+          "full_topk_mass": 0.43411339074373245,
+          "gold_included": 0.609375,
+          "retained_mass": 0.661017544567585,
+          "retained_topk_mass": 0.427885081153363,
+          "top1_agreement": 1.0,
+          "topk_mass_recall": 0.9828885393217206,
+          "topk_recall": 0.9740625023841858
+        }
+      },
+      "exact_decode_ms_per_prediction": 17.231253249999412,
+      "selected_decode_ms_per_prediction": 20.33902136718524,
+      "observed_latency_reduction_fraction": -0.18035647622937323,
+      "matched_fidelity_speed_screen_passed": false,
+      "exact_combined_ms_per_16": 348.0085601875089,
+      "selected_combined_ms_per_16": 398.81014400000225,
+      "existing_three_seed_mean_macro_nll": 6.61337602774923,
+      "model_parameter_bytes": 320043008,
+      "serialized_index_bytes": 51391970,
+      "coverage_summaries": [
+        {
+          "phase": "tune",
+          "method": "flat",
+          "config_id": "flat_b128",
+          "B": 128,
+          "ef_search": null,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 128.359375,
+              "full_topk_mass": 0.5148502289084718,
+              "gold_included": 0.578125,
+              "retained_mass": 0.5914309278596193,
+              "retained_topk_mass": 0.5148502289084718,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            },
+            "de": {
+              "candidate_count": 127.984375,
+              "full_topk_mass": 0.42330008116550744,
+              "gold_included": 0.5625,
+              "retained_mass": 0.5103113767690957,
+              "retained_topk_mass": 0.42323094874154776,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 0.9995106654241681,
+              "topk_recall": 0.9990625008940697
+            },
+            "ar": {
+              "candidate_count": 127.546875,
+              "full_topk_mass": 0.3666080755647272,
+              "gold_included": 0.53125,
+              "retained_mass": 0.46063940203748643,
+              "retained_topk_mass": 0.3665536951739341,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 0.9997876575216651,
+              "topk_recall": 0.9993750005960464
+            },
+            "fa": {
+              "candidate_count": 127.125,
+              "full_topk_mass": 0.43181639933027327,
+              "gold_included": 0.453125,
+              "retained_mass": 0.5211581662297249,
+              "retained_topk_mass": 0.43176496401429176,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 0.9995837016031146,
+              "topk_recall": 0.9993750005960464
+            }
+          },
+          "macro": {
+            "candidate_count": 127.75390625,
+            "full_topk_mass": 0.4341436962422449,
+            "gold_included": 0.53125,
+            "retained_mass": 0.5208849682239816,
+            "retained_topk_mass": 0.43409995920956135,
+            "top1_agreement": 1.0,
+            "topk_mass_recall": 0.999720506137237,
+            "topk_recall": 0.9994531255215406
+          }
+        },
+        {
+          "phase": "tune",
+          "method": "flat",
+          "config_id": "flat_b256",
+          "B": 256,
+          "ef_search": null,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 252.515625,
+              "full_topk_mass": 0.5148502289084718,
+              "gold_included": 0.59375,
+              "retained_mass": 0.6519686747342348,
+              "retained_topk_mass": 0.5148502289084718,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            },
+            "de": {
+              "candidate_count": 252.78125,
+              "full_topk_mass": 0.42330008116550744,
+              "gold_included": 0.625,
+              "retained_mass": 0.5802793116308749,
+              "retained_topk_mass": 0.42330008116550744,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            },
+            "ar": {
+              "candidate_count": 251.765625,
+              "full_topk_mass": 0.3666080755647272,
+              "gold_included": 0.65625,
+              "retained_mass": 0.5409051910974085,
+              "retained_topk_mass": 0.3666080755647272,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            },
+            "fa": {
+              "candidate_count": 250.1875,
+              "full_topk_mass": 0.43181639933027327,
+              "gold_included": 0.578125,
+              "retained_mass": 0.5948979663662612,
+              "retained_topk_mass": 0.43181639933027327,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            }
+          },
+          "macro": {
+            "candidate_count": 251.8125,
+            "full_topk_mass": 0.4341436962422449,
+            "gold_included": 0.61328125,
+            "retained_mass": 0.5920127859571949,
+            "retained_topk_mass": 0.4341436962422449,
+            "top1_agreement": 1.0,
+            "topk_mass_recall": 1.0,
+            "topk_recall": 1.0
+          }
+        },
+        {
+          "phase": "tune",
+          "method": "flat",
+          "config_id": "flat_b512",
+          "B": 512,
+          "ef_search": null,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 495.0625,
+              "full_topk_mass": 0.5148502289084718,
+              "gold_included": 0.65625,
+              "retained_mass": 0.7113087195903063,
+              "retained_topk_mass": 0.5148502289084718,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            },
+            "de": {
+              "candidate_count": 495.359375,
+              "full_topk_mass": 0.42330008116550744,
+              "gold_included": 0.671875,
+              "retained_mass": 0.6483106915839016,
+              "retained_topk_mass": 0.42330008116550744,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            },
+            "ar": {
+              "candidate_count": 494.5625,
+              "full_topk_mass": 0.3666080755647272,
+              "gold_included": 0.734375,
+              "retained_mass": 0.6236862014047801,
+              "retained_topk_mass": 0.3666080755647272,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            },
+            "fa": {
+              "candidate_count": 486.765625,
+              "full_topk_mass": 0.43181639933027327,
+              "gold_included": 0.671875,
+              "retained_mass": 0.6707079182378948,
+              "retained_topk_mass": 0.43181639933027327,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            }
+          },
+          "macro": {
+            "candidate_count": 492.9375,
+            "full_topk_mass": 0.4341436962422449,
+            "gold_included": 0.68359375,
+            "retained_mass": 0.6635033827042207,
+            "retained_topk_mass": 0.4341436962422449,
+            "top1_agreement": 1.0,
+            "topk_mass_recall": 1.0,
+            "topk_recall": 1.0
+          }
+        },
+        {
+          "phase": "tune",
+          "method": "hnsw",
+          "config_id": "b128_ef128",
+          "B": 128,
+          "ef_search": 128,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 128.28125,
+              "full_topk_mass": 0.5148502289084718,
+              "gold_included": 0.578125,
+              "retained_mass": 0.5891275962349027,
+              "retained_topk_mass": 0.5125195817090571,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 0.9908399684354663,
+              "topk_recall": 0.9865625016391277
+            },
+            "de": {
+              "candidate_count": 127.96875,
+              "full_topk_mass": 0.42330008116550744,
+              "gold_included": 0.5625,
+              "retained_mass": 0.50814882456325,
+              "retained_topk_mass": 0.42128754628356546,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 0.9899706607684493,
+              "topk_recall": 0.9818750033155084
+            },
+            "ar": {
+              "candidate_count": 127.234375,
+              "full_topk_mass": 0.3666080755647272,
+              "gold_included": 0.515625,
+              "retained_mass": 0.44335059728473425,
+              "retained_topk_mass": 0.3506353332195431,
+              "top1_agreement": 0.96875,
+              "topk_mass_recall": 0.9397972375154495,
+              "topk_recall": 0.9287499990314245
+            },
+            "fa": {
+              "candidate_count": 126.953125,
+              "full_topk_mass": 0.43181639933027327,
+              "gold_included": 0.453125,
+              "retained_mass": 0.513925512554124,
+              "retained_topk_mass": 0.42543578788172454,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 0.979624392464757,
+              "topk_recall": 0.9653125023469329
+            }
+          },
+          "macro": {
+            "candidate_count": 127.609375,
+            "full_topk_mass": 0.4341436962422449,
+            "gold_included": 0.52734375,
+            "retained_mass": 0.5136381326592527,
+            "retained_topk_mass": 0.42746956227347255,
+            "top1_agreement": 0.9921875,
+            "topk_mass_recall": 0.9750580647960305,
+            "topk_recall": 0.9656250015832484
+          }
+        },
+        {
+          "phase": "tune",
+          "method": "hnsw",
+          "config_id": "b128_ef256",
+          "B": 128,
+          "ef_search": 256,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 128.265625,
+              "full_topk_mass": 0.5148502289084718,
+              "gold_included": 0.578125,
+              "retained_mass": 0.5893064730335027,
+              "retained_topk_mass": 0.5126837240532041,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 0.9913840647786856,
+              "topk_recall": 0.9871875010430813
+            },
+            "de": {
+              "candidate_count": 127.96875,
+              "full_topk_mass": 0.42330008116550744,
+              "gold_included": 0.5625,
+              "retained_mass": 0.5083447440993041,
+              "retained_topk_mass": 0.42146575928200036,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 0.9906037766486406,
+              "topk_recall": 0.9837500024586916
+            },
+            "ar": {
+              "candidate_count": 127.28125,
+              "full_topk_mass": 0.3666080755647272,
+              "gold_included": 0.515625,
+              "retained_mass": 0.44486266234889627,
+              "retained_topk_mass": 0.351975928992033,
+              "top1_agreement": 0.96875,
+              "topk_mass_recall": 0.9464166676625609,
+              "topk_recall": 0.9374999972060323
+            },
+            "fa": {
+              "candidate_count": 127.015625,
+              "full_topk_mass": 0.43181639933027327,
+              "gold_included": 0.453125,
+              "retained_mass": 0.5151837458834052,
+              "retained_topk_mass": 0.4266254542162642,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 0.9837566111236811,
+              "topk_recall": 0.9696875037625432
+            }
+          },
+          "macro": {
+            "candidate_count": 127.6328125,
+            "full_topk_mass": 0.4341436962422449,
+            "gold_included": 0.52734375,
+            "retained_mass": 0.5144244063412771,
+            "retained_topk_mass": 0.4281877166358754,
+            "top1_agreement": 0.9921875,
+            "topk_mass_recall": 0.978040280053392,
+            "topk_recall": 0.9695312511175871
+          }
+        },
+        {
+          "phase": "tune",
+          "method": "hnsw",
+          "config_id": "b128_ef512",
+          "B": 128,
+          "ef_search": 512,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 128.265625,
+              "full_topk_mass": 0.5148502289084718,
+              "gold_included": 0.578125,
+              "retained_mass": 0.5896036040503532,
+              "retained_topk_mass": 0.5130092941690236,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 0.9927551746368408,
+              "topk_recall": 0.9887500004842877
+            },
+            "de": {
+              "candidate_count": 127.96875,
+              "full_topk_mass": 0.42330008116550744,
+              "gold_included": 0.5625,
+              "retained_mass": 0.508442691527307,
+              "retained_topk_mass": 0.4215936496620998,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 0.9911986198276281,
+              "topk_recall": 0.9846875015646219
+            },
+            "ar": {
+              "candidate_count": 127.34375,
+              "full_topk_mass": 0.3666080755647272,
+              "gold_included": 0.5,
+              "retained_mass": 0.4463001342955977,
+              "retained_topk_mass": 0.3532001271378249,
+              "top1_agreement": 0.96875,
+              "topk_mass_recall": 0.9509739652276039,
+              "topk_recall": 0.9428124977275729
+            },
+            "fa": {
+              "candidate_count": 127.015625,
+              "full_topk_mass": 0.43181639933027327,
+              "gold_included": 0.453125,
+              "retained_mass": 0.5157698285765946,
+              "retained_topk_mass": 0.42714195244479924,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 0.9855011086910963,
+              "topk_recall": 0.9721875032410026
+            }
+          },
+          "macro": {
+            "candidate_count": 127.6484375,
+            "full_topk_mass": 0.4341436962422449,
+            "gold_included": 0.5234375,
+            "retained_mass": 0.5150290646124631,
+            "retained_topk_mass": 0.4287362558534369,
+            "top1_agreement": 0.9921875,
+            "topk_mass_recall": 0.9801072170957923,
+            "topk_recall": 0.9721093757543713
+          }
+        },
+        {
+          "phase": "tune",
+          "method": "hnsw",
+          "config_id": "b128_ef1024",
+          "B": 128,
+          "ef_search": 1024,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 128.28125,
+              "full_topk_mass": 0.5148502289084718,
+              "gold_included": 0.578125,
+              "retained_mass": 0.5897409699391574,
+              "retained_topk_mass": 0.5131057251710445,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 0.9931381959468126,
+              "topk_recall": 0.9890625001862645
+            },
+            "de": {
+              "candidate_count": 127.96875,
+              "full_topk_mass": 0.42330008116550744,
+              "gold_included": 0.5625,
+              "retained_mass": 0.5085358216892928,
+              "retained_topk_mass": 0.42168093007057905,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 0.9917398039251566,
+              "topk_recall": 0.9853125009685755
+            },
+            "ar": {
+              "candidate_count": 127.359375,
+              "full_topk_mass": 0.3666080755647272,
+              "gold_included": 0.5,
+              "retained_mass": 0.4473588168621063,
+              "retained_topk_mass": 0.35414823004975915,
+              "top1_agreement": 0.984375,
+              "topk_mass_recall": 0.9544236278161407,
+              "topk_recall": 0.9465624997392297
+            },
+            "fa": {
+              "candidate_count": 127.015625,
+              "full_topk_mass": 0.43181639933027327,
+              "gold_included": 0.453125,
+              "retained_mass": 0.5160500130150467,
+              "retained_topk_mass": 0.4274075794965029,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 0.9864080734550953,
+              "topk_recall": 0.9746875008568168
+            }
+          },
+          "macro": {
+            "candidate_count": 127.65625,
+            "full_topk_mass": 0.4341436962422449,
+            "gold_included": 0.5234375,
+            "retained_mass": 0.5154214053764008,
+            "retained_topk_mass": 0.4290856161969714,
+            "top1_agreement": 0.99609375,
+            "topk_mass_recall": 0.9814274252858013,
+            "topk_recall": 0.9739062504377216
+          }
+        },
+        {
+          "phase": "tune",
+          "method": "hnsw",
+          "config_id": "b256_ef128",
+          "B": 256,
+          "ef_search": 128,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 252.1875,
+              "full_topk_mass": 0.5148502289084718,
+              "gold_included": 0.609375,
+              "retained_mass": 0.646913000382483,
+              "retained_topk_mass": 0.5125195817090571,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 0.9908399684354663,
+              "topk_recall": 0.9865625016391277
+            },
+            "de": {
+              "candidate_count": 252.171875,
+              "full_topk_mass": 0.42330008116550744,
+              "gold_included": 0.609375,
+              "retained_mass": 0.5741664641536772,
+              "retained_topk_mass": 0.4213566789403558,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 0.9904599972069263,
+              "topk_recall": 0.9828125033527613
+            },
+            "ar": {
+              "candidate_count": 250.046875,
+              "full_topk_mass": 0.3666080755647272,
+              "gold_included": 0.640625,
+              "retained_mass": 0.5127230766229331,
+              "retained_topk_mass": 0.35071921872440726,
+              "top1_agreement": 0.96875,
+              "topk_mass_recall": 0.9403707925230265,
+              "topk_recall": 0.9296875
+            },
+            "fa": {
+              "candidate_count": 248.875,
+              "full_topk_mass": 0.43181639933027327,
+              "gold_included": 0.5625,
+              "retained_mass": 0.5816842755302787,
+              "retained_topk_mass": 0.42548722331412137,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 0.9800406917929649,
+              "topk_recall": 0.965937502682209
+            }
+          },
+          "macro": {
+            "candidate_count": 250.8203125,
+            "full_topk_mass": 0.4341436962422449,
+            "gold_included": 0.60546875,
+            "retained_mass": 0.578871704172343,
+            "retained_topk_mass": 0.4275206756719854,
+            "top1_agreement": 0.9921875,
+            "topk_mass_recall": 0.975427862489596,
+            "topk_recall": 0.9662500019185245
+          }
+        },
+        {
+          "phase": "tune",
+          "method": "hnsw",
+          "config_id": "b256_ef256",
+          "B": 256,
+          "ef_search": 256,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 252.21875,
+              "full_topk_mass": 0.5148502289084718,
+              "gold_included": 0.609375,
+              "retained_mass": 0.6473861406557262,
+              "retained_topk_mass": 0.5126837240532041,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 0.9913840647786856,
+              "topk_recall": 0.9871875010430813
+            },
+            "de": {
+              "candidate_count": 252.171875,
+              "full_topk_mass": 0.42330008116550744,
+              "gold_included": 0.609375,
+              "retained_mass": 0.5747046768665314,
+              "retained_topk_mass": 0.4215348919387907,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 0.9910931130871177,
+              "topk_recall": 0.9846875034272671
+            },
+            "ar": {
+              "candidate_count": 250.125,
+              "full_topk_mass": 0.3666080755647272,
+              "gold_included": 0.640625,
+              "retained_mass": 0.5152808125130832,
+              "retained_topk_mass": 0.351975928992033,
+              "top1_agreement": 0.96875,
+              "topk_mass_recall": 0.9464166676625609,
+              "topk_recall": 0.9374999972060323
+            },
+            "fa": {
+              "candidate_count": 248.953125,
+              "full_topk_mass": 0.43181639933027327,
+              "gold_included": 0.578125,
+              "retained_mass": 0.5836335960775614,
+              "retained_topk_mass": 0.426676889648661,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 0.984172910451889,
+              "topk_recall": 0.9703125031664968
+            }
+          },
+          "macro": {
+            "candidate_count": 250.8671875,
+            "full_topk_mass": 0.4341436962422449,
+            "gold_included": 0.609375,
+            "retained_mass": 0.5802513065282255,
+            "retained_topk_mass": 0.4282178586581722,
+            "top1_agreement": 0.9921875,
+            "topk_mass_recall": 0.9782666889950633,
+            "topk_recall": 0.9699218762107193
+          }
+        },
+        {
+          "phase": "tune",
+          "method": "hnsw",
+          "config_id": "b256_ef512",
+          "B": 256,
+          "ef_search": 512,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 252.203125,
+              "full_topk_mass": 0.5148502289084718,
+              "gold_included": 0.609375,
+              "retained_mass": 0.6478064702823758,
+              "retained_topk_mass": 0.5130092941690236,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 0.9927551746368408,
+              "topk_recall": 0.9887500004842877
+            },
+            "de": {
+              "candidate_count": 252.203125,
+              "full_topk_mass": 0.42330008116550744,
+              "gold_included": 0.609375,
+              "retained_mass": 0.575000002514571,
+              "retained_topk_mass": 0.4216627823188901,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 0.9916879571974277,
+              "topk_recall": 0.9856250025331974
+            },
+            "ar": {
+              "candidate_count": 250.296875,
+              "full_topk_mass": 0.3666080755647272,
+              "gold_included": 0.625,
+              "retained_mass": 0.517551330383867,
+              "retained_topk_mass": 0.3532001271378249,
+              "top1_agreement": 0.96875,
+              "topk_mass_recall": 0.9509739652276039,
+              "topk_recall": 0.9428124977275729
+            },
+            "fa": {
+              "candidate_count": 249.046875,
+              "full_topk_mass": 0.43181639933027327,
+              "gold_included": 0.5625,
+              "retained_mass": 0.5846942784264684,
+              "retained_topk_mass": 0.4271933878771961,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 0.9859174080193043,
+              "topk_recall": 0.9728125026449561
+            }
+          },
+          "macro": {
+            "candidate_count": 250.9375,
+            "full_topk_mass": 0.4341436962422449,
+            "gold_included": 0.6015625,
+            "retained_mass": 0.5812630204018205,
+            "retained_topk_mass": 0.4287663978757337,
+            "top1_agreement": 0.9921875,
+            "topk_mass_recall": 0.9803336262702942,
+            "topk_recall": 0.9725000008475035
+          }
+        },
+        {
+          "phase": "tune",
+          "method": "hnsw",
+          "config_id": "b256_ef1024",
+          "B": 256,
+          "ef_search": 1024,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 252.21875,
+              "full_topk_mass": 0.5148502289084718,
+              "gold_included": 0.609375,
+              "retained_mass": 0.6480871238745749,
+              "retained_topk_mass": 0.5131057251710445,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 0.9931381959468126,
+              "topk_recall": 0.9890625001862645
+            },
+            "de": {
+              "candidate_count": 252.21875,
+              "full_topk_mass": 0.42330008116550744,
+              "gold_included": 0.609375,
+              "retained_mass": 0.5752545059658587,
+              "retained_topk_mass": 0.42175006272736937,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 0.9922291412949562,
+              "topk_recall": 0.986250001937151
+            },
+            "ar": {
+              "candidate_count": 250.375,
+              "full_topk_mass": 0.3666080755647272,
+              "gold_included": 0.609375,
+              "retained_mass": 0.5192221351899207,
+              "retained_topk_mass": 0.35414823004975915,
+              "top1_agreement": 0.984375,
+              "topk_mass_recall": 0.9544236278161407,
+              "topk_recall": 0.9465624997392297
+            },
+            "fa": {
+              "candidate_count": 249.09375,
+              "full_topk_mass": 0.43181639933027327,
+              "gold_included": 0.5625,
+              "retained_mass": 0.5853452952578664,
+              "retained_topk_mass": 0.4274590148124844,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 0.9868243718519807,
+              "topk_recall": 0.9753125011920929
+            }
+          },
+          "macro": {
+            "candidate_count": 250.9765625,
+            "full_topk_mass": 0.4341436962422449,
+            "gold_included": 0.59765625,
+            "retained_mass": 0.5819772650720552,
+            "retained_topk_mass": 0.42911575819016434,
+            "top1_agreement": 0.99609375,
+            "topk_mass_recall": 0.9816538342274725,
+            "topk_recall": 0.9742968757636845
+          }
+        },
+        {
+          "phase": "tune",
+          "method": "hnsw",
+          "config_id": "b512_ef128",
+          "B": 512,
+          "ef_search": 128,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 492.828125,
+              "full_topk_mass": 0.5148502289084718,
+              "gold_included": 0.65625,
+              "retained_mass": 0.7011373438872397,
+              "retained_topk_mass": 0.5125195817090571,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 0.9908399684354663,
+              "topk_recall": 0.9865625016391277
+            },
+            "de": {
+              "candidate_count": 491.265625,
+              "full_topk_mass": 0.42330008116550744,
+              "gold_included": 0.671875,
+              "retained_mass": 0.634345821570605,
+              "retained_topk_mass": 0.4213566789403558,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 0.9904599972069263,
+              "topk_recall": 0.9828125033527613
+            },
+            "ar": {
+              "candidate_count": 488.640625,
+              "full_topk_mass": 0.3666080755647272,
+              "gold_included": 0.671875,
+              "retained_mass": 0.5783995017409325,
+              "retained_topk_mass": 0.3507514267694205,
+              "top1_agreement": 0.96875,
+              "topk_mass_recall": 0.9405701644718647,
+              "topk_recall": 0.9299999997019768
+            },
+            "fa": {
+              "candidate_count": 479.203125,
+              "full_topk_mass": 0.43181639933027327,
+              "gold_included": 0.640625,
+              "retained_mass": 0.6464894809760153,
+              "retained_topk_mass": 0.42548722331412137,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 0.9800406917929649,
+              "topk_recall": 0.965937502682209
+            }
+          },
+          "macro": {
+            "candidate_count": 487.984375,
+            "full_topk_mass": 0.4341436962422449,
+            "gold_included": 0.66015625,
+            "retained_mass": 0.6400930370436981,
+            "retained_topk_mass": 0.4275287276832387,
+            "top1_agreement": 0.9921875,
+            "topk_mass_recall": 0.9754777054768056,
+            "topk_recall": 0.9663281268440187
+          }
+        },
+        {
+          "phase": "tune",
+          "method": "hnsw",
+          "config_id": "b512_ef256",
+          "B": 512,
+          "ef_search": 256,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 492.90625,
+              "full_topk_mass": 0.5148502289084718,
+              "gold_included": 0.640625,
+              "retained_mass": 0.7022023010067642,
+              "retained_topk_mass": 0.5126837240532041,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 0.9913840647786856,
+              "topk_recall": 0.9871875010430813
+            },
+            "de": {
+              "candidate_count": 491.296875,
+              "full_topk_mass": 0.42330008116550744,
+              "gold_included": 0.671875,
+              "retained_mass": 0.6358517198823392,
+              "retained_topk_mass": 0.4215348919387907,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 0.9910931130871177,
+              "topk_recall": 0.9846875034272671
+            },
+            "ar": {
+              "candidate_count": 488.921875,
+              "full_topk_mass": 0.3666080755647272,
+              "gold_included": 0.671875,
+              "retained_mass": 0.5826450083404779,
+              "retained_topk_mass": 0.351975928992033,
+              "top1_agreement": 0.96875,
+              "topk_mass_recall": 0.9464166676625609,
+              "topk_recall": 0.9374999972060323
+            },
+            "fa": {
+              "candidate_count": 480.125,
+              "full_topk_mass": 0.43181639933027327,
+              "gold_included": 0.65625,
+              "retained_mass": 0.6500896252691746,
+              "retained_topk_mass": 0.426676889648661,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 0.984172910451889,
+              "topk_recall": 0.9703125031664968
+            }
+          },
+          "macro": {
+            "candidate_count": 488.3125,
+            "full_topk_mass": 0.4341436962422449,
+            "gold_included": 0.66015625,
+            "retained_mass": 0.642697163624689,
+            "retained_topk_mass": 0.4282178586581722,
+            "top1_agreement": 0.9921875,
+            "topk_mass_recall": 0.9782666889950633,
+            "topk_recall": 0.9699218762107193
+          }
+        },
+        {
+          "phase": "tune",
+          "method": "hnsw",
+          "config_id": "b512_ef512",
+          "B": 512,
+          "ef_search": 512,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 492.96875,
+              "full_topk_mass": 0.5148502289084718,
+              "gold_included": 0.640625,
+              "retained_mass": 0.7029658514074981,
+              "retained_topk_mass": 0.5130092941690236,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 0.9927551746368408,
+              "topk_recall": 0.9887500004842877
+            },
+            "de": {
+              "candidate_count": 491.5,
+              "full_topk_mass": 0.42330008116550744,
+              "gold_included": 0.671875,
+              "retained_mass": 0.6366437245160341,
+              "retained_topk_mass": 0.4216627823188901,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 0.9916879571974277,
+              "topk_recall": 0.9856250025331974
+            },
+            "ar": {
+              "candidate_count": 489.1875,
+              "full_topk_mass": 0.3666080755647272,
+              "gold_included": 0.671875,
+              "retained_mass": 0.5860640220344067,
+              "retained_topk_mass": 0.3532342615071684,
+              "top1_agreement": 0.96875,
+              "topk_mass_recall": 0.9510832531377673,
+              "topk_recall": 0.9431249974295497
+            },
+            "fa": {
+              "candidate_count": 480.953125,
+              "full_topk_mass": 0.43181639933027327,
+              "gold_included": 0.65625,
+              "retained_mass": 0.652105197776109,
+              "retained_topk_mass": 0.4271933878771961,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 0.9859174080193043,
+              "topk_recall": 0.9728125026449561
+            }
+          },
+          "macro": {
+            "candidate_count": 488.65234375,
+            "full_topk_mass": 0.4341436962422449,
+            "gold_included": 0.66015625,
+            "retained_mass": 0.644444698933512,
+            "retained_topk_mass": 0.42877493146806955,
+            "top1_agreement": 0.9921875,
+            "topk_mass_recall": 0.980360948247835,
+            "topk_recall": 0.9725781257729977
+          }
+        },
+        {
+          "phase": "tune",
+          "method": "hnsw",
+          "config_id": "b512_ef1024",
+          "B": 512,
+          "ef_search": 1024,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 492.96875,
+              "full_topk_mass": 0.5148502289084718,
+              "gold_included": 0.640625,
+              "retained_mass": 0.7034788867458701,
+              "retained_topk_mass": 0.5131057251710445,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 0.9931381959468126,
+              "topk_recall": 0.9890625001862645
+            },
+            "de": {
+              "candidate_count": 491.6875,
+              "full_topk_mass": 0.42330008116550744,
+              "gold_included": 0.671875,
+              "retained_mass": 0.6372628393583,
+              "retained_topk_mass": 0.42175006272736937,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 0.9922291412949562,
+              "topk_recall": 0.986250001937151
+            },
+            "ar": {
+              "candidate_count": 489.59375,
+              "full_topk_mass": 0.3666080755647272,
+              "gold_included": 0.671875,
+              "retained_mass": 0.588899637106806,
+              "retained_topk_mass": 0.35418236441910267,
+              "top1_agreement": 0.984375,
+              "topk_mass_recall": 0.954532915726304,
+              "topk_recall": 0.9468749994412065
+            },
+            "fa": {
+              "candidate_count": 481.40625,
+              "full_topk_mass": 0.43181639933027327,
+              "gold_included": 0.65625,
+              "retained_mass": 0.6533768023364246,
+              "retained_topk_mass": 0.4274590148124844,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 0.9868243718519807,
+              "topk_recall": 0.9753125011920929
+            }
+          },
+          "macro": {
+            "candidate_count": 488.9140625,
+            "full_topk_mass": 0.4341436962422449,
+            "gold_included": 0.66015625,
+            "retained_mass": 0.6457545413868502,
+            "retained_topk_mass": 0.4291242917825002,
+            "top1_agreement": 0.99609375,
+            "topk_mass_recall": 0.9816811562050134,
+            "topk_recall": 0.9743750006891787
+          }
+        },
+        {
+          "phase": "confirmation",
+          "method": "flat",
+          "config_id": "flat_b128",
+          "B": 128,
+          "ef_search": null,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 128.296875,
+              "full_topk_mass": 0.5129135064780712,
+              "gold_included": 0.640625,
+              "retained_mass": 0.5920623887795955,
+              "retained_topk_mass": 0.5127949544694275,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 0.9995227586477995,
+              "topk_recall": 0.9981249999254942
+            },
+            "de": {
+              "candidate_count": 127.875,
+              "full_topk_mass": 0.46239514322951436,
+              "gold_included": 0.578125,
+              "retained_mass": 0.5480830799788237,
+              "retained_topk_mass": 0.4623059770092368,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 0.9995151739567518,
+              "topk_recall": 0.9990625008940697
+            },
+            "ar": {
+              "candidate_count": 127.453125,
+              "full_topk_mass": 0.3610078829806298,
+              "gold_included": 0.375,
+              "retained_mass": 0.4652518618386239,
+              "retained_topk_mass": 0.3607717379927635,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 0.9988580709323287,
+              "topk_recall": 0.9974999995902181
+            },
+            "fa": {
+              "candidate_count": 126.546875,
+              "full_topk_mass": 0.43411339074373245,
+              "gold_included": 0.453125,
+              "retained_mass": 0.5278655055444688,
+              "retained_topk_mass": 0.4340250783134252,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 0.9994869185611606,
+              "topk_recall": 0.9990625008940697
+            }
+          },
+          "macro": {
+            "candidate_count": 127.54296875,
+            "full_topk_mass": 0.44260748085798696,
+            "gold_included": 0.51171875,
+            "retained_mass": 0.533315709035378,
+            "retained_topk_mass": 0.44247443694621325,
+            "top1_agreement": 1.0,
+            "topk_mass_recall": 0.9993457305245101,
+            "topk_recall": 0.9984375003259629
+          }
+        },
+        {
+          "phase": "confirmation",
+          "method": "flat",
+          "config_id": "flat_b256",
+          "B": 256,
+          "ef_search": null,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 253.046875,
+              "full_topk_mass": 0.5129135064780712,
+              "gold_included": 0.703125,
+              "retained_mass": 0.655009426176548,
+              "retained_topk_mass": 0.5129135064780712,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            },
+            "de": {
+              "candidate_count": 253.21875,
+              "full_topk_mass": 0.46239514322951436,
+              "gold_included": 0.65625,
+              "retained_mass": 0.6155752334743738,
+              "retained_topk_mass": 0.46239514322951436,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            },
+            "ar": {
+              "candidate_count": 251.53125,
+              "full_topk_mass": 0.3610078829806298,
+              "gold_included": 0.484375,
+              "retained_mass": 0.5530082122422755,
+              "retained_topk_mass": 0.3610078829806298,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            },
+            "fa": {
+              "candidate_count": 248.890625,
+              "full_topk_mass": 0.43411339074373245,
+              "gold_included": 0.5625,
+              "retained_mass": 0.603616586420685,
+              "retained_topk_mass": 0.43411339074373245,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            }
+          },
+          "macro": {
+            "candidate_count": 251.671875,
+            "full_topk_mass": 0.44260748085798696,
+            "gold_included": 0.6015625,
+            "retained_mass": 0.6068023645784706,
+            "retained_topk_mass": 0.44260748085798696,
+            "top1_agreement": 1.0,
+            "topk_mass_recall": 1.0,
+            "topk_recall": 1.0
+          }
+        },
+        {
+          "phase": "confirmation",
+          "method": "flat",
+          "config_id": "flat_b512",
+          "B": 512,
+          "ef_search": null,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 495.8125,
+              "full_topk_mass": 0.5129135064780712,
+              "gold_included": 0.75,
+              "retained_mass": 0.7160222795791924,
+              "retained_topk_mass": 0.5129135064780712,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            },
+            "de": {
+              "candidate_count": 495.46875,
+              "full_topk_mass": 0.46239514322951436,
+              "gold_included": 0.734375,
+              "retained_mass": 0.6790651106275618,
+              "retained_topk_mass": 0.46239514322951436,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            },
+            "ar": {
+              "candidate_count": 494.453125,
+              "full_topk_mass": 0.3610078829806298,
+              "gold_included": 0.609375,
+              "retained_mass": 0.6395872291177511,
+              "retained_topk_mass": 0.3610078829806298,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            },
+            "fa": {
+              "candidate_count": 485.109375,
+              "full_topk_mass": 0.43411339074373245,
+              "gold_included": 0.625,
+              "retained_mass": 0.6798220803029835,
+              "retained_topk_mass": 0.43411339074373245,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 1.0,
+              "topk_recall": 1.0
+            }
+          },
+          "macro": {
+            "candidate_count": 492.7109375,
+            "full_topk_mass": 0.44260748085798696,
+            "gold_included": 0.6796875,
+            "retained_mass": 0.6786241749068722,
+            "retained_topk_mass": 0.44260748085798696,
+            "top1_agreement": 1.0,
+            "topk_mass_recall": 1.0,
+            "topk_recall": 1.0
+          }
+        },
+        {
+          "phase": "confirmation",
+          "method": "hnsw",
+          "config_id": "b512_ef1024",
+          "B": 512,
+          "ef_search": 1024,
+          "contexts": 256,
+          "languages": {
+            "en": {
+              "candidate_count": 493.578125,
+              "full_topk_mass": 0.5129135064780712,
+              "gold_included": 0.734375,
+              "retained_mass": 0.7082120729610324,
+              "retained_topk_mass": 0.5109800712671131,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 0.993423075415194,
+              "topk_recall": 0.9881250029429793
+            },
+            "de": {
+              "candidate_count": 492.421875,
+              "full_topk_mass": 0.46239514322951436,
+              "gold_included": 0.71875,
+              "retained_mass": 0.6647953549399972,
+              "retained_topk_mass": 0.45903295930474997,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 0.985211817547679,
+              "topk_recall": 0.9793750010430813
+            },
+            "ar": {
+              "candidate_count": 489.046875,
+              "full_topk_mass": 0.3610078829806298,
+              "gold_included": 0.625,
+              "retained_mass": 0.6085079540498555,
+              "retained_topk_mass": 0.3525658552534878,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 0.9699667934328318,
+              "topk_recall": 0.9556250013411045
+            },
+            "fa": {
+              "candidate_count": 479.796875,
+              "full_topk_mass": 0.43411339074373245,
+              "gold_included": 0.609375,
+              "retained_mass": 0.661017544567585,
+              "retained_topk_mass": 0.427885081153363,
+              "top1_agreement": 1.0,
+              "topk_mass_recall": 0.9828885393217206,
+              "topk_recall": 0.9740625023841858
+            }
+          },
+          "macro": {
+            "candidate_count": 488.7109375,
+            "full_topk_mass": 0.44260748085798696,
+            "gold_included": 0.671875,
+            "retained_mass": 0.6606332316296175,
+            "retained_topk_mass": 0.43761599174467847,
+            "top1_agreement": 1.0,
+            "topk_mass_recall": 0.9828725564293563,
+            "topk_recall": 0.9742968769278377
+          }
+        }
+      ],
+      "timing_summaries": [
+        {
+          "phase": "confirmation",
+          "config_id": "b512_ef1024",
+          "family": "prefill_and_decode",
+          "B": 512,
+          "ef_search": 1024,
+          "cells": 16,
+          "mean_cell_median_ms": 398.81014400000225,
+          "ms_per_prediction": 24.92563400000014
+        },
+        {
+          "phase": "confirmation",
+          "config_id": "b512_ef1024",
+          "family": "warm_decode",
+          "B": 512,
+          "ef_search": 1024,
+          "cells": 16,
+          "mean_cell_median_ms": 325.42434187496383,
+          "ms_per_prediction": 20.33902136718524
+        },
+        {
+          "phase": "confirmation",
+          "config_id": "exact",
+          "family": "prefill_and_decode",
+          "B": null,
+          "ef_search": null,
+          "cells": 16,
+          "mean_cell_median_ms": 348.0085601875089,
+          "ms_per_prediction": 21.750535011719307
+        },
+        {
+          "phase": "confirmation",
+          "config_id": "exact",
+          "family": "warm_decode",
+          "B": null,
+          "ef_search": null,
+          "cells": 16,
+          "mean_cell_median_ms": 275.7000519999906,
+          "ms_per_prediction": 17.231253249999412
+        },
+        {
+          "phase": "tune",
+          "config_id": "b128_ef1024",
+          "family": "warm_decode",
+          "B": 128,
+          "ef_search": 1024,
+          "cells": 8,
+          "mean_cell_median_ms": 325.152635749987,
+          "ms_per_prediction": 20.322039734374187
+        },
+        {
+          "phase": "tune",
+          "config_id": "b128_ef128",
+          "family": "warm_decode",
+          "B": 128,
+          "ef_search": 128,
+          "cells": 8,
+          "mean_cell_median_ms": 248.67033387498338,
+          "ms_per_prediction": 15.541895867186462
+        },
+        {
+          "phase": "tune",
+          "config_id": "b128_ef256",
+          "family": "warm_decode",
+          "B": 128,
+          "ef_search": 256,
+          "cells": 8,
+          "mean_cell_median_ms": 262.5153637499835,
+          "ms_per_prediction": 16.40721023437397
+        },
+        {
+          "phase": "tune",
+          "config_id": "b128_ef512",
+          "family": "warm_decode",
+          "B": 128,
+          "ef_search": 512,
+          "cells": 8,
+          "mean_cell_median_ms": 284.2184634999825,
+          "ms_per_prediction": 17.763653968748905
+        },
+        {
+          "phase": "tune",
+          "config_id": "b256_ef1024",
+          "family": "warm_decode",
+          "B": 256,
+          "ef_search": 1024,
+          "cells": 8,
+          "mean_cell_median_ms": 326.5457648750214,
+          "ms_per_prediction": 20.409110304688838
+        },
+        {
+          "phase": "tune",
+          "config_id": "b256_ef128",
+          "family": "warm_decode",
+          "B": 256,
+          "ef_search": 128,
+          "cells": 8,
+          "mean_cell_median_ms": 253.71559837499547,
+          "ms_per_prediction": 15.857224898437217
+        },
+        {
+          "phase": "tune",
+          "config_id": "b256_ef256",
+          "family": "warm_decode",
+          "B": 256,
+          "ef_search": 256,
+          "cells": 8,
+          "mean_cell_median_ms": 260.40372874999207,
+          "ms_per_prediction": 16.275233046874504
+        },
+        {
+          "phase": "tune",
+          "config_id": "b256_ef512",
+          "family": "warm_decode",
+          "B": 256,
+          "ef_search": 512,
+          "cells": 8,
+          "mean_cell_median_ms": 284.17335637499264,
+          "ms_per_prediction": 17.76083477343704
+        },
+        {
+          "phase": "tune",
+          "config_id": "b512_ef1024",
+          "family": "warm_decode",
+          "B": 512,
+          "ef_search": 1024,
+          "cells": 8,
+          "mean_cell_median_ms": 327.6212593750074,
+          "ms_per_prediction": 20.476328710937963
+        },
+        {
+          "phase": "tune",
+          "config_id": "b512_ef128",
+          "family": "warm_decode",
+          "B": 512,
+          "ef_search": 128,
+          "cells": 8,
+          "mean_cell_median_ms": 256.5787012499783,
+          "ms_per_prediction": 16.036168828123643
+        },
+        {
+          "phase": "tune",
+          "config_id": "b512_ef256",
+          "family": "warm_decode",
+          "B": 512,
+          "ef_search": 256,
+          "cells": 8,
+          "mean_cell_median_ms": 263.70526412502215,
+          "ms_per_prediction": 16.481579007813885
+        },
+        {
+          "phase": "tune",
+          "config_id": "b512_ef512",
+          "family": "warm_decode",
+          "B": 512,
+          "ef_search": 512,
+          "cells": 8,
+          "mean_cell_median_ms": 286.18578887498813,
+          "ms_per_prediction": 17.88661180468676
+        },
+        {
+          "phase": "tune",
+          "config_id": "exact",
+          "family": "warm_decode",
+          "B": null,
+          "ef_search": null,
+          "cells": 8,
+          "mean_cell_median_ms": 277.2430985000085,
+          "ms_per_prediction": 17.32769365625053
+        }
+      ],
+      "verified_counts": {
+        "coverage": 4864,
+        "reference": 512,
+        "timing": 168
+      }
+    }
+  ],
+  "notebook_wall_seconds": 833.4646201170001,
+  "evidence_sha256": "9a11403c873bc4701fe057cf9f328232b635528acfee19a2d023272a9a90a1e2",
+  "manifest_sha256": "2d3704a3c2332ab1c0f31a0be4cbcc8f2e3235f9db3f7353d8b74d7414672735",
+  "protocol_sha256": "00d6db88223064e0461628313a24b037d16a488c95c27e62cd7eed2e8c57eb8f",
+  "learning_scores_sha256": "bd32b5dcf489fae96a9e1033300ea57a4c7bfcaa3d9c332759fc27fb6fddc41a",
+  "audit_limit": "The audit independently reconstructs candidate membership, greedy/gold joins, top-50 recalls, language/macro reductions, raw timing medians, the complete config grid and tune-only selection. Full retained mass is bounded and joined to its top-50 subset, but cannot be independently recomputed without all vocabulary probabilities or checkpoints. The frozen worker checks exact candidate-score parity and parameter immutability; this audit binds those source/measurement records without reloading model bodies or rerunning inference.",
+  "audit_sha256": "6c9163f51730161644183f8ddbbcf50148505322115a1ff4285e637a27a7109a"
+}

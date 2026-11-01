@@ -1,0 +1,391 @@
+{
+  "schema_version": 1,
+  "created": "2026-10-22",
+  "scope": "bounded four-language readiness sample",
+  "source_selection": "prefix of explicit shard; not representative full-corpus sampling",
+  "planned_main_languages": [
+    "en",
+    "de",
+    "ar",
+    "fa"
+  ],
+  "corpus": [
+    {
+      "language": "en",
+      "repo": "HuggingFaceFW/fineweb",
+      "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+      "files": [
+        {
+          "path": "sample/10BT/000_00000.parquet",
+          "size": 2147292183,
+          "lfs_sha256": "6b552ea48424648dc86d00df276f93fdfc55e9ad342ce3e4affc23a3a370792b",
+          "blob_id": "eaca691e1942aa92c8a9de96eae38d23383338aa"
+        }
+      ]
+    },
+    {
+      "language": "de",
+      "repo": "HuggingFaceFW/fineweb-2",
+      "revision": "af9c13333eb981300149d5ca60a8e9d659b276b9",
+      "files": [
+        {
+          "path": "data/deu_Latn/train/000_00000.parquet",
+          "size": 4845556135,
+          "lfs_sha256": "3044853802c8e8eefdd799abb4f4480d62af8aa90989611e0ed7bb205822af42",
+          "blob_id": "14ef3531d0badbe31a88c1603635e8faa7b3b064"
+        }
+      ]
+    },
+    {
+      "language": "ar",
+      "repo": "HuggingFaceFW/fineweb-2",
+      "revision": "af9c13333eb981300149d5ca60a8e9d659b276b9",
+      "files": [
+        {
+          "path": "data/arb_Arab/train/000_00000.parquet",
+          "size": 4843246685,
+          "lfs_sha256": "814460aa1fab3ed2c98f0a64674aab5023b4bf9df25480dfbcc04e51513a0583",
+          "blob_id": "0fd803b6eb652cb9dea2b3594f528f5ae8f25102"
+        }
+      ]
+    },
+    {
+      "language": "fa",
+      "repo": "HuggingFaceFW/fineweb-2",
+      "revision": "af9c13333eb981300149d5ca60a8e9d659b276b9",
+      "files": [
+        {
+          "path": "data/fas_Arab/train/000_00000.parquet",
+          "size": 4842457213,
+          "lfs_sha256": "229573bead0cb74b7f4837b31eb236d11f79f7379e536bfe2e4b18be680f4a39",
+          "blob_id": "8d6ddbe0be07d1b23d1847106c2977611cfeb31d"
+        }
+      ]
+    }
+  ],
+  "benchmarks": [
+    {
+      "benchmark": "FLORES200",
+      "language": "en",
+      "split": "dev",
+      "revision": "flores200-original-publisher-release",
+      "format": "tar_text",
+      "text_fields": [
+        "text"
+      ],
+      "url": "https://dl.fbaipublicfiles.com/nllb/flores200_dataset.tar.gz",
+      "expected_sha256": "b8b0b76783024b85797e5cc75064eb83fc5288b41e9654dabc7be6ae944011f6",
+      "member": "./flores200_dataset/dev/eng_Latn.dev"
+    },
+    {
+      "benchmark": "FLORES200",
+      "language": "en",
+      "split": "devtest",
+      "revision": "flores200-original-publisher-release",
+      "format": "tar_text",
+      "text_fields": [
+        "text"
+      ],
+      "url": "https://dl.fbaipublicfiles.com/nllb/flores200_dataset.tar.gz",
+      "expected_sha256": "b8b0b76783024b85797e5cc75064eb83fc5288b41e9654dabc7be6ae944011f6",
+      "member": "./flores200_dataset/devtest/eng_Latn.devtest"
+    },
+    {
+      "benchmark": "FLORES200",
+      "language": "de",
+      "split": "dev",
+      "revision": "flores200-original-publisher-release",
+      "format": "tar_text",
+      "text_fields": [
+        "text"
+      ],
+      "url": "https://dl.fbaipublicfiles.com/nllb/flores200_dataset.tar.gz",
+      "expected_sha256": "b8b0b76783024b85797e5cc75064eb83fc5288b41e9654dabc7be6ae944011f6",
+      "member": "./flores200_dataset/dev/deu_Latn.dev"
+    },
+    {
+      "benchmark": "FLORES200",
+      "language": "de",
+      "split": "devtest",
+      "revision": "flores200-original-publisher-release",
+      "format": "tar_text",
+      "text_fields": [
+        "text"
+      ],
+      "url": "https://dl.fbaipublicfiles.com/nllb/flores200_dataset.tar.gz",
+      "expected_sha256": "b8b0b76783024b85797e5cc75064eb83fc5288b41e9654dabc7be6ae944011f6",
+      "member": "./flores200_dataset/devtest/deu_Latn.devtest"
+    },
+    {
+      "benchmark": "FLORES200",
+      "language": "ar",
+      "split": "dev",
+      "revision": "flores200-original-publisher-release",
+      "format": "tar_text",
+      "text_fields": [
+        "text"
+      ],
+      "url": "https://dl.fbaipublicfiles.com/nllb/flores200_dataset.tar.gz",
+      "expected_sha256": "b8b0b76783024b85797e5cc75064eb83fc5288b41e9654dabc7be6ae944011f6",
+      "member": "./flores200_dataset/dev/arb_Arab.dev"
+    },
+    {
+      "benchmark": "FLORES200",
+      "language": "ar",
+      "split": "devtest",
+      "revision": "flores200-original-publisher-release",
+      "format": "tar_text",
+      "text_fields": [
+        "text"
+      ],
+      "url": "https://dl.fbaipublicfiles.com/nllb/flores200_dataset.tar.gz",
+      "expected_sha256": "b8b0b76783024b85797e5cc75064eb83fc5288b41e9654dabc7be6ae944011f6",
+      "member": "./flores200_dataset/devtest/arb_Arab.devtest"
+    },
+    {
+      "benchmark": "FLORES200",
+      "language": "fa",
+      "split": "dev",
+      "revision": "flores200-original-publisher-release",
+      "format": "tar_text",
+      "text_fields": [
+        "text"
+      ],
+      "url": "https://dl.fbaipublicfiles.com/nllb/flores200_dataset.tar.gz",
+      "expected_sha256": "b8b0b76783024b85797e5cc75064eb83fc5288b41e9654dabc7be6ae944011f6",
+      "member": "./flores200_dataset/dev/pes_Arab.dev"
+    },
+    {
+      "benchmark": "FLORES200",
+      "language": "fa",
+      "split": "devtest",
+      "revision": "flores200-original-publisher-release",
+      "format": "tar_text",
+      "text_fields": [
+        "text"
+      ],
+      "url": "https://dl.fbaipublicfiles.com/nllb/flores200_dataset.tar.gz",
+      "expected_sha256": "b8b0b76783024b85797e5cc75064eb83fc5288b41e9654dabc7be6ae944011f6",
+      "member": "./flores200_dataset/devtest/pes_Arab.devtest"
+    },
+    {
+      "benchmark": "XNLI",
+      "language": "en",
+      "split": "validation",
+      "repo": "facebook/xnli",
+      "revision": "b8dd5d7af51114dbda02c0e3f6133f332186418e",
+      "path": "en/validation-00000-of-00001.parquet",
+      "format": "parquet",
+      "text_fields": [
+        "premise",
+        "hypothesis"
+      ]
+    },
+    {
+      "benchmark": "XNLI",
+      "language": "en",
+      "split": "test",
+      "repo": "facebook/xnli",
+      "revision": "b8dd5d7af51114dbda02c0e3f6133f332186418e",
+      "path": "en/test-00000-of-00001.parquet",
+      "format": "parquet",
+      "text_fields": [
+        "premise",
+        "hypothesis"
+      ]
+    },
+    {
+      "benchmark": "XNLI",
+      "language": "de",
+      "split": "validation",
+      "repo": "facebook/xnli",
+      "revision": "b8dd5d7af51114dbda02c0e3f6133f332186418e",
+      "path": "de/validation-00000-of-00001.parquet",
+      "format": "parquet",
+      "text_fields": [
+        "premise",
+        "hypothesis"
+      ]
+    },
+    {
+      "benchmark": "XNLI",
+      "language": "de",
+      "split": "test",
+      "repo": "facebook/xnli",
+      "revision": "b8dd5d7af51114dbda02c0e3f6133f332186418e",
+      "path": "de/test-00000-of-00001.parquet",
+      "format": "parquet",
+      "text_fields": [
+        "premise",
+        "hypothesis"
+      ]
+    },
+    {
+      "benchmark": "XNLI",
+      "language": "ar",
+      "split": "validation",
+      "repo": "facebook/xnli",
+      "revision": "b8dd5d7af51114dbda02c0e3f6133f332186418e",
+      "path": "ar/validation-00000-of-00001.parquet",
+      "format": "parquet",
+      "text_fields": [
+        "premise",
+        "hypothesis"
+      ]
+    },
+    {
+      "benchmark": "XNLI",
+      "language": "ar",
+      "split": "test",
+      "repo": "facebook/xnli",
+      "revision": "b8dd5d7af51114dbda02c0e3f6133f332186418e",
+      "path": "ar/test-00000-of-00001.parquet",
+      "format": "parquet",
+      "text_fields": [
+        "premise",
+        "hypothesis"
+      ]
+    },
+    {
+      "benchmark": "MNLI",
+      "language": "en",
+      "split": "validation_matched",
+      "repo": "nyu-mll/multi_nli",
+      "revision": "da70db2af9d09693783c3320c4249840212ee221",
+      "path": "data/validation_matched-00000-of-00001.parquet",
+      "format": "parquet",
+      "text_fields": [
+        "premise",
+        "hypothesis"
+      ]
+    },
+    {
+      "benchmark": "MNLI",
+      "language": "en",
+      "split": "validation_mismatched",
+      "repo": "nyu-mll/multi_nli",
+      "revision": "da70db2af9d09693783c3320c4249840212ee221",
+      "path": "data/validation_mismatched-00000-of-00001.parquet",
+      "format": "parquet",
+      "text_fields": [
+        "premise",
+        "hypothesis"
+      ]
+    },
+    {
+      "benchmark": "OPUS100",
+      "split": "validation",
+      "repo": "Helsinki-NLP/opus-100",
+      "revision": "805090dc28bf78897da9641cdf08b61287580df9",
+      "path": "de-en/validation-00000-of-00001.parquet",
+      "format": "parquet",
+      "text_fields": [
+        "translation"
+      ]
+    },
+    {
+      "benchmark": "OPUS100",
+      "split": "test",
+      "repo": "Helsinki-NLP/opus-100",
+      "revision": "805090dc28bf78897da9641cdf08b61287580df9",
+      "path": "de-en/test-00000-of-00001.parquet",
+      "format": "parquet",
+      "text_fields": [
+        "translation"
+      ]
+    },
+    {
+      "benchmark": "OPUS100",
+      "split": "validation",
+      "repo": "Helsinki-NLP/opus-100",
+      "revision": "805090dc28bf78897da9641cdf08b61287580df9",
+      "path": "ar-en/validation-00000-of-00001.parquet",
+      "format": "parquet",
+      "text_fields": [
+        "translation"
+      ]
+    },
+    {
+      "benchmark": "OPUS100",
+      "split": "test",
+      "repo": "Helsinki-NLP/opus-100",
+      "revision": "805090dc28bf78897da9641cdf08b61287580df9",
+      "path": "ar-en/test-00000-of-00001.parquet",
+      "format": "parquet",
+      "text_fields": [
+        "translation"
+      ]
+    },
+    {
+      "benchmark": "OPUS100",
+      "split": "validation",
+      "repo": "Helsinki-NLP/opus-100",
+      "revision": "805090dc28bf78897da9641cdf08b61287580df9",
+      "path": "en-fa/validation-00000-of-00001.parquet",
+      "format": "parquet",
+      "text_fields": [
+        "translation"
+      ]
+    },
+    {
+      "benchmark": "OPUS100",
+      "split": "test",
+      "repo": "Helsinki-NLP/opus-100",
+      "revision": "805090dc28bf78897da9641cdf08b61287580df9",
+      "path": "en-fa/test-00000-of-00001.parquet",
+      "format": "parquet",
+      "text_fields": [
+        "translation"
+      ]
+    },
+    {
+      "benchmark": "FarsTail",
+      "language": "fa",
+      "split": "train",
+      "revision": "5d6322c40368ea5fab50e406e083e537a7d97817",
+      "url": "https://raw.githubusercontent.com/dml-qom/FarsTail/5d6322c40368ea5fab50e406e083e537a7d97817/data/Train-word.csv",
+      "format": "tsv",
+      "text_fields": [
+        "premise",
+        "hypothesis"
+      ]
+    },
+    {
+      "benchmark": "FarsTail",
+      "language": "fa",
+      "split": "validation",
+      "revision": "5d6322c40368ea5fab50e406e083e537a7d97817",
+      "url": "https://raw.githubusercontent.com/dml-qom/FarsTail/5d6322c40368ea5fab50e406e083e537a7d97817/data/Val-word.csv",
+      "format": "tsv",
+      "text_fields": [
+        "premise",
+        "hypothesis"
+      ]
+    },
+    {
+      "benchmark": "FarsTail",
+      "language": "fa",
+      "split": "test",
+      "revision": "5d6322c40368ea5fab50e406e083e537a7d97817",
+      "url": "https://raw.githubusercontent.com/dml-qom/FarsTail/5d6322c40368ea5fab50e406e083e537a7d97817/data/Test-word.csv",
+      "format": "tsv",
+      "text_fields": [
+        "premise",
+        "hypothesis"
+      ]
+    }
+  ],
+  "limitations": [
+    "MNLI hidden test and task training texts are not included in the initial exclusion bank",
+    "OPUS100 supervised training pairs are reserved for a later adapter/audit stage",
+    "public benchmark coverage is limited to the listed sources/splits/languages"
+  ],
+  "attribution": {
+    "fineweb": "https://huggingface.co/datasets/HuggingFaceFW/fineweb",
+    "fineweb2": "https://huggingface.co/datasets/HuggingFaceFW/fineweb-2",
+    "flores": "https://github.com/facebookresearch/flores",
+    "xnli": "https://github.com/facebookresearch/XNLI",
+    "farstail": "https://github.com/dml-qom/FarsTail",
+    "opus100": "https://opus.nlpl.eu/opus-100.php"
+  }
+}
